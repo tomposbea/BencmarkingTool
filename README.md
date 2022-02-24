@@ -1,9 +1,9 @@
 # BencmarkingTool
 
 ## Compilation:
-chmod 755 run.sh
-./run.sh
-./test
+chmod 755 run.sh  
+./run.sh  
+./test  
 
 ## C files
 main.c - reads matrix from input.txt, creates threads  
