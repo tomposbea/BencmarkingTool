@@ -1,8 +1,13 @@
 project(BenchmarkingTool)
 cmake_minimum_required(VERSION 3.12)
 
-set (DCMAKE_C_FLAGS "-o -pthread")
+set(CMAKE_THREAD_PREFER_PTHREAD TRUE)
+set(THREADS_PREFER_PTHREAD_FLAG TRUE)
+find_package(Threads REQUIRED)
 
-add_executable(main main.c)
-add_executable(lcm lcm.c)
-set(HEADERS includes.h)
+add_executable(Run 
+	main.c
+	file_io.c
+	lcm.c
+	print.c)
+target_link_libraries(Run Threads::Threads)
