@@ -6,7 +6,7 @@
 #include <string.h>
 #include "includes.h"
 
-const char filename[] = "input.txt";
+const char filename[] = "../input.txt";
 
 //matrix
 int matrix[M][N];
@@ -48,7 +48,8 @@ void *thread(void *argt){
 int main(int argc, char **argv) {
  printf("Before\n\n");
  
- read(matrix,filename);
+ //read(matrix,filename);
+ generate_matrix(matrix);
  print_matrix(matrix);
  
  pthread_t thread_id;

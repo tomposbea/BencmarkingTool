@@ -9,5 +9,6 @@ add_executable(Run
 	main.c
 	file_io.c
 	lcm.c
-	print.c)
+	print.c
+	generate.c)
 target_link_libraries(Run Threads::Threads)

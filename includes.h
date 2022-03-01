@@ -12,3 +12,6 @@ void write(const char *filename);
 //print.c
 void print_matrix(int a[M][N]);
 void print_res(int nr, int matrix[N], int gcd, int lcm);
+
+//generate.c
+void generate_matrix(int m[M][N]);
