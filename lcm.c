@@ -29,14 +29,14 @@ int LCM(int a, int b) {
 }
 
 //calculates lcm, gcd to the row
-void lcm_init(int matrix[N], int* lcm, int* gcd) {
+void lcm_init(int matrix[N], int* lcm, int* gcd, int column) {
 	struct Results res[N]; //stores all result (lcm, gcd) pairs
 	int i, counter;
 	int a,b,c,d;
 	int len;
 	
-	if(N%2==0) len=N;
-	else len=N-1; //if N is odd, last one has to be saved separatly to Results struct
+	if(column%2==0) len=column;
+	else len=column-1; //if N is odd, last one has to be saved separatly to Results struct
 	
 	for(i=0,counter=0;i<len;i+=2,counter++) { //calculates results for pairs of the matrix, saves in struct Results
 		a=matrix[i];
@@ -48,7 +48,7 @@ void lcm_init(int matrix[N], int* lcm, int* gcd) {
 		printf("%d --- (%d and %d) lcm: %d, gcd: %d\n", counter, a, b, res[counter].res_lcm, res[counter].res_gcd);
 	}
 	
-	if(N%2>0) {
+	if(column%2>0) {
 		res[counter].res_lcm=matrix[i];
 		res[counter].res_gcd=matrix[i];
 		printf("%d --- (%d and %d) lcm: %d, gcd: %d\n", counter, matrix[i], matrix[i], res[counter].res_lcm, res[counter].res_gcd);

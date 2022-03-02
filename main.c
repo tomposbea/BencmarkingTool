@@ -4,73 +4,66 @@
 #include <pthread.h>
 #include <sched.h>
 #include <string.h>
+#include <signal.h>
+#include <unistd.h>
 #include "includes.h"
 
 const char filename[] = "../input.txt";
-
-//matrix
+const char config[] = "../matrix_conf.cfg";
 int matrix[M][N];
-//int matrix[3][N] = { {72, 120}, {80, 13}, {34, 16}};
-//int matrix[M][N] = { {72, 120, 39}, {80, 13, 24}, {34, 16, 85}};
-//int matrix[M][N] = { {72, 120, 39, 12}, {80, 13, 24, 18}, {34, 16, 85, 20}};
-//int matrix[M][N] = { {72, 120, 39, 12, 5}, {80, 13, 24, 18, 6}, {34, 16, 85, 20, 7}};
+int column, row, speed;
 
-// passess arguments to threads
-typedef struct {
-	int id;
-	int line[N];
-} thread_args;
+volatile sig_atomic_t stop;
 
 void *thread(void *argt){
-	
 	int thread_nr=* (int*)argt;
 	printf("thread %i\n", thread_nr);
 	
 	int cpu=sched_getcpu();
 	printf("core: %i\n", cpu );
 	
-	lcm_init(matrix[thread_nr], &lcm, &gcd);
-	print_res(thread_nr, matrix[thread_nr], gcd, lcm);
+	lcm_init(matrix[thread_nr], &lcm, &gcd, column);
+	print_res(thread_nr, matrix[thread_nr], gcd, lcm, column);
 	
-	//read from struct -> segmentation fault at array
-	/*thread_args *actual_args=argt;
-	int thread_nr=* (int*)actual_args->id;
-	
-	int a,b;
-	a=* (int *)actual_args->line[0];
-	b=* (int *)actual_args->line[1];
-	
-	//free(actual_args);*/
 	printf("\n");
 	return NULL;
 }
 
-int main(int argc, char **argv) {
- printf("Before\n\n");
- 
- //read(matrix,filename);
- generate_matrix(matrix);
- print_matrix(matrix);
- 
- pthread_t thread_id;
- int i;
- for(i=0;i<M;i++){
-	 //struct passing id+line
-	/*thread_args *args = malloc(sizeof *args);
-	args->id=i;
-	* int j;
-    for(j=0;j<N;j++){
-	   args->line[j]=matrix[i][j];}
-	//printf("%d %d %d\n", args->id, args->line[0], args->line[1]);
-	pthread_create(&thread_id, NULL, thread, (void *)&args);*/
-	
-	//passing just id, global matrix
-	pthread_create(&thread_id, NULL, thread, (void *)&i);
-	
-	int *ptr;
-	pthread_join(thread_id, (void**)&ptr);
+void stop_loop(int signum){
+	stop=1;
 }
+
+// creates row number threads
+void create_threads() {
+	pthread_t thread_id;
+        int i;
+        for(i=0;i<row;i++){
+               pthread_create(&thread_id, NULL, thread, (void *)&i);
+               int *ptr;
+               pthread_join(thread_id, (void**)&ptr);
+        }
+}
+
+int main(int argc, char **argv) {
+ 	printf("START\n\n");
  
- printf("After\n");
- return 0;
+	read_matrix_config(config, &row, &column, &speed);//read config file: matrix size, how often new matrix should be generated
+	printf("Matrix config: speed=%d, N(column)=%d, M(row)=%d\n\n", speed, column, row);
+ 	
+	generate_matrix(matrix, row, column); // generate a random matrix
+        print_matrix(matrix, row, column);
+
+	create_threads();
+	
+ 	//infinite loop, stop at ctrl+C
+ 	stop=0;
+ 	signal(SIGINT, stop_loop);
+ 	while(!stop){
+		generate_matrix(matrix, row, column); // generate a random matrix
+        	print_matrix(matrix, row, column);
+	 	sleep(speed);
+	}
+
+ 	printf("STOP\n");
+ 	return 0;
 }

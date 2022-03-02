@@ -10,5 +10,6 @@ add_executable(Run
 	file_io.c
 	lcm.c
 	print.c
-	generate.c)
+	generate.c
+	read_conf.c)
 target_link_libraries(Run Threads::Threads)

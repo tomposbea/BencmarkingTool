@@ -3,7 +3,7 @@
 #include <string.h>
 #include "includes.h"
 
-void read(int m[M][N], const char *filename){
+void read_file(int m[M][N], const char *filename, int row, int column){
 	FILE *fptr;
 	if((fptr = fopen(filename,"r"))==NULL) {
 		printf("Error opening file\n");
@@ -12,12 +12,12 @@ void read(int m[M][N], const char *filename){
 	
 	int i, j;
 	//int m[M][N];
-	for(i=0;i<M;i++)
-		for(j=0;j<N;j++)
+	for(i=0;i<row;i++)
+		for(j=0;j<column;j++)
 			fscanf(fptr, "%d", &m[i][j]);
 	
 	fclose(fptr);
 }
 
-void write(const char *filename){
+void write_file(const char *filename){
 }

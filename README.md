@@ -20,9 +20,11 @@ cmake --build .
 
 ## Files
 #### main.c 
-- Reads matrix from file (input.txt) / generates matrix 
-- Creates 3 threads, running on different CPUs
+- Reads matrix configuration(size, how often it should be generated) from matrix_conf.cfg
+- Generates random matrixes every few seconds, until CTRL+C
+- Creates row number threads, running on different CPUs
 - Threads calculate results for matrix rows
+- TODO: thread creation inside of loop(floating point exception after first iteration)
 
 #### lcm.c 
 - Calculate LCM, GCD for 2 values
@@ -40,8 +42,12 @@ cmake --build .
 - Generate random number between 2 values
 - Generate NxM matrix
 
+#### read_conf.c
+- Reads configuration file
+
 #### Headers
 - includes.h
 
 #### Input files
 - input.txt
+- matrix_conf.cfg
