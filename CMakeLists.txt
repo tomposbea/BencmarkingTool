@@ -7,9 +7,10 @@ find_package(Threads REQUIRED)
 
 add_executable(Run 
 	main.c
-	file_io.c
-	lcm.c
 	print.c
 	generate.c
-	read_conf.c)
+	read_conf.c
+	conversions.c
+	lcm.c)
+
 target_link_libraries(Run Threads::Threads)

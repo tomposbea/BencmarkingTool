@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "includes.h"
+#include "inc.h"
 
 struct Results{
 	int res_lcm;
@@ -44,14 +44,11 @@ void lcm_init(int matrix[N], int* lcm, int* gcd, int column) {
 		
 		res[counter].res_lcm=LCM(a,b);
 		res[counter].res_gcd=GCD(a,b);
-		
-		printf("%d --- (%d and %d) lcm: %d, gcd: %d\n", counter, a, b, res[counter].res_lcm, res[counter].res_gcd);
 	}
 	
 	if(column%2>0) {
 		res[counter].res_lcm=matrix[i];
 		res[counter].res_gcd=matrix[i];
-		printf("%d --- (%d and %d) lcm: %d, gcd: %d\n", counter, matrix[i], matrix[i], res[counter].res_lcm, res[counter].res_gcd);
 		counter++;
 	}
 	
@@ -67,8 +64,6 @@ void lcm_init(int matrix[N], int* lcm, int* gcd, int column) {
 			c=res[i].res_gcd;
 			d=res[i+1].res_gcd;
 			res[counter].res_gcd=GCD(c,d);
-			
-			printf("%d --- (%d and %d) (%d and %d) lcm: %d, gcd: %d\n", counter, a, b, c,d,res[counter].res_lcm, res[counter].res_gcd);
 		}
 		len=counter;
 		repetition/=2;
@@ -76,4 +71,12 @@ void lcm_init(int matrix[N], int* lcm, int* gcd, int column) {
 	
 	*lcm=res[counter-1].res_lcm;
 	*gcd=res[counter-1].res_gcd;
+}
+
+void lcm(int matrix[M][N], int row, int column){
+	int lcm, gcd;
+	for(int i=0;i<row;i++){
+		lcm_init(matrix[i], &lcm, &gcd, column);
+		//print_res(i, matrix[i], gcd, lcm, column);
+	}
 }

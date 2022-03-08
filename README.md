@@ -21,21 +21,20 @@ cmake --build .
 ## Files
 #### main.c 
 - Reads matrix configuration(size, how often it should be generated) from matrix_conf.cfg
-- Generates random matrixes every few seconds, until CTRL+C
-- Creates row number threads, running on different CPUs
-- Threads calculate results for matrix rows
-- TODO: thread creation inside of loop(floating point exception after first iteration)
+- Thread 0: generates random matrixes every few seconds, write them in pipe
+- Thread 1: calculate LCM, GCD for each matrix line
+- Thread 2: log how many matrixes were generated, calculated on and lost
+- TODO: poll
 
 #### lcm.c 
-- Calculate LCM, GCD for 2 values
-- Calculate LCM, GCD final LCM, GCD for an array
+- Calculate LCM, GCD for 2 values, an array, a matrix
 
 #### file_io.c 
 - Reading NxM matrix from file
 - Writing results to file
 
 #### print.c 
-- Printing matrix to terminal
+- Printing array, matrix to terminal
 - Printing results to terminal
 
 #### generate.c
@@ -45,9 +44,14 @@ cmake --build .
 #### read_conf.c
 - Reads configuration file
 
+#### conversions.c
+- Necessary matrix conversions to write matrixes as char arrays
+- int matrix <-> int array
+- int array <-> char array
+
 #### Headers
-- includes.h
+- inc.h
 
 #### Input files
-- input.txt
-- matrix_conf.cfg
+- input.txt: a matrix
+- matrix_conf.cfg: row, column nunmber and generating speed

@@ -1,69 +1,128 @@
 #define _GNU_SOURCE
+
+#include <fcntl.h>
 #include <stdio.h>
+#include <sys/stat.h>
+#include <unistd.h>
 #include <stdlib.h>
 #include <pthread.h>
-#include <sched.h>
 #include <string.h>
-#include <signal.h>
-#include <unistd.h>
-#include "includes.h"
+#include <math.h>
+#include <poll.h>
+#include <sys/stat.h>
+#include <sched.h>
+
+#include "inc.h"
 
 const char filename[] = "../input.txt";
 const char config[] = "../matrix_conf.cfg";
-int matrix[M][N];
-int column, row, speed;
+char * myfifo = "/tmp/myfifo";
+int size=N*M, row=M, column=N, speed;
+int nr_matrixes_generated;
+int nr_matrixes_lcm;
+int nr_matrixes_deleted;
+int running_time;
 
-volatile sig_atomic_t stop;
+// generates int matrix, converts into char array, writes in pipe
+void *worker(void *argt){
+    int cpu=sched_getcpu();
+    printf("matrix generator cpu core: %i\n", cpu );
 
-void *thread(void *argt){
-	int thread_nr=* (int*)argt;
-	printf("thread %i\n", thread_nr);
+    int array[size], a[M][N];
+    char b[CHAR_BUF];	
+
+    read_matrix_config(config, &row, &column, &speed);
+    printf("Matrix config: speed=%d, N(column)=%d, M(row)=%d\n", speed, column, row);
+
+    int fd;
+    mkfifo(myfifo, 0666);
+    fd=open(myfifo, O_WRONLY);
 	
-	int cpu=sched_getcpu();
-	printf("core: %i\n", cpu );
+    while(1) {
+	generate_matrix(a,row, column);
+	nr_matrixes_generated++;
 	
-	lcm_init(matrix[thread_nr], &lcm, &gcd, column);
-	print_res(thread_nr, matrix[thread_nr], gcd, lcm, column);
-	
-	printf("\n");
-	return NULL;
+	matrix_to_array(row, column, a,size,array);	
+      	convert_array_to_char(size,array,b);
+
+	write(fd, b, sizeof(b));
+	long long int sleep=speed*10000;
+	usleep(sleep); //microseconds (1sec = 6zeros)
+    }
+
+    close(fd);
+    unlink(myfifo);
 }
 
-void stop_loop(int signum){
-	stop=1;
+
+// reads char array from pipe, converts into int matrix
+void *slave(void *argt){
+    int cpu=sched_getcpu();
+    printf("operations cpu core: %i\n", cpu );
+	
+    char buf[MAX_BUF];
+    int mess[size];
+    int matrix[M][N];
+
+    int fd;
+    fd = open(myfifo, O_RDONLY);
+
+    while(1){
+        read(fd, buf, MAX_BUF);
+        convert_array_to_int(size, buf, mess);
+	array_to_matrix(row, column, size, mess,matrix);
+	
+	lcm(matrix, row, column);
+	nr_matrixes_lcm++;
+    }
+
+    close(fd);
 }
 
-// creates row number threads
+void *log_statistics(void *argt){
+    int cpu=sched_getcpu();
+    printf("logging cpu core: %i\n", cpu );
+    
+    while(1){
+        usleep(1000000);
+	running_time++;
+	nr_matrixes_deleted=nr_matrixes_generated-nr_matrixes_lcm;
+        printf("%dsec, generated: %d, calculated on: %d, lost: %d\n", 
+		running_time, nr_matrixes_generated, nr_matrixes_lcm, nr_matrixes_deleted);
+    }
+}
+
+// create writes and reader thread
 void create_threads() {
-	pthread_t thread_id;
+        pthread_t thread_id;
         int i;
-        for(i=0;i<row;i++){
-               pthread_create(&thread_id, NULL, thread, (void *)&i);
-               int *ptr;
-               pthread_join(thread_id, (void**)&ptr);
-        }
+
+	// thread 0: generate random matrixes, send them to thread 1
+	i=0;
+        pthread_create(&thread_id, NULL, worker, (void *)&i);
+
+	// thread 1: read matrixes from fifo pipe, do something with them
+	i=1;
+	pthread_create(&thread_id, NULL, slave, (void *)&i);
+
+	//thread 2: logging statistics
+	i=2;
+	pthread_create(&thread_id, NULL, log_statistics, (void *)&i);
+	
+	int *ptr;
+        pthread_join(thread_id, (void**)&ptr);
 }
 
-int main(int argc, char **argv) {
- 	printf("START\n\n");
- 
-	read_matrix_config(config, &row, &column, &speed);//read config file: matrix size, how often new matrix should be generated
-	printf("Matrix config: speed=%d, N(column)=%d, M(row)=%d\n\n", speed, column, row);
- 	
-	generate_matrix(matrix, row, column); // generate a random matrix
-        print_matrix(matrix, row, column);
+void init(){
+    nr_matrixes_generated=0;
+    nr_matrixes_lcm=0;
+    nr_matrixes_deleted=0;
+    running_time=0;
+}
 
-	create_threads();
-	
- 	//infinite loop, stop at ctrl+C
- 	stop=0;
- 	signal(SIGINT, stop_loop);
- 	while(!stop){
-		generate_matrix(matrix, row, column); // generate a random matrix
-        	print_matrix(matrix, row, column);
-	 	sleep(speed);
-	}
-
- 	printf("STOP\n");
- 	return 0;
+int main()
+{
+    init();
+    create_threads(); 
+    return 0;
 }

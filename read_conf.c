@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "includes.h"
+#include "inc.h"
 
 #define CONFIG_SIZE (256)
 #define SPEED_SET (1)
