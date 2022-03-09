@@ -17,29 +17,32 @@
 const char filename[] = "../input.txt";
 const char config[] = "../matrix_conf.cfg";
 char * myfifo = "/tmp/myfifo";
-int size=N*M, row=M, column=N, speed;
+int size, row, column, speed;
 int nr_matrixes_generated;
 int nr_matrixes_lcm;
 int nr_matrixes_deleted;
 int running_time;
+
+void matrix_config(){
+    read_matrix_config(config, &row, &column, &speed);
+    printf("Matrix config: speed=%d, N(column)=%d, M(row)=%d\n", speed, column, row);
+    size=row*column;
+}
 
 // generates int matrix, converts into char array, writes in pipe
 void *worker(void *argt){
     int cpu=sched_getcpu();
     printf("matrix generator cpu core: %i\n", cpu );
 
-    int array[size], a[M][N];
+    int array[size], a[row][column];
     char b[CHAR_BUF];	
-
-    read_matrix_config(config, &row, &column, &speed);
-    printf("Matrix config: speed=%d, N(column)=%d, M(row)=%d\n", speed, column, row);
 
     int fd;
     mkfifo(myfifo, 0666);
     fd=open(myfifo, O_WRONLY);
 	
     while(1) {
-	generate_matrix(a,row, column);
+	generate_matrix(row, column, a);
 	nr_matrixes_generated++;
 	
 	matrix_to_array(row, column, a,size,array);	
@@ -62,7 +65,7 @@ void *slave(void *argt){
 	
     char buf[MAX_BUF];
     int mess[size];
-    int matrix[M][N];
+    int matrix[row][column];
 
     int fd;
     fd = open(myfifo, O_RDONLY);
@@ -72,7 +75,7 @@ void *slave(void *argt){
         convert_array_to_int(size, buf, mess);
 	array_to_matrix(row, column, size, mess,matrix);
 	
-	lcm(matrix, row, column);
+	lcm(row, column, matrix);
 	nr_matrixes_lcm++;
     }
 
@@ -123,6 +126,7 @@ void init(){
 int main()
 {
     init();
+    matrix_config();
     create_threads(); 
     return 0;
 }

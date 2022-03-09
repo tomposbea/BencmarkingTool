@@ -29,8 +29,8 @@ int LCM(int a, int b) {
 }
 
 //calculates lcm, gcd to the row
-void lcm_init(int matrix[N], int* lcm, int* gcd, int column) {
-	struct Results res[N]; //stores all result (lcm, gcd) pairs
+void lcm_init(int* lcm, int* gcd, int column, int matrix[column]) {
+	struct Results res[column]; //stores all result (lcm, gcd) pairs
 	int i, counter;
 	int a,b,c,d;
 	int len;
@@ -73,10 +73,10 @@ void lcm_init(int matrix[N], int* lcm, int* gcd, int column) {
 	*gcd=res[counter-1].res_gcd;
 }
 
-void lcm(int matrix[M][N], int row, int column){
+void lcm(int row, int column, int matrix[row][column]){
 	int lcm, gcd;
 	for(int i=0;i<row;i++){
-		lcm_init(matrix[i], &lcm, &gcd, column);
+		lcm_init(&lcm, &gcd, column, matrix[i]);
 		//print_res(i, matrix[i], gcd, lcm, column);
 	}
 }

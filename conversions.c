@@ -36,14 +36,14 @@ void convert_array_to_int(int size, char *c, int res[size]){
 
 // flattens matrix into an array, it can be sent in one line
 
-void matrix_to_array(int row, int column, int a[M][N], int size, int res[size]){
+void matrix_to_array(int row, int column, int a[row][column], int size, int res[size]){
         int nr=0;
         for(int i=0;i<row;i++)
                 for(int j=0;j<column;j++)
                         res[nr++]=a[i][j];
 }
 
-void array_to_matrix(int row, int column, int size, int array[size], int res[M][N]) {
+void array_to_matrix(int row, int column, int size, int array[size], int res[row][column]) {
         int nr=0;
         for(int i=0;i<row;i++)
                 for(int j=0;j<column;j++)

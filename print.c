@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-//#include "includes.h"
 #include "inc.h"
 
-void print_res(int nr, int matrix[N], int gcd, int lcm, int column){
+void print_res(int nr, int gcd, int lcm, int column, int matrix[column]){
 	printf("\nRow %d: ", nr);
 	int i;
 	for(i=0;i<column;i++)
@@ -13,7 +12,7 @@ void print_res(int nr, int matrix[N], int gcd, int lcm, int column){
 	printf(", LCM: %d", lcm);
 }
 
-void print_matrix(int a[M][N], int row, int column) {
+void print_matrix(int row, int column, int a[row][column]) {
 	int i,j;
 	for(i=0;i<row;i++){
 		for(j=0;j<column;j++)
