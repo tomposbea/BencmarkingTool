@@ -1,13 +1,5 @@
 # BencmarkingTool
 
-## Compilation with gcc
-
-```bash
-chmod 755 run.sh
-./run.sh
-./test
-```
-
 ## Compilation with CMake
 
 ```bash
