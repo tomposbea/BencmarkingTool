@@ -1,5 +1,5 @@
 project(BenchmarkingTool)
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.16.3)
 
 set(CMAKE_THREAD_PREFER_PTHREAD TRUE)
 set(THREADS_PREFER_PTHREAD_FLAG TRUE)

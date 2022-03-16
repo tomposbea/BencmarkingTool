@@ -1,5 +1,9 @@
 #define MAX_BUF 1024
 #define CHAR_BUF 128
+//#define THREADS 2 
+//#define FIFO 8
+//#define STRINGLEN 16
+//#define MAXTABLE 16384
 
 //lcm.c
 //int lcm, gcd;
@@ -12,6 +16,7 @@ void read_matrix_config(const char *filename, int *n, int *m, int *fr);
 //generate.c
 int generate_int(int lower, int upper);
 void generate_matrix(int row, int column, int m[row][column]);
+int GenerateString(char * char_array, int row, int column, int size);
 
 //conversion.c
 void convert_array_to_char(int size, int a[size], char b[CHAR_BUF]);
