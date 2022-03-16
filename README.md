@@ -1,5 +1,10 @@
 # BencmarkingTool
 
+## Integration - work in progress
+- main: zsiga.c
+- compilation: run.sh -> cmake not working yet
+- executable: a.out
+
 ## Compilation with CMake
 
 ```bash
