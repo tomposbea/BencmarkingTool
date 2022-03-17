@@ -13,6 +13,8 @@
 #include <inttypes.h>
 #include <time.h>
 #include <math.h>
+#include "inc.h"
+
 #define SleepUni(ms) usleep(ms*1000)
 #define AtomicExhange(var, val) __atomic_exchange_n (var, val, __ATOMIC_RELEASE)
 #define AtomicLoad(val) __atomic_load_n(val, __ATOMIC_ACQUIRE)
@@ -76,6 +78,8 @@ int64_t GetFrequency() {
 #include <string.h>
 #include <Windows.h>
 #include <profileapi.h>
+#include "inc.h"
+
 #define SleepUni(ms) Sleep(ms)
 #define AtomicExhange(var, val) InterlockedExchange(var, val)
 #define AtomicLoad(val) InterlockedAdd(val, 0)
@@ -95,13 +99,13 @@ unsigned long GetClockValue() {
 }
 
 #endif
-
+/*
 #define THREADS 4
 #define FIFO 8
 #define STRINGLEN 128
 #define MAXTABLE 16384
 #define ALPHABET 15
-
+*/
 
 struct Transport
 {
@@ -307,6 +311,7 @@ THREADTYPE ThreadReport(void* data) {
 
 void InitSubsystem(){
 	printf("\nInit subsystem...\n");
+	
 	// Init Fifo System.
         for (int i = 0; i < THREADS; i++) {
                 for (int j = 0; j < FIFO; j++) Fifo[i][j].valid = 0;

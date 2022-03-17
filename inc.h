@@ -1,9 +1,11 @@
 #define MAX_BUF 1024
 #define CHAR_BUF 128
-//#define THREADS 2 
-//#define FIFO 8
-//#define STRINGLEN 16
-//#define MAXTABLE 16384
+#define THREADS 4
+#define FIFO 8
+#define STRINGLEN 128
+#define MAXTABLE 16384
+#define ALPHABET 15
+
 
 //lcm.c
 //int lcm, gcd;

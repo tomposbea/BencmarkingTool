@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-//#include "inc.h"
+#include "inc.h"
 
 int generate_int(int lower, int upper){
 	return ((rand() % (upper-lower+1)) + lower);
@@ -20,8 +20,6 @@ int GenerateString(char * char_array, int row, int column, int size) {
         generate_matrix(row, column, matrix);
         matrix_to_array(row, column, matrix,size,array);
         convert_array_to_char(size,array,char_array);
-
-        //GeneratedCtrl++;
 
         return sizeof(char_array);
 }
