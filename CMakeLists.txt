@@ -9,7 +9,7 @@ if(UNIX)
         if( ${ARCHITECTURE} STREQUAL "x86_64" )
 		set(COMPILER_OPTIONS ${COMPILER_OPTIONS} -O3 -DNDEBUG -Wl,--no-as-needed -lm)
        	else()
-		set(COMPILER_OPTIONS ${COMPILER_OPTIONS} -O3 -march=armv8.2-a -Wl,--no-as-needed -lm)
+		set(COMPILER_OPTIONS ${COMPILER_OPTIONS} -O3 -DNDEBUG -march=armv8.2-a -Wl,--no-as-needed -lm)
 	endif()
 endif(UNIX)
 
