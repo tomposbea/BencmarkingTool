@@ -1,10 +1,5 @@
 # BencmarkingTool
 
-## Integration - work in progress
-- main: zsiga.c
-- compilation: run.sh -> cmake not working yet
-- executable: a.out
-
 ## Compilation with CMake
 
 ```bash
@@ -22,6 +17,11 @@ cmake --build .
 - Thread 1: calculate LCM, GCD for each matrix line
 - Thread 2: log how many matrixes were generated, calculated on and lost
 - TODO: poll
+
+#### fifo.c
+- Writing to FIFO, number of fifos defined in defines.h
+- Reading from FIFO
+- check if message is duplicate, do calculations
 
 #### lcm.c 
 - Calculate LCM, GCD for 2 values, an array, a matrix
@@ -47,7 +47,9 @@ cmake --build .
 - int array <-> char array
 
 #### Headers
-- inc.h
+- defines.h: variables, constants, defined values
+- functions.h: function declarations
+- def_linx/windows: os specific macros
 
 #### Input files
 - input.txt: a matrix

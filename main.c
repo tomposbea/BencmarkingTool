@@ -1,275 +1,222 @@
+#if defined(__linux__)
 #define _GNU_SOURCE
-
-#include <fcntl.h>
 #include <stdio.h>
-#include <sys/stat.h>
-#include <unistd.h>
 #include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
 #include <pthread.h>
 #include <string.h>
-#include <math.h>
-#include <poll.h>
-#include <sys/stat.h>
 #include <sched.h>
-#include <sched.h>
+#include <sys/sysinfo.h>
+#include <errno.h>
+#include <ctype.h>      /* Character Type Classification */
+#include <inttypes.h>
 #include <time.h>
+#include <math.h>
+#include "headers/defines.h"
+#include "headers/functions.h"
+#include "headers/def_linux.h"
 
-#include "inc.h"
-
-#define AtomicExchange(var, val) __atomic_exchange_n (var, val, __ATOMIC_RELEASE)
-#define AtomicLoad(val) __atomic_load_n(val, __ATOMIC_ACQUIRE)
-#define strncpy_s(dest,num1,src,num2) strncpy(dest, src, num2)
-
-const char filename[] = "../input.txt";
-const char config[] = "../matrix_conf.cfg";
-char * myfifo = "/tmp/myfifo";
-
-int size, row, column, speed;
-int nr_matrixes_generated;
-int nr_matrixes_lcm;
-int nr_matrixes_deleted;
-int running_time;
-
-int enable=0, run=1;
-
-int fifo_busy[THREADS];
-int fifo_len[THREADS];
-int write_ptr[THREADS];
-int read_ptr[THREADS];
-int table_ptr = 0;
-int table_busy=0;
-char table[MAXTABLE][STRINGLEN];
-
-struct Transport {
-	int valid;
-	char string[STRINGLEN];
-};
-struct Transport Fifo[THREADS][FIFO];
-
-void matrix_config(){
-    read_matrix_config(config, &row, &column, &speed);
-    printf("Matrix config: speed=%d, N(column)=%d, M(row)=%d\n", speed, column, row);
-    size=row*column;
+#ifdef __aarch64__  // Linux ARM
+inline int64_t GetClockValue() {
+	int64_t virtual_timer_value;
+	asm volatile("mrs %0, cntvct_el0" : "=r"(virtual_timer_value));
+	return virtual_timer_value;
 }
 
-int write_to_fifo(int fifonum, char* temp){
-	int oldbusy=1;
-	while(oldbusy){
-		oldbusy=AtomicExchange(&fifo_busy[fifonum],1);
-		if(oldbusy){ //check if right fifo
-			while(AtomicLoad(&(fifo_busy[fifonum]))) usleep(0); //fifo is busy
-			oldbusy=1;
-		}
-	}
-
-	if(((write_ptr[fifonum]+1)%FIFO) == read_ptr[fifonum]){ //fifo is full
-		nr_matrixes_deleted++;
-		AtomicExchange(&fifo_busy[fifonum],0);
-		return -1;
-	} 
-	
-	printf("\n %d fifo mess: %s\n", fifonum, temp);
-	//fifo not full
-	int oldwrite=write_ptr[fifonum];
-	write_ptr[fifonum]=(write_ptr[fifonum]+1)%FIFO;
-
-	strncpy_s(Fifo[fifonum][oldwrite].string, STRINGLEN, temp, STRINGLEN);
-	Fifo[fifonum][oldwrite].valid=1;
-	fifo_len[fifonum]++;
-
-	AtomicExchange(&(fifo_busy[fifonum]),0);
-	return 0;
-
+inline int64_t GetFrequency() {
+	int64_t freq;
+	asm volatile("mrs %0, cntfrq_el0" : "=r"(freq));
+	return freq;
 }
-
-int FindDuplicate(char* instring) {
-	int i;
-	for (i = 0; i < MAXTABLE; i++) if (!strcmp(table[i], instring)) return i;  // Found.
-	return -1;  // Not Found
-}
-
-int process_string(char* instring) {
-	if(FindDuplicate(instring)!=-1){ //duplicate found
-		nr_matrixes_lcm++;
-		return 1;
-	}
-
-	//critical section
-	int oldbusy=1;
-	while(oldbusy){
-		oldbusy=AtomicExchange(&table_busy,1);
-                if(oldbusy){ //check if ours
-                        while(AtomicLoad(&(table_busy))) usleep(0); //fifo is busy
-                        oldbusy=1;
-                }
-        }
-
-	//write to table
-	strncpy_s(table[table_ptr], STRINGLEN, instring, STRINGLEN);
-	table_ptr=(table_ptr+1)%MAXTABLE;
-	nr_matrixes_lcm++;
-	AtomicExchange(&table_busy, 0);
-	return 0;
-}
-
-int read_from_fifo(int fifonum){
-	char intext[STRINGLEN];
-	if(read_ptr[fifonum]==write_ptr[fifonum]) return -1; //fifo is empty
-	
-	int oldbusy=1;
-	while(oldbusy){
-		oldbusy=AtomicExchange(&fifo_busy[fifonum],1);
-                if(oldbusy){ //check if right fifo
-                        while(AtomicLoad(&(fifo_busy[fifonum]))) usleep(0); //fifo is busy
-                        oldbusy=1;
-                }
-	}
-	
-	struct Transport* income=Fifo[fifonum]+read_ptr[fifonum];//push data to fifo
-	if(income->valid) strncpy_s(intext, STRINGLEN, income->string, STRINGLEN); //save data to stack
-	income->valid=0;//release fifo
-	read_ptr[fifonum]=(read_ptr[fifonum]+1)%FIFO;
-	fifo_len[fifonum]--;
-
-	 AtomicExchange(&(fifo_busy[fifonum]),0);
-	 printf("\nRead: %s\n", intext);
-	 return process_string(intext);
-}
-
-// generates int matrix, converts into char array, writes in pipe
-void *thread_generate(void *argt){
-    int cpu=sched_getcpu();
-    printf("matrix generator cpu core: %i\n", cpu );
-
-    int array[size], matrix[row][column];
-    char char_array[CHAR_BUF];
-    int roundrobin=0;    
-
-    int fd;
-    mkfifo(myfifo, 0666);
-    fd=open(myfifo, O_WRONLY);
-	
-    while(run) {
-	if(enable) {
-		generate_matrix(row, column, matrix);
-		matrix_to_array(row, column, matrix,size,array);	
-      		convert_array_to_char(size,array,char_array);
-
-		nr_matrixes_generated++;
-                roundrobin++;
-
-		printf("\nWrite: %.*s\n", (int)sizeof(char_array), char_array);	
-		write_to_fifo(roundrobin, char_array);
-		//write(fd, char_array, sizeof(char_array));
-	
-		if(roundrobin>=THREADS) roundrobin=0;
-
-		long long int sleep=speed*10000;
-		usleep(sleep); //microseconds (1sec = 6zeros)
-	} else usleep(0);
-    }
-
-    close(fd);
-    unlink(myfifo);
+#else    // Linux x86
+inline u_int64_t GetClockValue() {
+	u_int32_t low, high;
+	__asm__ volatile("rdtsc" : "=a"(low), "=d"(high));
+	return (((u_int64_t)high) << 32) | ((u_int64_t)low);
 }
 
 
-// reads char array from pipe, converts into int matrix
-void *thread_process(void *argt){
-    int cpu=sched_getcpu();
-    int fifonum=*((int *)argt);
-    printf("Process %d cpu core: %i\n",fifonum, cpu );
-	
-    char buf[STRINGLEN];
-    int mess[size];
-    int matrix[row][column];
-
-    int fd;
-    fd = open(myfifo, O_RDONLY);
-
-    while(run){
-	if(enable) {
-        	read(fd, buf, MAX_BUF);
-        	//read_from_fifo(fifonum);
-		printf("\nMess: %s\n", buf); 
-
-		convert_array_to_int(size, buf, mess);
-		array_to_matrix(row, column, size, mess,matrix);
-	
-		lcm(row, column, matrix);
-		nr_matrixes_lcm++;
-	} else usleep(0);
-    }
-
-    close(fd);
-}
-
-void *thread_report(void *argt){
-    int cpu=sched_getcpu();
-    printf("Report cpu core: %i\n", cpu );
-   
-    printf("\n"); 
-    while(run){
-	if(enable){
-		running_time++;
-		nr_matrixes_deleted=nr_matrixes_generated-nr_matrixes_lcm;
-        	printf("%dsec, generated: %d, calculated on: %d, lost: %d\n", 
-		running_time, nr_matrixes_generated, nr_matrixes_lcm, nr_matrixes_deleted);
-	}
-	usleep(1000000);
-    }
-}
-
-void stop_process(){
-    printf("\nRunning\n");
-    enable=1;
-    
-    getchar(); //any key
-    enable=0;
-    run=0;
-    printf("\nStopped\n");
-}
-
-// create writes and reader thread
-void create_threads() {
-        pthread_t thread_id;
-
-        pthread_create(&thread_id, NULL, thread_generate, 0);
-	pthread_create(&thread_id, NULL, thread_report, 0);
-
-	for(int i=0;i<THREADS;i++)	
-		pthread_create(&thread_id, NULL, thread_process, (void *)&i);
-
-	stop_process();
-
-	int *ptr;
-        pthread_join(thread_id, (void**)&ptr);
-}
-
-void init(){
-    nr_matrixes_generated=0;
-    nr_matrixes_lcm=0;
-    nr_matrixes_deleted=0;
-    running_time=0;
-
-    // Init Fifo System.
-    for (int i = 0; i < THREADS; i++) {
-	for (int j = 0; j < FIFO; j++) Fifo[i][j].valid = 0;
-		write_ptr[i] = 0;
-		read_ptr[i] = 0;
-		fifo_busy[i] = 0;
-		fifo_len[i] = 0;
-    }
-
-    // Init table
-    for (int i = 0; i < MAXTABLE; i++) table[i][0] = 0;
-}
-
-int main()
+inline int64_t ts_nanosec(const struct timespec* ts)
 {
-    init();
-    matrix_config();
-    create_threads();
+	return (((int64_t)ts->tv_sec) * SI_G + (int64_t)ts->tv_nsec);
+}
 
-    return 0;
+int64_t GetFrequency() {
+	struct timespec ts0, ts1, ts_tmo = { 0, SI_G / 5 };
+	u_int64_t hp0, hp1;
+	int64_t ns, cycles;
+
+	hp0 = GetClockValue();
+	clock_gettime(CLOCK_MONOTONIC, &ts0);
+	nanosleep(&ts_tmo, NULL);
+	clock_gettime(CLOCK_MONOTONIC, &ts1);
+	hp1 = GetClockValue();
+
+	ns = ts_nanosec(&ts1) - ts_nanosec(&ts0);
+	cycles = hp1 - hp0;
+	//	printf("hp0:%lu, hp1:%lu, ts0:%lu, ts1:%lu, ns:%lu, cycles:%lu\n",hp0, hp1, ts0.tv_nsec, ts1.tv_nsec, ns, cycles);
+	return (SI_G * cycles) / ns;
+}
+
+#endif
+
+#else 
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <Windows.h>
+#include <profileapi.h>
+#include "headers/defines.h"
+#include "headers/functions.h"
+#include "headers/def_windows.h"
+
+unsigned long GetFrequency() {
+	LARGE_INTEGER freq;
+	QueryPerformanceFrequency(&freq);
+	return (unsigned long) freq.QuadPart;
+}
+
+unsigned long GetClockValue() {
+	LARGE_INTEGER val;
+	QueryPerformanceCounter(&val);
+	return (unsigned long) val.QuadPart;
+}
+
+#endif
+int CpuAllocTable[] = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 };
+//                      G,P,P,P,P,P,P,P,P,P,P,P....
+
+void SetProcessAffinity(int cpu)
+{
+#if defined(__linux__)
+	cpu_set_t  mask;
+	CPU_ZERO(&mask);
+	CPU_SET(cpu, &mask);
+	pthread_setaffinity_np(pthread_self(), sizeof(mask), &mask);	
+#else
+	SetThreadAffinityMask(GetCurrentThread(), 1 << cpu );
+#endif
+}
+
+THREADTYPE ThreadGen(void* data) {
+	int roundrobin = 0;
+	SetProcessAffinity(CpuAllocTable[0]);
+	while (Run) {
+		if (Enable) {
+			GenerateAndWriteToFIFO(roundrobin);
+			roundrobin++;
+			if (roundrobin >= THREADS) roundrobin = 0;
+			SleepUni(speed);
+		}
+		else SleepUni(0);
+	}
+	return 0;
+}
+
+THREADTYPE ThreadProcess(void* data) {
+	//int fifonum=*((int *)data);
+	int fifonum=(int)data;
+	SetProcessAffinity(CpuAllocTable[1+fifonum]);
+	while (Run) {
+		if (Enable) {
+			if (GetFromFIFOAndProcess(fifonum)) SleepUni(0);
+		}
+		else SleepUni(0);
+	}
+	return 0;
+}
+
+THREADTYPE ThreadReport(void* data) {
+	int i;
+	while (Run) {
+		if (Enable)
+		{
+			printf("\nCounter:%6.6d Gen:%8.8d   Dropped: %8.8d  Processed:%8.8d   Duplicates: %8.8d\nFifo: ", Counter++, GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl);
+			for (i = 0; i < THREADS; i++) printf("%d:%3.3d  ", i, FifoLen[i]);
+			GeneratedCtrl = DroppedCtrl = ProcessedCtrl = DuplicateCtrl = 0;
+		}
+
+		SleepUni(1000);
+	}
+	return 0;
+}
+
+void InitSubsystem(){
+	printf("\nInit subsystem...\n");
+
+	TableBusy = 0;
+	TablePtr = 0;
+
+	DuplicateCtrl = 0;
+	GeneratedCtrl = 0;
+	ProcessedCtrl = 0;
+	DroppedCtrl = 0;
+	Counter = 0;
+	Run = 1;
+	Enable = 0;
+
+
+	// Init Fifo System.
+        for (int i = 0; i < THREADS; i++) {
+                for (int j = 0; j < FIFO; j++) Fifo[i][j].valid = 0;
+                WritePtr[i] = 0;
+                ReadPtr[i] = 0;
+                FifoBusy[i] = 0;
+                FifoLen[i] = 0;
+        }
+        // Init table
+        for (int i = 0; i < MAXTABLE; i++) Table[i][0] = 0;
+}
+
+void InitTiming(){
+        SetProcessAffinity(0);
+        printf("\nHigh-speed timers...\n");
+        TimerFreq = GetFrequency();
+        printf("Reference Freq: %ld MHz\n", TimerFreq / 1000000);
+        TimerRef = GetClockValue();
+        SleepUni(1000);
+        printf("Reference Time Measurement for 1 sec: %ld ms\n", (((GetClockValue() - TimerRef) * 1000) / TimerFreq));
+}
+
+void StopProcess(){
+	SleepUni(1);
+        printf("\nRun...\n");
+        Enable = 1;
+        
+	// Wait for enter
+        getchar();
+        
+	// Destroy.
+        Enable = 0;
+        Run = 0;
+        SleepUni(1);
+        printf("\n\nStopped...\n");
+
+}
+
+void ReadConfig(){
+	const char config[] = "../matrix_conf.cfg";
+	read_matrix_config(config, &row, &column, &speed);
+	printf("Matrix config: speed=%d, N(column)=%d, M(row)=%d\n", speed, column, row);
+        size=row*column;
+}
+
+int main(int argc, char** argv) {
+	HANDLE threadReport;
+	HANDLE threadGen;
+	HANDLE threadWorker[THREADS];
+
+	InitSubsystem();
+	ReadConfig();
+	InitTiming();
+	
+	// Create Threads
+	ThreadCreate(threadGen, ThreadGen, 0);
+	ThreadCreate(threadReport, ThreadReport, 0);
+	for(int i=0; i<THREADS; i++) ThreadCreate((threadWorker[i]), ThreadProcess,i);
+	
+	StopProcess();
+	return 0;
 }

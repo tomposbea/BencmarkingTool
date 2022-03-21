@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "inc.h"
-
+#include <string.h>
+#include "headers/defines.h"
+#include "headers/functions.h"
 int generate_int(int lower, int upper){
 	return ((rand() % (upper-lower+1)) + lower);
 }
@@ -24,3 +25,8 @@ int GenerateString(char * char_array, int row, int column, int size) {
         return sizeof(char_array);
 }
 
+int FindDuplicate(char* instring) {
+        int i;
+        for (i = 0; i < MAXTABLE; i++) if (!strcmp(Table[i], instring)) return i;  // Found.
+        return -1;  // Not Found
+}

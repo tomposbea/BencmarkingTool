@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "inc.h"
-
+#include "headers/defines.h"
+#include "headers/functions.h"
 void print_res(int nr, int gcd, int lcm, int column, int matrix[column]){
 	printf("\nRow %d: ", nr);
 	int i;

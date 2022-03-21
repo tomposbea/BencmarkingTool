@@ -1,11 +1,3 @@
-#define MAX_BUF 1024
-#define CHAR_BUF 128
-#define THREADS 4
-#define FIFO 8
-#define STRINGLEN 128
-#define MAXTABLE 16384
-#define ALPHABET 15
-
 
 //lcm.c
 //int lcm, gcd;
@@ -19,6 +11,7 @@ void read_matrix_config(const char *filename, int *n, int *m, int *fr);
 int generate_int(int lower, int upper);
 void generate_matrix(int row, int column, int m[row][column]);
 int GenerateString(char * char_array, int row, int column, int size);
+int FindDuplicate(char* instring);
 
 //conversion.c
 void convert_array_to_char(int size, int a[size], char b[CHAR_BUF]);
@@ -30,3 +23,9 @@ void array_to_matrix(int row, int column, int size, int array[size], int res[row
 void print_array(int size, int m[size]);
 void print_matrix(int row, int column, int a[row][column]);
 void print_res(int i, int gcd, int lcm, int column, int matrix[column]);
+
+//fifo.c
+int WriteToFifo(int fifonum, char* Temp, int *DroppedCtrl);
+int GetFromFIFOAndProcess(int fifonum);
+int ProcessString(char* instring);
+int GenerateAndWriteToFIFO(int fifonum);

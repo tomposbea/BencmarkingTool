@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "inc.h"
-
+#include "headers/defines.h"
+#include "headers/functions.h"
 #define CONFIG_SIZE (256)
 #define SPEED_SET (1)
 #define n_SET (2)

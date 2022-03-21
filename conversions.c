@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#include "inc.h"
-
+#include "headers/defines.h"
+#include "headers/functions.h"
 // int array -> char array
 void convert_array_to_char(int size, int a[size], char b[128]){
         int n=0;
