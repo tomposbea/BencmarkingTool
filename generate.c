@@ -15,6 +15,7 @@ void generate_matrix(int row, int column, int m[row][column]){
 			m[i][j]=generate_int(1,99);
 }
 
+
 int GenerateString(char * char_array, int row, int column, int size) {
         int array[size], matrix[row][column];
 
