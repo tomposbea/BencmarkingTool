@@ -76,3 +76,6 @@ cmake ..
 #### Input files
 - input.txt: a matrix
 - matrix_conf.cfg: row, column nunmber and generating speed
+
+#### Output files
+- function_test_suite.xml: Info about the test case results
