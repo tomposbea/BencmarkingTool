@@ -2,6 +2,8 @@
 //lcm.c
 //int lcm, gcd;
 //void lcm_init(int matrix[N], int* lcm, int* gcd, int column);
+int GCD(int a, int b);
+int LCM(int a, int b);
 void lcm(int row, int column, int matrix[row][column]);
 
 //read_conf.c
