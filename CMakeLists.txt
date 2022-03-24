@@ -1,5 +1,5 @@
 project(BenchmarkingTool)
-cmake_minimum_required(VERSION 3.13.4)
+cmake_minimum_required(VERSION 3.12)
 
 set(COMPILER_OPTIONS)
 if(UNIX)
@@ -24,11 +24,15 @@ find_package(Threads REQUIRED)
 add_executable(Run 
 	main.c
 	print.c
-	generate.c
 	read_conf.c
-	conversions.c
-	lcm.c
 	fifo.c)
 
-target_link_libraries(Run Threads::Threads)
+add_library(Lib SHARED generate.c lcm.c conversions.c)
+
+SET_TARGET_PROPERTIES(Lib PROPERTIES LINKER_LANGUAGE C)
+target_link_libraries(Run Lib Threads::Threads)
 target_compile_options(Run PUBLIC ${COMPILER_OPTIONS})
+
+enable_testing()
+add_subdirectory(eric-test)
+add_subdirectory(test)
