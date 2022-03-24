@@ -1,5 +1,10 @@
 # BencmarkingTool
 
+## Eric-Test Framework
+```bash
+git submodule add ssh://gerrit.ericsson.se:29418/pc/eric-test
+```
+
 ## Compilation with CMake
 
 ```bash
@@ -8,6 +13,20 @@ cd build
 cmake ..
 cmake --build .
 ./Run
+```
+
+## Running Unit Tests
+```bash
+cd build
+ctest
+```
+
+## Implementing Codemodel-V2
+```bash
+cd build
+mkdir -p .cmake/api/v1/query
+touch .cmake/api/v1/query/codemodel-v2
+cmake ..
 ```
 
 ## Files
@@ -45,6 +64,9 @@ cmake --build .
 - Necessary matrix conversions to write matrixes as char arrays
 - int matrix <-> int array
 - int array <-> char array
+
+#### test/test.c
+- Unit test cases
 
 #### Headers
 - defines.h: variables, constants, defined values
