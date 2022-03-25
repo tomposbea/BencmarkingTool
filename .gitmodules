@@ -1,3 +1,0 @@
-[submodule "eric-test"]
-	path = eric-test
-	url = ssh://gerrit.ericsson.se:29418/pc/eric-test
