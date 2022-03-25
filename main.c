@@ -17,6 +17,9 @@
 #include "headers/functions.h"
 #include "headers/def_linux.h"
 
+int running_time;
+int log_frequency = 1;
+
 #ifdef __aarch64__  // Linux ARM
 inline int64_t GetClockValue() {
 	int64_t virtual_timer_value;
@@ -134,12 +137,24 @@ THREADTYPE ThreadReport(void* data) {
 		if (Enable)
 		{
 			print_matrix_reports();
-			printf("\nCounter:%6.6d Gen:%8.8d   Dropped: %8.8d  Processed:%8.8d   Duplicates: %8.8d\nFifo: ", Counter++, GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl);
+			printf("\nCounter:%6.6d Gen:%8.8d   Dropped: %8.8d  Processed:%8.8d   Duplicates: %8.8d\nFifo: ", Counter, GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl);
+			Counter+=log_frequency;
 			for (i = 0; i < THREADS; i++) printf("%d:%3.3d  ", i, FifoLen[i]);
 			GeneratedCtrl = DroppedCtrl = ProcessedCtrl = DuplicateCtrl = 0;
-		}
+		
+			 if(Counter>=running_time){
+                                Enable = 0;
+                                Run = 0;
+                                SleepUni(1);
+                                printf("\n\nStopped...\n");
 
-		SleepUni(1000);
+                                close_matrix_reports();
+                                exit(0);
+                        }
+
+		}
+		int sleep = log_frequency * 1000;
+		SleepUni(sleep);
 	}
 	return 0;
 }
@@ -211,6 +226,13 @@ void ReadConfig(){
 }
 
 int main(int argc, char** argv) {
+	if(argc == 1) printf("No input parameters\n");
+	else {
+		running_time = atoi(argv[1]);
+		log_frequency = atoi(argv[2]);
+		printf("Running time: %d s, log frequency: %d s", running_time, log_frequency);
+	}
+	
 	HANDLE threadReport;
 	HANDLE threadGen;
 	HANDLE threadWorker[THREADS];
@@ -225,6 +247,6 @@ int main(int argc, char** argv) {
 	ThreadCreate(threadReport, ThreadReport, 0);
 	for(int i=0; i<THREADS; i++) ThreadCreate((threadWorker[i]), ThreadProcess,i);
 	
-	StopProcess();
+	if(Counter<running_time) StopProcess();
 	return 0;
 }
