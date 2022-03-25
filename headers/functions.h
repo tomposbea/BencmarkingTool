@@ -31,3 +31,8 @@ int WriteToFifo(int fifonum, char* Temp, int *DroppedCtrl);
 int GetFromFIFOAndProcess(int fifonum);
 int ProcessString(char* instring);
 int GenerateAndWriteToFIFO(int fifonum);
+
+//write_xml.c
+void init_matrix_reports(const char *filename);
+void print_matrix_reports();
+void close_matrix_reports();

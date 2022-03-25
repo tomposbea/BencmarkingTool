@@ -11,13 +11,13 @@
 #include <inttypes.h>
 #include <time.h>
 #include <math.h>
-#include "headers/defines.h"
-#include "headers/functions.h"
+#include "../headers/defines.h"
+#include "../headers/functions.h"
 
 #if defined(__linux__)
-#include "headers/def_linux.h"
+#include "../headers/def_linux.h"
 #else
-#include "headers/def_windows.h"
+#include "../headers/def_windows.h"
 #endif
 
 int ProcessStringAndCalculate(char* instring) {

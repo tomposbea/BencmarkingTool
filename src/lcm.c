@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "headers/defines.h"
-#include "headers/functions.h"
+#include "../headers/defines.h"
+#include "../headers/functions.h"
 struct Results{
 	int res_lcm;
 	int res_gcd;

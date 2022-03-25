@@ -23,11 +23,12 @@ find_package(Threads REQUIRED)
 
 add_executable(Run 
 	main.c
-	print.c
-	read_conf.c
-	fifo.c)
+	src/print.c
+	src/read_conf.c
+	src/fifo.c
+	src/write_xml.c)
 
-add_library(Lib SHARED generate.c lcm.c conversions.c)
+add_library(Lib SHARED src/generate.c src/lcm.c src/conversions.c)
 
 SET_TARGET_PROPERTIES(Lib PROPERTIES LINKER_LANGUAGE C)
 target_link_libraries(Run Lib Threads::Threads)

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "includes.h"
+#include "../includes.h"
 
 void read_file(int m[M][N], const char *filename, int row, int column){
 	FILE *fptr;

@@ -34,4 +34,4 @@ int size, row, column, speed;
 
 unsigned long TimerFreq;
 unsigned long TimerRef;
-
+FILE *f;

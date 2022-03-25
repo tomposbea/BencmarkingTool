@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
-#include "headers/defines.h"
-#include "headers/functions.h"
+#include "../headers/defines.h"
+#include "../headers/functions.h"
 int generate_int(int lower, int upper){
 	return ((rand() % (upper-lower+1)) + lower);
 }

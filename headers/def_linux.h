@@ -1,6 +1,7 @@
 #define SleepUni(ms) usleep(ms*1000)
 #define AtomicExhange(var, val) __atomic_exchange_n (var, val, __ATOMIC_RELEASE)
 #define AtomicLoad(val) __atomic_load_n(val, __ATOMIC_ACQUIRE)
+#define strcmp_s(str1, str2) strcmp(str1, str2)
 #define strncpy_s(dest,num1,src,num2) strncpy(dest, src, num2)
 #define ThreadCreate(handle, funct, param) pthread_create(&handle, NULL, funct, (void*)param)
 #define THREADTYPE void*

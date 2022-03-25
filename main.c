@@ -133,6 +133,7 @@ THREADTYPE ThreadReport(void* data) {
 	while (Run) {
 		if (Enable)
 		{
+			print_matrix_reports();
 			printf("\nCounter:%6.6d Gen:%8.8d   Dropped: %8.8d  Processed:%8.8d   Duplicates: %8.8d\nFifo: ", Counter++, GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl);
 			for (i = 0; i < THREADS; i++) printf("%d:%3.3d  ", i, FifoLen[i]);
 			GeneratedCtrl = DroppedCtrl = ProcessedCtrl = DuplicateCtrl = 0;
@@ -193,11 +194,17 @@ void StopProcess(){
         Run = 0;
         SleepUni(1);
         printf("\n\nStopped...\n");
+	
+	close_matrix_reports();
+}
 
+void InitXML(){
+	const char filename[] = "../results/MatrixReports.xml";
+	init_matrix_reports(filename);
 }
 
 void ReadConfig(){
-	const char config[] = "../matrix_conf.cfg";
+	const char config[] = "../inputs/matrix_conf.cfg";
 	read_matrix_config(config, &row, &column, &speed);
 	printf("Matrix config: speed=%d, N(column)=%d, M(row)=%d\n", speed, column, row);
         size=row*column;
@@ -211,7 +218,8 @@ int main(int argc, char** argv) {
 	InitSubsystem();
 	ReadConfig();
 	InitTiming();
-	
+	InitXML();
+
 	// Create Threads
 	ThreadCreate(threadGen, ThreadGen, 0);
 	ThreadCreate(threadReport, ThreadReport, 0);
