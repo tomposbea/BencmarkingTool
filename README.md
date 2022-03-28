@@ -12,7 +12,7 @@ mkdir build
 cd build
 cmake ..
 cmake --build .
-./Run
+./Run <running-time> <log-frequency>
 ```
 
 ## Running Unit Tests
@@ -30,13 +30,13 @@ cmake ..
 ```
 
 ## Files
-#### main.c 
+### main.c 
 - Reads matrix configuration(size, how often it should be generated) from matrix_conf.cfg
-- Thread 0: generates random matrixes every few seconds, write them in pipe
-- Thread 1: calculate LCM, GCD for each matrix line
-- Thread 2: log how many matrixes were generated, calculated on and lost
-- TODO: poll
+- Thread 0: generates random matrixes every few seconds write them in fifo's(roundrobin)
+- Thread 1: check if the new matrix is a duplicate, if not calculate LCM, GCD for each matrix line
+- Thread 2: log how many matrixes were generated, calculated, lost and how many were duplicates
 
+### src
 #### fifo.c
 - Writing to FIFO, number of fifos defined in defines.h
 - Reading from FIFO
@@ -65,17 +65,24 @@ cmake ..
 - int matrix <-> int array
 - int array <-> char array
 
-#### test/test.c
-- Unit test cases
+#### write_xml.c
+- writes Thread 2 output to an xml file
 
-#### Headers
+### headers
 - defines.h: variables, constants, defined values
 - functions.h: function declarations
 - def_linx/windows: os specific macros
 
-#### Input files
-- input.txt: a matrix
+### inputs
 - matrix_conf.cfg: row, column nunmber and generating speed
 
-#### Output files
+### results
+- MatrixReports.xml: program output in xml form
+
+## Unit tests
+### test
+#### test.c
+- Unit test cases
+
+### Output files
 - build/test/function_test_suite.xml: Info about the test case results
