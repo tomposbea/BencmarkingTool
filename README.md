@@ -12,8 +12,11 @@ mkdir build
 cd build
 cmake ..
 cmake --build .
-./Run <running-time> <log-frequency>
+./Run [parameters]
 ```
+
+- ./Run -h
+- ./Run --help
 
 ## Running Unit Tests
 ```bash
