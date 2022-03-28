@@ -2,8 +2,8 @@
 
 <matrix-stat counter=000000>
 	<generated>00000946</generated>
-	<dropped>00000751</dropped>
-	<processed>00000163</processed>
+	<dropped>00000735</dropped>
+	<processed>00000179</processed>
 	<duplicates>00000000</duplicates>
 	<fifo>
 		<lenght i=0>007</length>
@@ -20,49 +20,13 @@
 
 <matrix-stat counter=000001>
 	<generated>00000947</generated>
-	<dropped>00000844</dropped>
-	<processed>00000103</processed>
+	<dropped>00000839</dropped>
+	<processed>00000109</processed>
 	<duplicates>00000000</duplicates>
 	<fifo>
 		<lenght i=0>007</length>
 		<lenght i=1>007</length>
-		<lenght i=2>007</length>
-		<lenght i=3>007</length>
-	</fifo>
-	<matrix-config>
-		<generating-frequency>1</generating-frequency>
-		<row>3</row>
-		<column>4</column>
-	</matrix-config>
-</matrix-stat>
-
-<matrix-stat counter=000002>
-	<generated>00000947</generated>
-	<dropped>00000816</dropped>
-	<processed>00000131</processed>
-	<duplicates>00000000</duplicates>
-	<fifo>
-		<lenght i=0>007</length>
-		<lenght i=1>007</length>
-		<lenght i=2>007</length>
-		<lenght i=3>007</length>
-	</fifo>
-	<matrix-config>
-		<generating-frequency>1</generating-frequency>
-		<row>3</row>
-		<column>4</column>
-	</matrix-config>
-</matrix-stat>
-
-<matrix-stat counter=000003>
-	<generated>00000946</generated>
-	<dropped>00000816</dropped>
-	<processed>00000131</processed>
-	<duplicates>00000000</duplicates>
-	<fifo>
-		<lenght i=0>006</length>
-		<lenght i=1>007</length>
-		<lenght i=2>007</length>
+		<lenght i=2>006</length>
 		<lenght i=3>007</length>
 	</fifo>
 	<matrix-config>

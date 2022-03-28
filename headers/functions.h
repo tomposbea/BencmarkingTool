@@ -36,3 +36,13 @@ int GenerateAndWriteToFIFO(int fifonum);
 void init_matrix_reports(const char *filename);
 void print_matrix_reports();
 void close_matrix_reports();
+
+//error.c
+void error_no_value(char* mess);
+void error_not_int(char* mess);
+void error_over_limit(char* mess, int limit);
+
+//usage.c
+void PrintUsage();
+int CheckParameter(int i, int len, char** argv, char* option);
+int GetParameters(int argc, char** argv);

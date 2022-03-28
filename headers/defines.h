@@ -1,22 +1,24 @@
 #define MAX_BUF 1024
 #define CHAR_BUF 128
-#define THREADS 4
 #define FIFO 8
 #define STRINGLEN 128
 #define MAXTABLE 16384
 #define ALPHABET 15
+#define MAX_THREADS 256
 
+int THREADS;
+int TABLE;
 struct Transport
 {
         int valid;
         char string[STRINGLEN];
 };
 
-struct Transport Fifo[THREADS][FIFO];
-int WritePtr[THREADS];
-int ReadPtr[THREADS];
-int FifoBusy[THREADS];
-int FifoLen[THREADS];
+struct Transport Fifo[MAX_THREADS][FIFO];
+int WritePtr[MAX_THREADS];
+int ReadPtr[MAX_THREADS];
+int FifoBusy[MAX_THREADS];
+int FifoLen[MAX_THREADS];
 char Table[MAXTABLE][STRINGLEN];
 
 int TableBusy;
@@ -35,3 +37,6 @@ int size, row, column, speed;
 unsigned long TimerFreq;
 unsigned long TimerRef;
 FILE *f;
+
+int running_time;
+int log_frequency;

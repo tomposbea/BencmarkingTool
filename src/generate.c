@@ -28,6 +28,6 @@ int GenerateString(char * char_array, int row, int column, int size) {
 
 int FindDuplicate(char* instring) {
         int i;
-        for (i = 0; i < MAXTABLE; i++) if (!strcmp(Table[i], instring)) return i;  // Found.
+        for (i = 0; i < TABLE; i++) if (!strcmp(Table[i], instring)) return i;  // Found.
         return -1;  // Not Found
 }

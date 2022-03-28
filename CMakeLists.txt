@@ -26,7 +26,9 @@ add_executable(Run
 	src/print.c
 	src/read_conf.c
 	src/fifo.c
-	src/write_xml.c)
+	src/write_xml.c
+	src/error.c
+	src/usage.c)
 
 add_library(Lib SHARED src/generate.c src/lcm.c src/conversions.c)
 

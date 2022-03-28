@@ -13,12 +13,10 @@
 #include <inttypes.h>
 #include <time.h>
 #include <math.h>
+#include <stdbool.h>
 #include "headers/defines.h"
 #include "headers/functions.h"
 #include "headers/def_linux.h"
-
-int running_time;
-int log_frequency = 1;
 
 #ifdef __aarch64__  // Linux ARM
 inline int64_t GetClockValue() {
@@ -145,11 +143,11 @@ THREADTYPE ThreadReport(void* data) {
 			 if(Counter>=running_time){
                                 Enable = 0;
                                 Run = 0;
-                                SleepUni(1);
-                                printf("\n\nStopped...\n");
-
-                                close_matrix_reports();
-                                exit(0);
+			
+				SleepUni(3000); //wait 3s for all processes to finish
+        			printf("\n\nStopped...\n");	
+				close_matrix_reports();
+				exit(0);
                         }
 
 		}
@@ -160,8 +158,6 @@ THREADTYPE ThreadReport(void* data) {
 }
 
 void InitSubsystem(){
-	printf("\nInit subsystem...\n");
-
 	TableBusy = 0;
 	TablePtr = 0;
 
@@ -184,6 +180,11 @@ void InitSubsystem(){
         }
         // Init table
         for (int i = 0; i < MAXTABLE; i++) Table[i][0] = 0;
+	TABLE = 4096;
+
+	THREADS=4;
+	running_time = 10;
+        log_frequency = 1;
 }
 
 void InitTiming(){
@@ -209,8 +210,6 @@ void StopProcess(){
         Run = 0;
         SleepUni(1);
         printf("\n\nStopped...\n");
-	
-	close_matrix_reports();
 }
 
 void InitXML(){
@@ -221,24 +220,17 @@ void InitXML(){
 void ReadConfig(){
 	const char config[] = "../inputs/matrix_conf.cfg";
 	read_matrix_config(config, &row, &column, &speed);
-	printf("Matrix config: speed=%d, N(column)=%d, M(row)=%d\n", speed, column, row);
         size=row*column;
 }
 
 int main(int argc, char** argv) {
-	if(argc == 1) printf("No input parameters\n");
-	else {
-		running_time = atoi(argv[1]);
-		log_frequency = atoi(argv[2]);
-		printf("Running time: %d s, log frequency: %d s", running_time, log_frequency);
-	}
-	
 	HANDLE threadReport;
 	HANDLE threadGen;
 	HANDLE threadWorker[THREADS];
 
 	InitSubsystem();
-	ReadConfig();
+        ReadConfig();
+	if(GetParameters(argc, argv)==0) return 0;
 	InitTiming();
 	InitXML();
 
@@ -247,6 +239,9 @@ int main(int argc, char** argv) {
 	ThreadCreate(threadReport, ThreadReport, 0);
 	for(int i=0; i<THREADS; i++) ThreadCreate((threadWorker[i]), ThreadProcess,i);
 	
-	if(Counter<running_time) StopProcess();
+
+	if(Counter>running_time) return 0;
+	StopProcess();
+	close_matrix_reports();
 	return 0;
 }
