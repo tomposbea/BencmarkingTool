@@ -40,3 +40,5 @@ FILE *f;
 
 int running_time;
 int log_frequency;
+
+char* output_file;

@@ -6,12 +6,13 @@
 
 void PrintUsage(){
         printf("Usage: ./Run [options]\n");
-        printf("\t-runtime \t runtime in seconds, default = 10s\n");
-        printf("\t-log \t\t log frequency in seconds, default = 1s\n");
-        printf("\t-thread \t number of processing threads, default = 4, max = %d\n", MAX_THREADS);
+        printf("\t-runtime \t runtime in seconds, default = %ds\n", running_time);
+        printf("\t-log \t\t log frequency in seconds, default = %ds\n", log_frequency);
+        printf("\t-thread \t number of processing threads, default = %d, max = %d\n", THREADS, MAX_THREADS);
         printf("\t-table \t\t table size, default: %d, max: %d\n", TABLE, MAXTABLE);
         printf("\t-row \t\t matrix row size, default from inputs/matrix_conf = %d\n", row);
         printf("\t-column \t matrix row size, default from inputs/matrix_conf = %d\n", column);
+	//printf("\t-output \t output XML file name, default = %s\n", output_file);
 }
 
 int CheckParameter(int i, int len, char** argv, char* option){
@@ -54,8 +55,20 @@ int GetParameters(int argc, char** argv){
                                 if(atoi(argv[i+1])>MAXTABLE) {error_over_limit("table", MAXTABLE); return 0;}
                                 TABLE=atoi(argv[i+1]);
                         }	
-                }
+                	/*if(!strcmp(argv[i], "-output")) {
+                                if(i==argc-1) { error_no_value("output"); return 0;}
+                        	char* param=argv[i+1];//filename
+				char *path="../results/";
+				strcat(path, param);//add path
+				//int len=strlen(path);
+				//char* last4=&path[len-4];
+				//if(strcmp(last4, ".xml")) strcat(path, ".xml"); //add extension if missing
+				printf("Name: %s", path);
+				//strcpy(output_file, path);
+			}*/
+		}
         }
+	size=row*column;
         return 1;
 }
 

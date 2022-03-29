@@ -136,7 +136,7 @@ THREADTYPE ThreadReport(void* data) {
 		{
 			print_matrix_reports();
 			printf("\nCounter:%6.6d Gen:%8.8d   Dropped: %8.8d  Processed:%8.8d   Duplicates: %8.8d\nFifo: ", Counter, GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl);
-			Counter+=log_frequency;
+			Counter++;
 			for (i = 0; i < THREADS; i++) printf("%d:%3.3d  ", i, FifoLen[i]);
 			GeneratedCtrl = DroppedCtrl = ProcessedCtrl = DuplicateCtrl = 0;
 		
@@ -180,11 +180,14 @@ void InitSubsystem(){
         }
         // Init table
         for (int i = 0; i < MAXTABLE; i++) Table[i][0] = 0;
-	TABLE = 4096;
+	TABLE = 16384;
 
 	THREADS=4;
-	running_time = 10;
+	running_time = 5;
         log_frequency = 1;
+
+	output_file="../results/MatrixReports.xml";
+	init_matrix_reports(output_file);
 }
 
 void InitTiming(){
@@ -223,6 +226,14 @@ void ReadConfig(){
         size=row*column;
 }
 
+void PrintParams(){
+	printf("\nRuntime: %d", running_time);
+	printf("\nLog frequency: %d", log_frequency);
+	printf("\nThread nr: %d", THREADS);
+	printf("\nTable size: %d", TABLE);
+	printf("\nMatrix size: row-%d, column-%d, size-%d\n", row, column, size);
+}
+
 int main(int argc, char** argv) {
 	HANDLE threadReport;
 	HANDLE threadGen;
@@ -232,7 +243,7 @@ int main(int argc, char** argv) {
         ReadConfig();
 	if(GetParameters(argc, argv)==0) return 0;
 	InitTiming();
-	InitXML();
+	PrintParams();
 
 	// Create Threads
 	ThreadCreate(threadGen, ThreadGen, 0);
