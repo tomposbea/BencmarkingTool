@@ -27,7 +27,7 @@ void print_matrix(int row, int column, int a[row][column]);
 void print_res(int i, int gcd, int lcm, int column, int matrix[column]);
 
 //fifo.c
-int WriteToFifo(int fifonum, char* Temp, int *DroppedCtrl);
+//int WriteToFifo(int fifonum, char* Temp, int *DroppedCtrl);
 int GetFromFIFOAndProcess(int fifonum);
 int ProcessString(char* instring);
 int GenerateAndWriteToFIFO(int fifonum);

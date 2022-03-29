@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 #include "../headers/defines.h"
 #include "../headers/functions.h"
 
@@ -28,7 +29,7 @@ void print_matrix_reports(){
         fprintf(f,"\t<size>%d</size>\n", size);
         fprintf(f,"\t<runtime>%d</runtime>\n", running_time);
         fprintf(f,"\t<log-freq>%d</log-freq>\n", log_frequency);
-        fprintf(f,"\t<table>%d</table>\n", TABLE);
+        fprintf(f,"\t<table>%d</table>\n", MAXTABLE);
 
 	fprintf(f,"\t<op>%s</op>\n", "Linux");
 	fprintf(f,"\t<arch>%s</arch>\n", "x86_64");

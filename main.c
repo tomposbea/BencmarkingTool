@@ -179,10 +179,10 @@ void InitSubsystem(){
                 FifoLen[i] = 0;
         }
         // Init table
-        for (int i = 0; i < MAXTABLE; i++) Table[i][0] = 0;
-	TABLE = 16384;
+	table_size  = 16384;
+        for (int i = 0; i < table_size; i++) Table[i][0] = 0;
 
-	THREADS=4;
+	threads_nr=4;
 	running_time = 5;
         log_frequency = 1;
 
@@ -230,7 +230,7 @@ void PrintParams(){
 	printf("\nRuntime: %d", running_time);
 	printf("\nLog frequency: %d", log_frequency);
 	printf("\nThread nr: %d", THREADS);
-	printf("\nTable size: %d", TABLE);
+	printf("\nTable size: %d", table_size);
 	printf("\nMatrix size: row-%d, column-%d, size-%d\n", row, column, size);
 }
 

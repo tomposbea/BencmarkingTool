@@ -50,7 +50,7 @@ int ProcessStringAndCalculate(char* instring) {
         // Write to table
         strncpy_s(Table[TablePtr], STRINGLEN, instring, STRINGLEN);
         // Set pointer
-        TablePtr = (TablePtr + 1) % TABLE;
+        TablePtr = (TablePtr + 1) % table_size;
 
         // Step counter.
         ProcessedCtrl++;

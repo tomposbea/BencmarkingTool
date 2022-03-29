@@ -9,7 +9,7 @@ void PrintUsage(){
         printf("\t-runtime \t runtime in seconds, default = %ds\n", running_time);
         printf("\t-log \t\t log frequency in seconds, default = %ds\n", log_frequency);
         printf("\t-thread \t number of processing threads, default = %d, max = %d\n", THREADS, MAX_THREADS);
-        printf("\t-table \t\t table size, default: %d, max: %d\n", TABLE, MAXTABLE);
+        printf("\t-table \t\t table size, default: %d, max: %d\n", MAXTABLE, MAXTABLE);
         printf("\t-row \t\t matrix row size, default from inputs/matrix_conf = %d\n", row);
         printf("\t-column \t matrix row size, default from inputs/matrix_conf = %d\n", column);
 	//printf("\t-output \t output XML file name, default = %s\n", output_file);
@@ -48,12 +48,12 @@ int GetParameters(int argc, char** argv){
 			if(!strcmp(argv[i], "-thread")) {
                                 if(!CheckParameter(i, argc, argv, "processing thread")) return 0;
 				if(atoi(argv[i+1])>MAX_THREADS) {error_over_limit("thread", MAX_THREADS); return 0;}
-                                THREADS=atoi(argv[i+1]);
+                                threads_nr=atoi(argv[i+1]);
                         }
 			if(!strcmp(argv[i], "-table")) {
                                 if(!CheckParameter(i, argc, argv, "table")) return 0;
                                 if(atoi(argv[i+1])>MAXTABLE) {error_over_limit("table", MAXTABLE); return 0;}
-                                TABLE=atoi(argv[i+1]);
+                                table_size=atoi(argv[i+1]);
                         }	
                 	/*if(!strcmp(argv[i], "-output")) {
                                 if(i==argc-1) { error_no_value("output"); return 0;}
