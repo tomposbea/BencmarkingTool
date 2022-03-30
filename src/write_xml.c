@@ -42,7 +42,7 @@ void print_to_xml(){
 	fprintf(f,"\t<proc>%8.8d</proc>\n", ProcessedCtrl);
 	fprintf(f,"\t<dup>%8.8d</dup>\n", DuplicateCtrl);
 
-	for (int i = 0; i < THREADS; i++){ 
+	for (int i = 0; i < thread_nr; i++){ 
 		fprintf(f,"\t<fifo i=%d>%3.3d</fifo>\n", i, FifoLen[i]);
 	}
 

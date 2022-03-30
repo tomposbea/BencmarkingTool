@@ -8,7 +8,7 @@ void PrintUsage(){
         printf("Usage: ./Run [options]\n");
         printf("\t-runtime \t runtime in seconds, default = %ds\n", running_time);
         printf("\t-log \t\t log frequency in seconds, default = %ds\n", log_frequency);
-        printf("\t-thread \t number of processing threads, default = %d, max = %d\n", THREADS, MAX_THREADS);
+        printf("\t-thread \t number of processing threads, default = %d, max = %d\n", thread_nr, MAX_THREADS);
         printf("\t-table \t\t table size, default: %d, max: %d\n", MAXTABLE, MAXTABLE);
         printf("\t-row \t\t matrix row size, default from inputs/matrix_conf = %d\n", row);
         printf("\t-column \t matrix row size, default from inputs/matrix_conf = %d\n", column);
@@ -50,7 +50,8 @@ int GetParameters(int argc, char** argv){
 			if(!strcmp(argv[i], "-thread")) {
                                 if(!CheckParameter(i, argc, argv, "processing thread")) return 0;
 				if(atoi(argv[i+1])>MAX_THREADS) {error_over_limit("thread", MAX_THREADS); return 0;}
-                                threads_nr=atoi(argv[i+1]);
+                                if(atoi(argv[i+1])<1) {error_under_limit("thread", 1); return 0;}
+				thread_nr=atoi(argv[i+1]);
                         }
 			if(!strcmp(argv[i], "-table")) {
                                 if(!CheckParameter(i, argc, argv, "table")) return 0;

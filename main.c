@@ -108,7 +108,7 @@ THREADTYPE ThreadGen(void* data) {
 		if (Enable) {
 			GenerateAndWriteToFIFO(roundrobin);
 			roundrobin++;
-			if (roundrobin >= THREADS) roundrobin = 0;
+			if (roundrobin >= thread_nr) roundrobin = 0;
 			SleepUni(speed);
 		}
 		else SleepUni(0);
@@ -117,7 +117,6 @@ THREADTYPE ThreadGen(void* data) {
 }
 
 THREADTYPE ThreadProcess(void* data) {
-	//int fifonum=*((int *)data);
 	int fifonum=(int)data;
 	SetProcessAffinity(CpuAllocTable[1+fifonum]);
 	while (Run) {
@@ -134,13 +133,8 @@ THREADTYPE ThreadReport(void* data) {
 	while (Run) {
 		if (Enable)
 		{
-			//write results to files
 			print_to_xml();
 			print_to_csv();
-
-			//print results to terminal
-			//printf("\nCounter:%6.6d Gen:%8.8d   Dropped: %8.8d  Processed:%8.8d   Duplicates: %8.8d\nFifo: ", Counter, GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl);
-			//for (i = 0; i < THREADS; i++) printf("%d:%3.3d  ", i, FifoLen[i]);
 			print_report();
 
 			Counter++;
@@ -150,14 +144,12 @@ THREADTYPE ThreadReport(void* data) {
 			if(Counter>=running_time){
                                 Enable = 0;
                                 Run = 0;
-			
 				SleepUni(3000); //wait 3s for all processes to finish
         			printf("\n\nStopped...\n");	
 				close_xml();
 				close_csv();
 				exit(0);
                         }
-
 		}
 		int sleep = log_frequency * 1000;
 		SleepUni(sleep);
@@ -172,7 +164,7 @@ void ReadConfig(){
         size=row*column;
 }
 
-void InitSubsystem(){
+int InitSubsystem(int argc, char** argv){
 	TableBusy = 0;
 	TablePtr = 0;
 
@@ -184,9 +176,16 @@ void InitSubsystem(){
 	Run = 1;
 	Enable = 0;
 
-
+	thread_nr = 4;
+	running_time = 5;
+        log_frequency = 1;
+        lower=1;
+        upper=99;
+	ReadConfig();
+	if(GetParameters(argc, argv)==0) return 0;
+	
 	// Init Fifo System.
-        for (int i = 0; i < THREADS; i++) {
+        for (int i = 0; i < thread_nr; i++) {
                 for (int j = 0; j < FIFO; j++) Fifo[i][j].valid = 0;
                 WritePtr[i] = 0;
                 ReadPtr[i] = 0;
@@ -197,19 +196,13 @@ void InitSubsystem(){
 	table_size  = 16384;
         for (int i = 0; i < table_size; i++) Table[i][0] = 0;
 
-	threads_nr=4;
-	running_time = 5;
-        log_frequency = 1;
-	lower=1;
-	upper=99;
-
 	output_file_xml="../results/MatrixReports.xml";
 	init_xml(output_file_xml);
 
 	output_file_csv="../results/MatrixReports.csv";
 	init_csv(output_file_csv);
 
-	ReadConfig();
+	return 1;
 }
 
 void InitTiming(){
@@ -242,7 +235,7 @@ void StopProcess(){
 void PrintParams(){
 	printf("\nRuntime: %d", running_time);
 	printf("\nLog frequency: %d", log_frequency);
-	printf("\nThread nr: %d", THREADS);
+	printf("\nThread nr: %d", thread_nr);
 	printf("\nTable size: %d", table_size);
 	printf("\nMatrix size: row-%d, column-%d, size-%d\n", row, column, size);
 	printf("\nMatrix value between: %d - %d", lower, upper);
@@ -251,17 +244,16 @@ void PrintParams(){
 int main(int argc, char** argv) {
 	HANDLE threadReport;
 	HANDLE threadGen;
-	HANDLE threadWorker[THREADS];
+	HANDLE threadWorker[thread_nr];
 
-	InitSubsystem();
-	if(GetParameters(argc, argv)==0) return 0;
+	if(!InitSubsystem(argc, argv)) return 0;
 	InitTiming();
 	PrintParams();
 
 	// Create Threads
 	ThreadCreate(threadGen, ThreadGen, 0);
 	ThreadCreate(threadReport, ThreadReport, 0);
-	for(int i=0; i<THREADS; i++) ThreadCreate((threadWorker[i]), ThreadProcess,i);
+	for(int i=0; i<thread_nr; i++) ThreadCreate((threadWorker[i]), ThreadProcess,i);
 	
 
 	if(Counter>running_time) return 0;

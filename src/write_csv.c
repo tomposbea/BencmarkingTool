@@ -10,7 +10,7 @@ FILE *fp;
 void init_csv(const char *filename){
         fp = fopen(filename,"w");
         fprintf (fp,"nr, time, date, gen-freq, row, column, size, lower, upper, runtime, log-freq, table, op, arch, gen, drop, proc, dup");
-	 for (int i = 0; i < THREADS; i++)
+	 for (int i = 0; i < thread_nr; i++)
 		 fprintf(fp, ", thread%d", i);
 	 fprintf(fp,"\n");
 }
@@ -27,7 +27,7 @@ void print_to_csv(){
 		   speed, row, column, size, lower, upper, running_time, log_frequency, MAXTABLE, 
 	       	   "Linux", "x86_64",
     		   GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl);
-	 for (int i = 0; i < THREADS; i++)
+	 for (int i = 0; i < thread_nr; i++)
 	 	   fprintf(fp, ", %3.3d", FifoLen[i]);
 	fprintf(fp,"\n");	 
 }
