@@ -14,7 +14,8 @@ void PrintUsage(){
         printf("\t-column \t matrix row size, default from inputs/matrix_conf = %d\n", column);
 	printf("\t-lower \t\t matrix member lowest value, default between %d - %d\n", lower, upper);
 	printf("\t-upper \t\t matrix member highest value, default between %d - %d\n", lower, upper);
-	//printf("\t-output \t output XML file name, default = %s\n", output_file);
+	printf("\t-xml \t output XML file name, default = %s, ex. MatrixReport\n", output_file_xml);
+	printf("\t-csv \t output CSV file name, default = %s, ex. MatrixReport\n", output_file_csv);
 }
 
 int CheckParameter(int i, int len, char** argv, char* option){
@@ -41,11 +42,13 @@ int GetParameters(int argc, char** argv){
                         }
                         if(!strcmp(argv[i], "-row")) {
                                 if(!CheckParameter(i, argc, argv, "matrix row")) return 0;
-                                row=atoi(argv[i+1]);
+                                if(atoi(argv[i+1])>6) {error_over_limit("row", 6); return 0;}
+				row=atoi(argv[i+1]);
                         }
                         if(!strcmp(argv[i], "-column")) {
                                 if(!CheckParameter(i, argc, argv, "matrix column")) return 0;
-                                column=atoi(argv[i+1]);
+                                if(atoi(argv[i+1])>6) {error_over_limit("column", 6); return 0;}
+				column=atoi(argv[i+1]);
                         }
 			if(!strcmp(argv[i], "-thread")) {
                                 if(!CheckParameter(i, argc, argv, "processing thread")) return 0;
@@ -70,17 +73,26 @@ int GetParameters(int argc, char** argv){
                                 lower=atoi(argv[i+1]);
                         }
 	
-                	/*if(!strcmp(argv[i], "-output")) {
-                                if(i==argc-1) { error_no_value("output"); return 0;}
-                        	char* param=argv[i+1];//filename
-				char *path="../results/";
+                	if(!strcmp(argv[i], "-xml")) {
+                                if(i==argc-1) { error_no_value("xml"); return 0;}
+                        	if(strlen(argv[i+1])>=100) {error_over_limit("xml",100); return 0;}
+				char param[100];
+				strcpy(param,argv[i+1]);//filename
+				char path[120]="../results/";
 				strcat(path, param);//add path
-				//int len=strlen(path);
-				//char* last4=&path[len-4];
-				//if(strcmp(last4, ".xml")) strcat(path, ".xml"); //add extension if missing
-				printf("Name: %s", path);
-				//strcpy(output_file, path);
-			}*/
+				strcat(path, ".xml");
+				strcpy(output_file_xml, path);
+			}
+			if(!strcmp(argv[i], "-csv")) {
+                                if(i==argc-1) { error_no_value("csv"); return 0;}
+                                if(strlen(argv[i+1])>=100) {error_over_limit("csv",100); return 0;}
+                                char param[100];
+                                strcpy(param,argv[i+1]);//filename
+                                char path[120]="../results/";
+                                strcat(path, param);//add path
+                                strcat(path, ".csv");
+                                strcpy(output_file_csv, path);
+                        }
 		}
         }
 	size=row*column;

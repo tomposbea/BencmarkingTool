@@ -43,5 +43,5 @@ int running_time;
 int log_frequency;
 
 
-char* output_file_xml;
-char* output_file_csv;
+char output_file_xml[120];
+char output_file_csv[120];

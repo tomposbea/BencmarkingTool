@@ -144,7 +144,7 @@ THREADTYPE ThreadReport(void* data) {
 			if(Counter>=running_time){
                                 Enable = 0;
                                 Run = 0;
-				SleepUni(3000); //wait 3s for all processes to finish
+				SleepUni(1000); //wait 1s for all processes to finish
         			printf("\n\nStopped...\n");	
 				close_xml();
 				close_csv();
@@ -181,6 +181,10 @@ int InitSubsystem(int argc, char** argv){
         log_frequency = 1;
         lower=1;
         upper=99;
+	
+        strcpy(output_file_xml,"../results/MatrixReports.xml");
+        strcpy(output_file_csv,"../results/MatrixReports.csv");
+	
 	ReadConfig();
 	if(GetParameters(argc, argv)==0) return 0;
 	
@@ -196,10 +200,7 @@ int InitSubsystem(int argc, char** argv){
 	table_size  = 16384;
         for (int i = 0; i < table_size; i++) Table[i][0] = 0;
 
-	output_file_xml="../results/MatrixReports.xml";
 	init_xml(output_file_xml);
-
-	output_file_csv="../results/MatrixReports.csv";
 	init_csv(output_file_csv);
 
 	return 1;
@@ -207,12 +208,11 @@ int InitSubsystem(int argc, char** argv){
 
 void InitTiming(){
         SetProcessAffinity(0);
-        printf("\nHigh-speed timers...\n");
         TimerFreq = GetFrequency();
-        printf("Reference Freq: %ld MHz\n", TimerFreq / 1000000);
+        //printf("Reference Freq: %ld MHz\n", TimerFreq / 1000000);
         TimerRef = GetClockValue();
         SleepUni(1000);
-        printf("Reference Time Measurement for 1 sec: %ld ms\n", (((GetClockValue() - TimerRef) * 1000) / TimerFreq));
+        //printf("Reference Time Measurement for 1 sec: %ld ms\n", (((GetClockValue() - TimerRef) * 1000) / TimerFreq));
 }
 
 void StopProcess(){
@@ -234,11 +234,11 @@ void StopProcess(){
 
 void PrintParams(){
 	printf("\nRuntime: %d", running_time);
-	printf("\nLog frequency: %d", log_frequency);
-	printf("\nThread nr: %d", thread_nr);
-	printf("\nTable size: %d", table_size);
-	printf("\nMatrix size: row-%d, column-%d, size-%d\n", row, column, size);
-	printf("\nMatrix value between: %d - %d", lower, upper);
+	printf(", Log frequency: %d", log_frequency);
+	printf(", Thread nr: %d", thread_nr);
+	printf(", Table size: %d", table_size);
+	printf(", Matrix size: row-%d, column-%d, size-%d\n", row, column, size);
+	printf(", Matrix value between: %d - %d", lower, upper);
 }
 
 int main(int argc, char** argv) {
