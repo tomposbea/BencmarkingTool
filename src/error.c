@@ -17,3 +17,14 @@ void error_over_limit(char* mess, int limit){
         PrintUsage();
 }
 
+void error_under_limit(char* mess, int limit){
+        printf("Error: %s value is under the limit, min value: %d!\n", mess, limit);
+        PrintUsage();
+}
+
+void error_lower_upper(){
+        printf("Error: lower is higher than upper!\n");
+        PrintUsage();
+}
+
+

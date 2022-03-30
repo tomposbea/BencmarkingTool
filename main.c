@@ -134,19 +134,27 @@ THREADTYPE ThreadReport(void* data) {
 	while (Run) {
 		if (Enable)
 		{
-			print_matrix_reports();
-			printf("\nCounter:%6.6d Gen:%8.8d   Dropped: %8.8d  Processed:%8.8d   Duplicates: %8.8d\nFifo: ", Counter, GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl);
+			//write results to files
+			print_to_xml();
+			print_to_csv();
+
+			//print results to terminal
+			//printf("\nCounter:%6.6d Gen:%8.8d   Dropped: %8.8d  Processed:%8.8d   Duplicates: %8.8d\nFifo: ", Counter, GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl);
+			//for (i = 0; i < THREADS; i++) printf("%d:%3.3d  ", i, FifoLen[i]);
+			print_report();
+
 			Counter++;
-			for (i = 0; i < THREADS; i++) printf("%d:%3.3d  ", i, FifoLen[i]);
 			GeneratedCtrl = DroppedCtrl = ProcessedCtrl = DuplicateCtrl = 0;
 		
-			 if(Counter>=running_time){
+			// stop is runtime is up
+			if(Counter>=running_time){
                                 Enable = 0;
                                 Run = 0;
 			
 				SleepUni(3000); //wait 3s for all processes to finish
         			printf("\n\nStopped...\n");	
-				close_matrix_reports();
+				close_xml();
+				close_csv();
 				exit(0);
                         }
 
@@ -155,6 +163,13 @@ THREADTYPE ThreadReport(void* data) {
 		SleepUni(sleep);
 	}
 	return 0;
+}
+
+// ---------------- INIT --------------------------------
+void ReadConfig(){
+        const char config[] = "../inputs/matrix_conf.cfg";
+        read_matrix_config(config, &row, &column, &speed);
+        size=row*column;
 }
 
 void InitSubsystem(){
@@ -185,9 +200,16 @@ void InitSubsystem(){
 	threads_nr=4;
 	running_time = 5;
         log_frequency = 1;
+	lower=1;
+	upper=99;
 
-	output_file="../results/MatrixReports.xml";
-	init_matrix_reports(output_file);
+	output_file_xml="../results/MatrixReports.xml";
+	init_xml(output_file_xml);
+
+	output_file_csv="../results/MatrixReports.csv";
+	init_csv(output_file_csv);
+
+	ReadConfig();
 }
 
 void InitTiming(){
@@ -212,18 +234,9 @@ void StopProcess(){
         Enable = 0;
         Run = 0;
         SleepUni(1);
+	close_xml();
+	close_csv();
         printf("\n\nStopped...\n");
-}
-
-void InitXML(){
-	const char filename[] = "../results/MatrixReports.xml";
-	init_matrix_reports(filename);
-}
-
-void ReadConfig(){
-	const char config[] = "../inputs/matrix_conf.cfg";
-	read_matrix_config(config, &row, &column, &speed);
-        size=row*column;
 }
 
 void PrintParams(){
@@ -232,6 +245,7 @@ void PrintParams(){
 	printf("\nThread nr: %d", THREADS);
 	printf("\nTable size: %d", table_size);
 	printf("\nMatrix size: row-%d, column-%d, size-%d\n", row, column, size);
+	printf("\nMatrix value between: %d - %d", lower, upper);
 }
 
 int main(int argc, char** argv) {
@@ -240,7 +254,6 @@ int main(int argc, char** argv) {
 	HANDLE threadWorker[THREADS];
 
 	InitSubsystem();
-        ReadConfig();
 	if(GetParameters(argc, argv)==0) return 0;
 	InitTiming();
 	PrintParams();
@@ -253,6 +266,5 @@ int main(int argc, char** argv) {
 
 	if(Counter>running_time) return 0;
 	StopProcess();
-	close_matrix_reports();
 	return 0;
 }

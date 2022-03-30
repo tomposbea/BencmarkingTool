@@ -42,12 +42,13 @@ int Run;
 int Enable;
 
 int size, row, column, speed;
-
+int upper, lower;
 unsigned long TimerFreq;
 unsigned long TimerRef;
-FILE *f;
 
 int running_time;
 int log_frequency;
 
-char* output_file;
+
+char* output_file_xml;
+char* output_file_csv;

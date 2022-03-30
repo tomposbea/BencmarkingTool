@@ -5,13 +5,14 @@
 #include "../headers/defines.h"
 #include "../headers/functions.h"
 
+FILE *f;
 
-void init_matrix_reports(const char *filename){
+void init_xml(const char *filename){
 	f = fopen(filename,"w");
 	fprintf (f,"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n\n");
 }
 
-void print_matrix_reports(){
+void print_to_xml(){
 	fprintf(f,"<stat>\n");
 
 	fprintf(f,"\t<nr>%6.6d</nr>\n", Counter);
@@ -27,7 +28,9 @@ void print_matrix_reports(){
         fprintf(f,"\t<row>%d</row>\n", row);
         fprintf(f,"\t<column>%d</column>\n", column);
         fprintf(f,"\t<size>%d</size>\n", size);
-        fprintf(f,"\t<runtime>%d</runtime>\n", running_time);
+	fprintf(f,"\t<lower>%d</lower>\n", lower);
+ 	fprintf(f,"\t<upper>%d</upper>\n", upper);
+ 	fprintf(f,"\t<runtime>%d</runtime>\n", running_time);
         fprintf(f,"\t<log-freq>%d</log-freq>\n", log_frequency);
         fprintf(f,"\t<table>%d</table>\n", MAXTABLE);
 
@@ -46,6 +49,6 @@ void print_matrix_reports(){
 	fprintf(f,"</stat>\n\n");
 }
 
-void close_matrix_reports() {
+void close_xml() {
 	fclose(f);
 }

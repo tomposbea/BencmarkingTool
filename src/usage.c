@@ -12,6 +12,8 @@ void PrintUsage(){
         printf("\t-table \t\t table size, default: %d, max: %d\n", MAXTABLE, MAXTABLE);
         printf("\t-row \t\t matrix row size, default from inputs/matrix_conf = %d\n", row);
         printf("\t-column \t matrix row size, default from inputs/matrix_conf = %d\n", column);
+	printf("\t-lower \t\t matrix member lowest value, default between %d - %d\n", lower, upper);
+	printf("\t-upper \t\t matrix member highest value, default between %d - %d\n", lower, upper);
 	//printf("\t-output \t output XML file name, default = %s\n", output_file);
 }
 
@@ -54,7 +56,19 @@ int GetParameters(int argc, char** argv){
                                 if(!CheckParameter(i, argc, argv, "table")) return 0;
                                 if(atoi(argv[i+1])>MAXTABLE) {error_over_limit("table", MAXTABLE); return 0;}
                                 table_size=atoi(argv[i+1]);
-                        }	
+                        }
+			if(!strcmp(argv[i], "-upper")) {
+                                if(!CheckParameter(i, argc, argv, "upper")) return 0;
+                                if(atoi(argv[i+1])<lower) {error_lower_upper(); return 0;}
+                                upper=atoi(argv[i+1]);
+                        }
+			if(!strcmp(argv[i], "-lower")) {
+                                if(!CheckParameter(i, argc, argv, "lower")) return 0;
+                                if(atoi(argv[i+1])<0) {error_under_limit("lower", 0); return 0;}
+				if(atoi(argv[i+1])>upper) {error_lower_upper(); return 0;}
+                                lower=atoi(argv[i+1]);
+                        }
+	
                 	/*if(!strcmp(argv[i], "-output")) {
                                 if(i==argc-1) { error_no_value("output"); return 0;}
                         	char* param=argv[i+1];//filename

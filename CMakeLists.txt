@@ -28,7 +28,8 @@ add_executable(Run
 	src/fifo.c
 	src/write_xml.c
 	src/error.c
-	src/usage.c)
+	src/usage.c
+	src/write_csv.c)
 
 add_library(Lib SHARED src/generate.c src/lcm.c src/conversions.c)
 

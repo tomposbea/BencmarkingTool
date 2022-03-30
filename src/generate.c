@@ -4,15 +4,15 @@
 #include <string.h>
 #include "../headers/defines.h"
 #include "../headers/functions.h"
-int generate_int(int lower, int upper){
-	return ((rand() % (upper-lower+1)) + lower);
+int generate_int(int lowerl, int upperl){
+	return ((rand() % (upperl-lowerl+1)) + lowerl);
 }
 
 void generate_matrix(int row, int column, int m[row][column]){
 	int i,j;
 	for(i=0;i<row;i++)
 		for(j=0;j<column;j++)
-			m[i][j]=generate_int(1,99);
+			m[i][j]=generate_int(lower, upper);
 }
 
 
