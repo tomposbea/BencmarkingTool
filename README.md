@@ -70,60 +70,30 @@ CMD ["BencmarkingTool/build/Run"]
 - Thread 2: log how many matrixes were generated, calculated, lost and how many were duplicates
 
 ### src
-##### fifo.c
-- Writing to FIFO, number of fifos defined in defines.h
-- Reading from FIFO
-- check if message is duplicate, do calculations
-
-##### lcm.c 
-- Calculate LCM, GCD for 2 values, an array, a matrix
-
-##### file_io.c 
-- Reading NxM matrix from file
-- Writing results to file
-
-##### print.c 
-- Printing array, matrix to terminal
-- Printing results to terminal
-
-##### generate.c
-- Generate random number between 2 values
-- Generate NxM matrix
-
-##### read_conf.c
-- Reads configuration file
-
-##### conversions.c
-- Necessary matrix conversions to write matrixes as char arrays
-- int matrix <-> int array
-- int array <-> char array
-
-##### write_xml.c
-- writes Thread 2 output to an xml file
-
-##### error.c
-- error messages for input parameters
-
-##### usage.c
-- help: parameter list
-- usage of input parameters
-- checks
+- **fifo.c**: read/write to fifos, check if message is duplicate, do calculations
+- **lcm.c**: calculate LCM, GCD for 2 values, an array, a matrix
+- **file_io.c**: reading NxM matrix from file, writing results to txt file, NOT USED
+- **print.c**: printing array, matrix, results, logs to terminal
+- **generate.c**: generate random number between 2 values, generate NxM matrix, check if matrix is unique
+- **read_conf.c**: reads configuration file with matrix size and generating speed info
+- **conversions.c**: necessary matrix conversions to write matrixes as char arrays
+- **write_xml.c**: writes Thread 2 output to an xml file
+- **write_csv.c**: writes Thread 2 output to an csv file
+- **error.c**: error messages for input parameters
+- **usage.c**: read+check input parameters, --help option
 
 ### headers
-- defines.h: variables, constants, defined values
-- functions.h: function declarations
-- def_linx/windows: os specific macros
+- **defines.h**: variables, constants, defined values
+- **functions.h**: function declarations
+- **def_linx/windows**: os specific macros
 
 ### inputs
-- matrix_conf.cfg: row, column nunmber and generating speed
+- **matrix_conf.cfg**: row, column nunmber and generating speed
 
 ### results
-- MatrixReports.xml: program output in xml form
+- MatrixReports.xml
+- MatrixReports.csv
 
 ## Unit tests
-### test
-##### test.c
-- Unit test cases
-
-### Output files
+- test.c: Unit test cases
 - build/test/function_test_suite.xml: Info about the test case results

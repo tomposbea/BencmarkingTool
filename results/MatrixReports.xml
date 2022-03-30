@@ -1,2 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Wed Mar 30 09:02:19 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>4</column>
+	<size>12</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>5</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<op>Linux</op>
+	<arch>x86_64</arch>
+	<gen>00000946</gen>
+	<drop>00000737</drop>
+	<proc>00000177</proc>
+	<dup>00000000</dup>
+	<fifo i=0>007</fifo>
+	<fifo i=1>007</fifo>
+	<fifo i=2>007</fifo>
+	<fifo i=3>007</fifo>
+</stat>
+
+<stat>
+	<nr>000001</nr>
+	<time>000001</time>
+	<date>Wed Mar 30 09:02:20 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>4</column>
+	<size>12</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>5</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<op>Linux</op>
+	<arch>x86_64</arch>
+	<gen>00000947</gen>
+	<drop>00000821</drop>
+	<proc>00000126</proc>
+	<dup>00000000</dup>
+	<fifo i=0>007</fifo>
+	<fifo i=1>007</fifo>
+	<fifo i=2>007</fifo>
+	<fifo i=3>007</fifo>
+</stat>
+
+<stat>
+	<nr>000002</nr>
+	<time>000002</time>
+	<date>Wed Mar 30 09:02:21 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>4</column>
+	<size>12</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>5</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<op>Linux</op>
+	<arch>x86_64</arch>
+	<gen>00000946</gen>
+	<drop>00000815</drop>
+	<proc>00000131</proc>
+	<dup>00000000</dup>
+	<fifo i=0>007</fifo>
+	<fifo i=1>007</fifo>
+	<fifo i=2>007</fifo>
+	<fifo i=3>007</fifo>
+</stat>
+
+<stat>
+	<nr>000003</nr>
+	<time>000003</time>
+	<date>Wed Mar 30 09:02:22 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>4</column>
+	<size>12</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>5</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<op>Linux</op>
+	<arch>x86_64</arch>
+	<gen>00000947</gen>
+	<drop>00000829</drop>
+	<proc>00000118</proc>
+	<dup>00000000</dup>
+	<fifo i=0>007</fifo>
+	<fifo i=1>007</fifo>
+	<fifo i=2>007</fifo>
+	<fifo i=3>007</fifo>
+</stat>
+
+<stat>
+	<nr>000004</nr>
+	<time>000004</time>
+	<date>Wed Mar 30 09:02:23 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>4</column>
+	<size>12</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>5</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<op>Linux</op>
+	<arch>x86_64</arch>
+	<gen>00000946</gen>
+	<drop>00000805</drop>
+	<proc>00000141</proc>
+	<dup>00000000</dup>
+	<fifo i=0>007</fifo>
+	<fifo i=1>007</fifo>
+	<fifo i=2>007</fifo>
+	<fifo i=3>007</fifo>
+</stat>
+
