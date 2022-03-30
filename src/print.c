@@ -31,3 +31,13 @@ void print_report(){
 	printf("\nCounter:%6.6d Gen:%8.8d   Dropped: %8.8d  Processed:%8.8d   Duplicates: %8.8d\nFifo: ", Counter, GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl);
         for (int i = 0; i < thread_nr; i++) printf("%d:%3.3d  ", i, FifoLen[i]);
 }
+
+void PrintParams(){
+        printf("\nRuntime: %d", running_time);
+        printf(", Log frequency: %d", log_frequency);
+        printf(", Thread nr: %d", thread_nr);
+        printf(", Table size: %d", table_size);
+        printf(", Matrix size: row-%d, column-%d, size-%d\n", row, column, size);
+        printf(", Matrix value between: %d - %d", lower, upper);
+}
+

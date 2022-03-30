@@ -29,7 +29,8 @@ add_executable(Run
 	src/write_xml.c
 	src/error.c
 	src/usage.c
-	src/write_csv.c)
+	src/write_csv.c
+	src/init.c)
 
 add_library(Lib SHARED src/generate.c src/lcm.c src/conversions.c)
 

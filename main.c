@@ -157,55 +157,6 @@ THREADTYPE ThreadReport(void* data) {
 	return 0;
 }
 
-// ---------------- INIT --------------------------------
-void ReadConfig(){
-        const char config[] = "../inputs/matrix_conf.cfg";
-        read_matrix_config(config, &row, &column, &speed);
-        size=row*column;
-}
-
-int InitSubsystem(int argc, char** argv){
-	TableBusy = 0;
-	TablePtr = 0;
-
-	DuplicateCtrl = 0;
-	GeneratedCtrl = 0;
-	ProcessedCtrl = 0;
-	DroppedCtrl = 0;
-	Counter = 0;
-	Run = 1;
-	Enable = 0;
-
-	thread_nr = 4;
-	running_time = 5;
-        log_frequency = 1;
-        lower=1;
-        upper=99;
-	
-        strcpy(output_file_xml,"../results/MatrixReports.xml");
-        strcpy(output_file_csv,"../results/MatrixReports.csv");
-	
-	ReadConfig();
-	if(GetParameters(argc, argv)==0) return 0;
-	
-	// Init Fifo System.
-        for (int i = 0; i < thread_nr; i++) {
-                for (int j = 0; j < FIFO; j++) Fifo[i][j].valid = 0;
-                WritePtr[i] = 0;
-                ReadPtr[i] = 0;
-                FifoBusy[i] = 0;
-                FifoLen[i] = 0;
-        }
-        // Init table
-	table_size  = 16384;
-        for (int i = 0; i < table_size; i++) Table[i][0] = 0;
-
-	init_xml(output_file_xml);
-	init_csv(output_file_csv);
-
-	return 1;
-}
-
 void InitTiming(){
         SetProcessAffinity(0);
         TimerFreq = GetFrequency();
@@ -213,32 +164,6 @@ void InitTiming(){
         TimerRef = GetClockValue();
         SleepUni(1000);
         //printf("Reference Time Measurement for 1 sec: %ld ms\n", (((GetClockValue() - TimerRef) * 1000) / TimerFreq));
-}
-
-void StopProcess(){
-	SleepUni(1);
-        printf("\nRun...\n");
-        Enable = 1;
-        
-	// Wait for enter
-        getchar();
-        
-	// Destroy.
-        Enable = 0;
-        Run = 0;
-        SleepUni(1);
-	close_xml();
-	close_csv();
-        printf("\n\nStopped...\n");
-}
-
-void PrintParams(){
-	printf("\nRuntime: %d", running_time);
-	printf(", Log frequency: %d", log_frequency);
-	printf(", Thread nr: %d", thread_nr);
-	printf(", Table size: %d", table_size);
-	printf(", Matrix size: row-%d, column-%d, size-%d\n", row, column, size);
-	printf(", Matrix value between: %d - %d", lower, upper);
 }
 
 int main(int argc, char** argv) {
