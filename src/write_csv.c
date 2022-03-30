@@ -9,7 +9,7 @@ FILE *fp;
 
 void init_csv(const char *filename){
         fp = fopen(filename,"w");
-        fprintf (fp,"nr, time, date, gen-freq, row, column, size, lower, upper, runtime, log-freq, table, arch, gen, drop, proc, dup");
+        fprintf (fp,"nr, time, date, gen-freq, row, column, size, lower, upper, runtime, log-freq, table, model, cache, cpu, gen, drop, proc, dup");
 	 for (int i = 0; i < thread_nr; i++)
 		 fprintf(fp, ", thread%d", i);
 	 fprintf(fp,"\n");
