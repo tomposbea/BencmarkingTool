@@ -1,0 +1,1024 @@
+processor	: 0
+cpu MHz		: 2588.530
+core id		: 0
+
+processor	: 1
+cpu MHz		: 2166.178
+core id		: 1
+
+processor	: 2
+cpu MHz		: 2153.722
+core id		: 2
+
+processor	: 3
+cpu MHz		: 1980.252
+core id		: 3
+
+processor	: 4
+cpu MHz		: 1996.851
+core id		: 4
+
+processor	: 5
+cpu MHz		: 1981.731
+core id		: 5
+
+processor	: 6
+cpu MHz		: 1962.904
+core id		: 6
+
+processor	: 7
+cpu MHz		: 1954.932
+core id		: 7
+
+processor	: 8
+cpu MHz		: 2541.940
+core id		: 8
+
+processor	: 9
+cpu MHz		: 2305.255
+core id		: 9
+
+processor	: 10
+cpu MHz		: 2509.466
+core id		: 10
+
+processor	: 11
+cpu MHz		: 2602.082
+core id		: 11
+
+processor	: 12
+cpu MHz		: 2592.345
+core id		: 12
+
+processor	: 13
+cpu MHz		: 2603.804
+core id		: 13
+
+processor	: 14
+cpu MHz		: 2174.572
+core id		: 14
+
+processor	: 15
+cpu MHz		: 2596.550
+core id		: 15
+
+processor	: 16
+cpu MHz		: 2595.125
+core id		: 16
+
+processor	: 17
+cpu MHz		: 2594.037
+core id		: 17
+
+processor	: 18
+cpu MHz		: 2600.563
+core id		: 18
+
+processor	: 19
+cpu MHz		: 2590.120
+core id		: 19
+
+processor	: 20
+cpu MHz		: 2105.824
+core id		: 20
+
+processor	: 21
+cpu MHz		: 2589.659
+core id		: 21
+
+processor	: 22
+cpu MHz		: 2160.209
+core id		: 22
+
+processor	: 23
+cpu MHz		: 2600.310
+core id		: 23
+
+processor	: 24
+cpu MHz		: 2593.318
+core id		: 24
+
+processor	: 25
+cpu MHz		: 2150.319
+core id		: 25
+
+processor	: 26
+cpu MHz		: 2140.754
+core id		: 26
+
+processor	: 27
+cpu MHz		: 2599.450
+core id		: 27
+
+processor	: 28
+cpu MHz		: 2593.589
+core id		: 28
+
+processor	: 29
+cpu MHz		: 2119.078
+core id		: 29
+
+processor	: 30
+cpu MHz		: 2597.897
+core id		: 30
+
+processor	: 31
+cpu MHz		: 2604.795
+core id		: 31
+
+processor	: 32
+cpu MHz		: 2593.503
+core id		: 32
+
+processor	: 33
+cpu MHz		: 2591.797
+core id		: 33
+
+processor	: 34
+cpu MHz		: 2177.925
+core id		: 34
+
+processor	: 35
+cpu MHz		: 2588.886
+core id		: 35
+
+processor	: 36
+cpu MHz		: 1998.784
+core id		: 36
+
+processor	: 37
+cpu MHz		: 2598.172
+core id		: 37
+
+processor	: 38
+cpu MHz		: 2158.445
+core id		: 38
+
+processor	: 39
+cpu MHz		: 2168.653
+core id		: 39
+
+processor	: 40
+cpu MHz		: 1992.640
+core id		: 40
+
+processor	: 41
+cpu MHz		: 2596.357
+core id		: 41
+
+processor	: 42
+cpu MHz		: 2584.894
+core id		: 42
+
+processor	: 43
+cpu MHz		: 2165.473
+core id		: 43
+
+processor	: 44
+cpu MHz		: 2590.701
+core id		: 44
+
+processor	: 45
+cpu MHz		: 2598.293
+core id		: 45
+
+processor	: 46
+cpu MHz		: 2597.684
+core id		: 46
+
+processor	: 47
+cpu MHz		: 2596.316
+core id		: 47
+
+processor	: 48
+cpu MHz		: 2594.229
+core id		: 48
+
+processor	: 49
+cpu MHz		: 2589.857
+core id		: 49
+
+processor	: 50
+cpu MHz		: 2595.722
+core id		: 50
+
+processor	: 51
+cpu MHz		: 2599.296
+core id		: 51
+
+processor	: 52
+cpu MHz		: 2594.228
+core id		: 52
+
+processor	: 53
+cpu MHz		: 2594.022
+core id		: 53
+
+processor	: 54
+cpu MHz		: 2595.125
+core id		: 54
+
+processor	: 55
+cpu MHz		: 2592.629
+core id		: 55
+
+processor	: 56
+cpu MHz		: 2594.986
+core id		: 56
+
+processor	: 57
+cpu MHz		: 2590.850
+core id		: 57
+
+processor	: 58
+cpu MHz		: 2593.134
+core id		: 58
+
+processor	: 59
+cpu MHz		: 2592.023
+core id		: 59
+
+processor	: 60
+cpu MHz		: 2599.085
+core id		: 60
+
+processor	: 61
+cpu MHz		: 2591.143
+core id		: 61
+
+processor	: 62
+cpu MHz		: 2600.488
+core id		: 62
+
+processor	: 63
+cpu MHz		: 2601.118
+core id		: 63
+
+processor	: 64
+cpu MHz		: 2155.767
+core id		: 0
+
+processor	: 65
+cpu MHz		: 2158.373
+core id		: 1
+
+processor	: 66
+cpu MHz		: 1729.658
+core id		: 2
+
+processor	: 67
+cpu MHz		: 2604.093
+core id		: 3
+
+processor	: 68
+cpu MHz		: 2598.439
+core id		: 4
+
+processor	: 69
+cpu MHz		: 1731.469
+core id		: 5
+
+processor	: 70
+cpu MHz		: 1725.546
+core id		: 6
+
+processor	: 71
+cpu MHz		: 2134.156
+core id		: 7
+
+processor	: 72
+cpu MHz		: 2112.487
+core id		: 8
+
+processor	: 73
+cpu MHz		: 2120.398
+core id		: 9
+
+processor	: 74
+cpu MHz		: 2600.378
+core id		: 10
+
+processor	: 75
+cpu MHz		: 1964.654
+core id		: 11
+
+processor	: 76
+cpu MHz		: 2603.631
+core id		: 12
+
+processor	: 77
+cpu MHz		: 2598.139
+core id		: 13
+
+processor	: 78
+cpu MHz		: 1970.628
+core id		: 14
+
+processor	: 79
+cpu MHz		: 2181.492
+core id		: 15
+
+processor	: 80
+cpu MHz		: 2591.638
+core id		: 16
+
+processor	: 81
+cpu MHz		: 2168.787
+core id		: 17
+
+processor	: 82
+cpu MHz		: 2177.833
+core id		: 18
+
+processor	: 83
+cpu MHz		: 2175.505
+core id		: 19
+
+processor	: 84
+cpu MHz		: 2592.654
+core id		: 20
+
+processor	: 85
+cpu MHz		: 2587.476
+core id		: 21
+
+processor	: 86
+cpu MHz		: 2604.087
+core id		: 22
+
+processor	: 87
+cpu MHz		: 2593.785
+core id		: 23
+
+processor	: 88
+cpu MHz		: 2105.613
+core id		: 24
+
+processor	: 89
+cpu MHz		: 2601.853
+core id		: 25
+
+processor	: 90
+cpu MHz		: 1727.854
+core id		: 26
+
+processor	: 91
+cpu MHz		: 2599.117
+core id		: 27
+
+processor	: 92
+cpu MHz		: 2600.264
+core id		: 28
+
+processor	: 93
+cpu MHz		: 2595.246
+core id		: 29
+
+processor	: 94
+cpu MHz		: 2591.469
+core id		: 30
+
+processor	: 95
+cpu MHz		: 2054.770
+core id		: 31
+
+processor	: 96
+cpu MHz		: 1724.985
+core id		: 32
+
+processor	: 97
+cpu MHz		: 2598.261
+core id		: 33
+
+processor	: 98
+cpu MHz		: 2117.334
+core id		: 34
+
+processor	: 99
+cpu MHz		: 2598.170
+core id		: 35
+
+processor	: 100
+cpu MHz		: 1757.668
+core id		: 36
+
+processor	: 101
+cpu MHz		: 2114.954
+core id		: 37
+
+processor	: 102
+cpu MHz		: 2157.368
+core id		: 38
+
+processor	: 103
+cpu MHz		: 2162.510
+core id		: 39
+
+processor	: 104
+cpu MHz		: 2129.555
+core id		: 40
+
+processor	: 105
+cpu MHz		: 2117.329
+core id		: 41
+
+processor	: 106
+cpu MHz		: 2608.867
+core id		: 42
+
+processor	: 107
+cpu MHz		: 2591.933
+core id		: 43
+
+processor	: 108
+cpu MHz		: 2596.455
+core id		: 44
+
+processor	: 109
+cpu MHz		: 2591.407
+core id		: 45
+
+processor	: 110
+cpu MHz		: 2109.297
+core id		: 46
+
+processor	: 111
+cpu MHz		: 2087.081
+core id		: 47
+
+processor	: 112
+cpu MHz		: 2104.813
+core id		: 48
+
+processor	: 113
+cpu MHz		: 2588.704
+core id		: 49
+
+processor	: 114
+cpu MHz		: 2595.125
+core id		: 50
+
+processor	: 115
+cpu MHz		: 2591.181
+core id		: 51
+
+processor	: 116
+cpu MHz		: 2577.037
+core id		: 52
+
+processor	: 117
+cpu MHz		: 2598.368
+core id		: 53
+
+processor	: 118
+cpu MHz		: 2101.011
+core id		: 54
+
+processor	: 119
+cpu MHz		: 2600.194
+core id		: 55
+
+processor	: 120
+cpu MHz		: 2604.225
+core id		: 56
+
+processor	: 121
+cpu MHz		: 2591.506
+core id		: 57
+
+processor	: 122
+cpu MHz		: 1735.857
+core id		: 58
+
+processor	: 123
+cpu MHz		: 2132.543
+core id		: 59
+
+processor	: 124
+cpu MHz		: 2009.783
+core id		: 60
+
+processor	: 125
+cpu MHz		: 2117.409
+core id		: 61
+
+processor	: 126
+cpu MHz		: 2603.019
+core id		: 62
+
+processor	: 127
+cpu MHz		: 2118.876
+core id		: 63
+
+processor	: 128
+cpu MHz		: 2591.363
+core id		: 0
+
+processor	: 129
+cpu MHz		: 2121.015
+core id		: 1
+
+processor	: 130
+cpu MHz		: 2594.332
+core id		: 2
+
+processor	: 131
+cpu MHz		: 2115.062
+core id		: 3
+
+processor	: 132
+cpu MHz		: 2590.167
+core id		: 4
+
+processor	: 133
+cpu MHz		: 2585.090
+core id		: 5
+
+processor	: 134
+cpu MHz		: 2593.837
+core id		: 6
+
+processor	: 135
+cpu MHz		: 2592.882
+core id		: 7
+
+processor	: 136
+cpu MHz		: 2598.632
+core id		: 8
+
+processor	: 137
+cpu MHz		: 2128.420
+core id		: 9
+
+processor	: 138
+cpu MHz		: 2587.773
+core id		: 10
+
+processor	: 139
+cpu MHz		: 2108.982
+core id		: 11
+
+processor	: 140
+cpu MHz		: 2595.622
+core id		: 12
+
+processor	: 141
+cpu MHz		: 2590.976
+core id		: 13
+
+processor	: 142
+cpu MHz		: 2594.048
+core id		: 14
+
+processor	: 143
+cpu MHz		: 2592.083
+core id		: 15
+
+processor	: 144
+cpu MHz		: 2595.125
+core id		: 16
+
+processor	: 145
+cpu MHz		: 2021.727
+core id		: 17
+
+processor	: 146
+cpu MHz		: 2595.445
+core id		: 18
+
+processor	: 147
+cpu MHz		: 2597.606
+core id		: 19
+
+processor	: 148
+cpu MHz		: 2127.081
+core id		: 20
+
+processor	: 149
+cpu MHz		: 2584.824
+core id		: 21
+
+processor	: 150
+cpu MHz		: 2164.615
+core id		: 22
+
+processor	: 151
+cpu MHz		: 2596.372
+core id		: 23
+
+processor	: 152
+cpu MHz		: 2014.316
+core id		: 24
+
+processor	: 153
+cpu MHz		: 1723.091
+core id		: 25
+
+processor	: 154
+cpu MHz		: 1721.972
+core id		: 26
+
+processor	: 155
+cpu MHz		: 2585.455
+core id		: 27
+
+processor	: 156
+cpu MHz		: 2101.543
+core id		: 28
+
+processor	: 157
+cpu MHz		: 1732.202
+core id		: 29
+
+processor	: 158
+cpu MHz		: 2597.634
+core id		: 30
+
+processor	: 159
+cpu MHz		: 2587.731
+core id		: 31
+
+processor	: 160
+cpu MHz		: 2599.935
+core id		: 32
+
+processor	: 161
+cpu MHz		: 2069.201
+core id		: 33
+
+processor	: 162
+cpu MHz		: 1769.081
+core id		: 34
+
+processor	: 163
+cpu MHz		: 1850.793
+core id		: 35
+
+processor	: 164
+cpu MHz		: 2171.930
+core id		: 36
+
+processor	: 165
+cpu MHz		: 2011.541
+core id		: 37
+
+processor	: 166
+cpu MHz		: 1665.685
+core id		: 38
+
+processor	: 167
+cpu MHz		: 1767.346
+core id		: 39
+
+processor	: 168
+cpu MHz		: 1758.696
+core id		: 40
+
+processor	: 169
+cpu MHz		: 2070.105
+core id		: 41
+
+processor	: 170
+cpu MHz		: 2065.762
+core id		: 42
+
+processor	: 171
+cpu MHz		: 1763.624
+core id		: 43
+
+processor	: 172
+cpu MHz		: 2123.967
+core id		: 44
+
+processor	: 173
+cpu MHz		: 2083.585
+core id		: 45
+
+processor	: 174
+cpu MHz		: 2081.716
+core id		: 46
+
+processor	: 175
+cpu MHz		: 2099.681
+core id		: 47
+
+processor	: 176
+cpu MHz		: 2136.943
+core id		: 48
+
+processor	: 177
+cpu MHz		: 2064.910
+core id		: 49
+
+processor	: 178
+cpu MHz		: 2086.600
+core id		: 50
+
+processor	: 179
+cpu MHz		: 2100.258
+core id		: 51
+
+processor	: 180
+cpu MHz		: 2096.062
+core id		: 52
+
+processor	: 181
+cpu MHz		: 2030.371
+core id		: 53
+
+processor	: 182
+cpu MHz		: 2594.070
+core id		: 54
+
+processor	: 183
+cpu MHz		: 2043.056
+core id		: 55
+
+processor	: 184
+cpu MHz		: 2134.878
+core id		: 56
+
+processor	: 185
+cpu MHz		: 2088.101
+core id		: 57
+
+processor	: 186
+cpu MHz		: 2090.031
+core id		: 58
+
+processor	: 187
+cpu MHz		: 2095.160
+core id		: 59
+
+processor	: 188
+cpu MHz		: 2589.729
+core id		: 60
+
+processor	: 189
+cpu MHz		: 2039.619
+core id		: 61
+
+processor	: 190
+cpu MHz		: 2064.983
+core id		: 62
+
+processor	: 191
+cpu MHz		: 2589.711
+core id		: 63
+
+processor	: 192
+cpu MHz		: 2594.327
+core id		: 0
+
+processor	: 193
+cpu MHz		: 2585.455
+core id		: 1
+
+processor	: 194
+cpu MHz		: 2062.614
+core id		: 2
+
+processor	: 195
+cpu MHz		: 2585.640
+core id		: 3
+
+processor	: 196
+cpu MHz		: 2592.968
+core id		: 4
+
+processor	: 197
+cpu MHz		: 2078.516
+core id		: 5
+
+processor	: 198
+cpu MHz		: 2077.706
+core id		: 6
+
+processor	: 199
+cpu MHz		: 2595.476
+core id		: 7
+
+processor	: 200
+cpu MHz		: 2058.025
+core id		: 8
+
+processor	: 201
+cpu MHz		: 2138.457
+core id		: 9
+
+processor	: 202
+cpu MHz		: 2596.670
+core id		: 10
+
+processor	: 203
+cpu MHz		: 2589.253
+core id		: 11
+
+processor	: 204
+cpu MHz		: 2586.125
+core id		: 12
+
+processor	: 205
+cpu MHz		: 2593.442
+core id		: 13
+
+processor	: 206
+cpu MHz		: 2592.841
+core id		: 14
+
+processor	: 207
+cpu MHz		: 2591.245
+core id		: 15
+
+processor	: 208
+cpu MHz		: 2600.876
+core id		: 16
+
+processor	: 209
+cpu MHz		: 2599.167
+core id		: 17
+
+processor	: 210
+cpu MHz		: 2589.439
+core id		: 18
+
+processor	: 211
+cpu MHz		: 2591.074
+core id		: 19
+
+processor	: 212
+cpu MHz		: 2596.394
+core id		: 20
+
+processor	: 213
+cpu MHz		: 2590.869
+core id		: 21
+
+processor	: 214
+cpu MHz		: 2567.314
+core id		: 22
+
+processor	: 215
+cpu MHz		: 2593.258
+core id		: 23
+
+processor	: 216
+cpu MHz		: 2589.753
+core id		: 24
+
+processor	: 217
+cpu MHz		: 2602.336
+core id		: 25
+
+processor	: 218
+cpu MHz		: 2088.218
+core id		: 26
+
+processor	: 219
+cpu MHz		: 2577.976
+core id		: 27
+
+processor	: 220
+cpu MHz		: 2593.239
+core id		: 28
+
+processor	: 221
+cpu MHz		: 2581.910
+core id		: 29
+
+processor	: 222
+cpu MHz		: 2592.164
+core id		: 30
+
+processor	: 223
+cpu MHz		: 2036.914
+core id		: 31
+
+processor	: 224
+cpu MHz		: 1747.252
+core id		: 32
+
+processor	: 225
+cpu MHz		: 2139.149
+core id		: 33
+
+processor	: 226
+cpu MHz		: 1769.537
+core id		: 34
+
+processor	: 227
+cpu MHz		: 2113.977
+core id		: 35
+
+processor	: 228
+cpu MHz		: 1596.745
+core id		: 36
+
+processor	: 229
+cpu MHz		: 2104.086
+core id		: 37
+
+processor	: 230
+cpu MHz		: 2097.367
+core id		: 38
+
+processor	: 231
+cpu MHz		: 2151.161
+core id		: 39
+
+processor	: 232
+cpu MHz		: 2138.926
+core id		: 40
+
+processor	: 233
+cpu MHz		: 1765.688
+core id		: 41
+
+processor	: 234
+cpu MHz		: 2072.682
+core id		: 42
+
+processor	: 235
+cpu MHz		: 2076.100
+core id		: 43
+
+processor	: 236
+cpu MHz		: 2146.559
+core id		: 44
+
+processor	: 237
+cpu MHz		: 2101.069
+core id		: 45
+
+processor	: 238
+cpu MHz		: 1765.255
+core id		: 46
+
+processor	: 239
+cpu MHz		: 1765.648
+core id		: 47
+
+processor	: 240
+cpu MHz		: 1760.613
+core id		: 48
+
+processor	: 241
+cpu MHz		: 2115.370
+core id		: 49
+
+processor	: 242
+cpu MHz		: 2097.636
+core id		: 50
+
+processor	: 243
+cpu MHz		: 2101.350
+core id		: 51
+
+processor	: 244
+cpu MHz		: 2583.133
+core id		: 52
+
+processor	: 245
+cpu MHz		: 2598.126
+core id		: 53
+
+processor	: 246
+cpu MHz		: 1731.582
+core id		: 54
+
+processor	: 247
+cpu MHz		: 2071.817
+core id		: 55
+
+processor	: 248
+cpu MHz		: 2096.690
+core id		: 56
+
+processor	: 249
+cpu MHz		: 2603.380
+core id		: 57
+
+processor	: 250
+cpu MHz		: 2151.008
+core id		: 58
+
+processor	: 251
+cpu MHz		: 2593.415
+core id		: 59
+
+processor	: 252
+cpu MHz		: 1730.176
+core id		: 60
+
+processor	: 253
+cpu MHz		: 2154.535
+core id		: 61
+
+processor	: 254
+cpu MHz		: 2078.989
+core id		: 62
+
+processor	: 255
+cpu MHz		: 1731.644
+core id		: 63
+

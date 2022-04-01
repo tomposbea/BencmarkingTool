@@ -6,6 +6,7 @@
 #include "../headers/functions.h"
 
 FILE *f;
+FILE *pop;
 
 void init_xml(const char *filename){
 	f = fopen(filename,"w");
@@ -22,8 +23,6 @@ void print_to_xml(){
 
 	//get system info
         char command[100];
-        FILE *pop;
-        pop = popen(command, "r");
 
         sprintf(command,"cat /proc/cpuinfo | grep \"model name\" | uniq | cut -d : -f 2");
         char model[100];
@@ -45,8 +44,6 @@ void print_to_xml(){
         if(fgets(cpu, 100, pop)!=NULL);
 	len=strlen(cpu);
 	cpu[len-1]='\0';
-
-        pclose(pop);
 	
 	//write
 	fprintf(f,"<stat>\n");
@@ -75,7 +72,18 @@ void print_to_xml(){
 	fprintf(f,"\t<dup>%8.8d</dup>\n", DuplicateCtrl);
 
 	for (int i = 0; i < thread_nr; i++){ 
-		fprintf(f,"\t<fifo i=%d>%3.3d</fifo>\n", i, FifoLen[i]);
+		fprintf(f,"\t<thread%d>%3.3d</thread%d>\n", i, FifoLen[i], i);
+		fprintf(f,"\t<cpucore-t%d>%d</cpucore-t%d>\n", i, i+2, i);
+		
+		//mhz
+		char comm[150];
+		sprintf(comm,"cat /proc/cpuinfo | grep -E 'processor|cpu MHz' | cut -d : -f 2 | paste - - | sed '%dq;d' | cut -d \" \" -f 3", i+2);
+        	char mhz[100];
+        	pop = popen(comm, "r");
+        	if(fgets(mhz, 100, pop)!=NULL);
+		len=strlen(mhz);
+        	mhz[len-1]='\0';
+		fprintf(f,"\t<cpumhz-t%d>%s</cpumhz-t%d>\n", i, mhz, i);
 	}
 
 	fprintf(f,"</stat>\n\n");
@@ -83,4 +91,5 @@ void print_to_xml(){
 
 void close_xml() {
 	fclose(f);
+	pclose(pop);
 }

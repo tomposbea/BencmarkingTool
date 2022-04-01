@@ -3,14 +3,14 @@
 <stat>
 	<nr>000000</nr>
 	<time>000000</time>
-	<date>Wed Mar 30 13:23:18 2022</date>
+	<date>Fri Apr  1 15:47:17 2022</date>
 	<gen-freq>1</gen-freq>
 	<row>3</row>
 	<column>2</column>
 	<size>6</size>
 	<lower>1</lower>
 	<upper>99</upper>
-	<runtime>5</runtime>
+	<runtime>2</runtime>
 	<log-freq>1</log-freq>
 	<table>16384</table>
 	<model> AMD EPYC 7H12 64-Core Processor</model>
@@ -18,63 +18,53 @@
 	<cpu> 64</cpu>
 	<gen>00000992</gen>
 	<drop>00000000</drop>
-	<proc>00000991</proc>
+	<proc>00000992</proc>
 	<dup>00000000</dup>
-	<fifo i=0>000</fifo>
-	<fifo i=1>000</fifo>
-	<fifo i=2>000</fifo>
-	<fifo i=3>001</fifo>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2532.356</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2566.020</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2530.203</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2530.386</cpumhz-t3>
 </stat>
 
 <stat>
 	<nr>000001</nr>
 	<time>000001</time>
-	<date>Wed Mar 30 13:23:19 2022</date>
+	<date>Fri Apr  1 15:47:18 2022</date>
 	<gen-freq>1</gen-freq>
 	<row>3</row>
 	<column>2</column>
 	<size>6</size>
 	<lower>1</lower>
 	<upper>99</upper>
-	<runtime>5</runtime>
+	<runtime>2</runtime>
 	<log-freq>1</log-freq>
 	<table>16384</table>
 	<model> AMD EPYC 7H12 64-Core Processor</model>
 	<cache> 512 KB</cache>
 	<cpu> 64</cpu>
-	<gen>00000983</gen>
+	<gen>00000990</gen>
 	<drop>00000000</drop>
-	<proc>00000983</proc>
+	<proc>00000990</proc>
 	<dup>00000000</dup>
-	<fifo i=0>000</fifo>
-	<fifo i=1>000</fifo>
-	<fifo i=2>000</fifo>
-	<fifo i=3>000</fifo>
-</stat>
-
-<stat>
-	<nr>000002</nr>
-	<time>000002</time>
-	<date>Wed Mar 30 13:23:20 2022</date>
-	<gen-freq>1</gen-freq>
-	<row>3</row>
-	<column>2</column>
-	<size>6</size>
-	<lower>1</lower>
-	<upper>99</upper>
-	<runtime>5</runtime>
-	<log-freq>1</log-freq>
-	<table>16384</table>
-	<model> AMD EPYC 7H12 64-Core Processor</model>
-	<cache> 512 KB</cache>
-	<cpu> 64</cpu>
-	<gen>00000982</gen>
-	<drop>00000000</drop>
-	<proc>00000982</proc>
-	<dup>00000000</dup>
-	<fifo i=0>000</fifo>
-	<fifo i=1>000</fifo>
-	<fifo i=2>000</fifo>
-	<fifo i=3>000</fifo>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.987</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2559.830</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2533.315</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2575.819</cpumhz-t3>
 </stat>
 

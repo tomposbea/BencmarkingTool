@@ -1,2 +1,0 @@
-nr, time, date, gen-freq, row, column, size, lower, upper, runtime, log-freq, table, model, cache, cpu, gen, drop, proc, dup, thread0, thread1, thread2
-000000, 000000, Wed Mar 30 13:02:54 2022, 1, 6, 6, 36, 1, 99, 1, 1, 16384,  AMD EPYC 7H12 64-Core Processor,  512 KB,  64, 00001026, 00000970, 00000032, 00000000, 007, 007, 007

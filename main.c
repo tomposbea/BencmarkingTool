@@ -14,6 +14,7 @@
 #include <time.h>
 #include <math.h>
 #include <stdbool.h>
+
 #include "headers/defines.h"
 #include "headers/functions.h"
 #include "headers/def_linux.h"
@@ -102,6 +103,7 @@ void SetProcessAffinity(int cpu)
 }
 
 THREADTYPE ThreadGen(void* data) {
+        printf("CPU for generating: %d\n", CpuAllocTable[0]);
 	int roundrobin = 0;
 	SetProcessAffinity(CpuAllocTable[0]);
 	while (Run) {
@@ -118,6 +120,7 @@ THREADTYPE ThreadGen(void* data) {
 
 THREADTYPE ThreadProcess(void* data) {
 	int fifonum=(int)data;
+	printf("CPU for fifo%d: %d\n", fifonum, CpuAllocTable[1+fifonum]);
 	SetProcessAffinity(CpuAllocTable[1+fifonum]);
 	while (Run) {
 		if (Enable) {
@@ -180,7 +183,6 @@ int main(int argc, char** argv) {
 	ThreadCreate(threadReport, ThreadReport, 0);
 	for(int i=0; i<thread_nr; i++) ThreadCreate((threadWorker[i]), ThreadProcess,i);
 	
-
 	if(Counter>running_time) return 0;
 	StopProcess();
 	return 0;
