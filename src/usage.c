@@ -55,6 +55,7 @@ int GetParameters(int argc, char** argv){
 				if(atoi(argv[i+1])>MAX_THREADS) {error_over_limit("thread", MAX_THREADS); return 0;}
                                 if(atoi(argv[i+1])<1) {error_under_limit("thread", 1); return 0;}
 				thread_nr=atoi(argv[i+1]);
+				if(thread_nr > max_thread_param) max_thread_param = thread_nr;
                         }
 			else if(!strcmp(argv[i], "-table")) {
                                 if(!CheckParameter(i, argc, argv, "table")) return 0;

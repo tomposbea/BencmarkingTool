@@ -103,7 +103,6 @@ void SetProcessAffinity(int cpu)
 }
 
 THREADTYPE ThreadGen(void* data) {
-        printf("CPU for generating: %d\n", CpuAllocTable[0]);
 	int roundrobin = 0;
 	SetProcessAffinity(CpuAllocTable[0]);
 	while (Run) {
@@ -120,7 +119,6 @@ THREADTYPE ThreadGen(void* data) {
 
 THREADTYPE ThreadProcess(void* data) {
 	int fifonum=(int)data;
-	printf("CPU for fifo%d: %d\n", fifonum, CpuAllocTable[1+fifonum]);
 	SetProcessAffinity(CpuAllocTable[1+fifonum]);
 	while (Run) {
 		if (Enable) {

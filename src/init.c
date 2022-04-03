@@ -8,7 +8,7 @@
 
 void StopProcess(){
         SleepUni(1);
-        printf("\nRun...\n");
+        printf("\nRUNNING\n");
         Enable = 1;
 
         // Wait for enter
@@ -20,7 +20,8 @@ void StopProcess(){
         SleepUni(1);
         close_xml();
         close_csv();
-        printf("\n\nStopped...\n");
+        printf("\n\nSTOPPED\n");
+	printf("-------------------------------------------------------------------\n");
 }
 
 void ReadConfig(){
@@ -42,6 +43,7 @@ int InitSubsystem(int argc, char** argv){
         Enable = 0;
 
         thread_nr = 4;
+	max_thread_param = 4;
         running_time = 2;
         log_frequency = 1;
         lower=1;

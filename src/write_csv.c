@@ -15,7 +15,7 @@ void init_csv(const char *filename){
 	fseek(fp, 0, SEEK_END);
 	if( ftell(fp) == 0) {
         	fprintf (fp,"nr, time, date, gen-freq, row, column, size, lower, upper, runtime, log-freq, table, model, cache, cpu, gen, drop, proc, dup");
-	 	for (int i = 0; i < thread_nr; i++)
+	 	for (int i = 0; i < MAX_THREADS; i++)
 			fprintf(fp, ", thread%d, cpucore-t%d, cpumhz-t%d", i, i, i);
 	 	fprintf(fp,"\n");
 	}
@@ -71,6 +71,8 @@ void print_to_csv(){
                 mhz[len-1]='\0';
 		fprintf(fp, ", %s", mhz);
 	 }
+	 for (int i = thread_nr; i < MAX_THREADS; i++)
+		 fprintf(fp, ", %3.3d, %d, %s", 0, 0, "");
 	fprintf(fp,"\n");	 
 }
 
