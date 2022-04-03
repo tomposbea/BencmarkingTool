@@ -46,6 +46,7 @@ int InitSubsystem(int argc, char** argv){
         log_frequency = 1;
         lower=1;
         upper=99;
+	table_size  = 16384;
 
         strcpy(output_file_xml,"../results/MatrixReports.xml");
         strcpy(output_file_csv,"../results/MatrixReports.csv");
@@ -62,7 +63,6 @@ int InitSubsystem(int argc, char** argv){
                 FifoLen[i] = 0;
         }
         // Init table
-        table_size  = 16384;
         for (int i = 0; i < table_size; i++) Table[i][0] = 0;
 
         init_xml(output_file_xml);

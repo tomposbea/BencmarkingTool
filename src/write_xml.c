@@ -6,11 +6,16 @@
 #include "../headers/functions.h"
 
 FILE *f;
-FILE *pop;
+FILE *p;
 
 void init_xml(const char *filename){
-	f = fopen(filename,"w");
-	fprintf (f,"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n\n");
+	f = fopen(filename,"a");
+
+	//writer header if new file
+	fseek(f, 0, SEEK_END);
+	if( ftell(f) == 0) {
+		fprintf (f,"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n\n");
+	}
 }
 
 void print_to_xml(){
@@ -26,22 +31,22 @@ void print_to_xml(){
 
         sprintf(command,"cat /proc/cpuinfo | grep \"model name\" | uniq | cut -d : -f 2");
         char model[100];
-        pop = popen(command, "r");
-        if(fgets(model, 100, pop)!=NULL);
+        p = popen(command, "r");
+        if(fgets(model, 100, p)!=NULL);
 	len=strlen(model);
 	model[len-1]='\0';
 
         sprintf(command,"cat /proc/cpuinfo | grep \"cache size\" | uniq | cut -d : -f 2");
         char cache[100];
-        pop = popen(command, "r");
-        if(fgets(cache, 100, pop)!=NULL);
+        p = popen(command, "r");
+        if(fgets(cache, 100, p)!=NULL);
 	len=strlen(cache);
 	cache[len-1]='\0';
 
         sprintf(command,"cat /proc/cpuinfo | grep \"cpu cores\" | uniq | cut -d : -f 2");
         char cpu[100];
-        pop = popen(command, "r");
-        if(fgets(cpu, 100, pop)!=NULL);
+        p = popen(command, "r");
+        if(fgets(cpu, 100, p)!=NULL);
 	len=strlen(cpu);
 	cpu[len-1]='\0';
 	
@@ -79,8 +84,8 @@ void print_to_xml(){
 		char comm[150];
 		sprintf(comm,"cat /proc/cpuinfo | grep -E 'processor|cpu MHz' | cut -d : -f 2 | paste - - | sed '%dq;d' | cut -d \" \" -f 3", i+2);
         	char mhz[100];
-        	pop = popen(comm, "r");
-        	if(fgets(mhz, 100, pop)!=NULL);
+        	p = popen(comm, "r");
+        	if(fgets(mhz, 100, p)!=NULL);
 		len=strlen(mhz);
         	mhz[len-1]='\0';
 		fprintf(f,"\t<cpumhz-t%d>%s</cpumhz-t%d>\n", i, mhz, i);
@@ -91,5 +96,5 @@ void print_to_xml(){
 
 void close_xml() {
 	fclose(f);
-	pclose(pop);
+	pclose(p);
 }
