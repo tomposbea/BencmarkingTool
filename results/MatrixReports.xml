@@ -10620,3 +10620,7023 @@
 	<cpumhz-t2>2526.535</cpumhz-t2>
 </stat>
 
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:42:17 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.372</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2555.108</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2555.157</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:42:21 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2533.051</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2571.639</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2526.982</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:42:24 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2539.879</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2530.334</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2528.947</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:42:27 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2585.322</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2530.822</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2561.404</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:42:31 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2528.248</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2555.185</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2544.249</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:42:34 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2471.039</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2531.945</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2541.621</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:42:37 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2589.297</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2549.969</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2547.328</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:42:41 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2586.418</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2552.668</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2503.624</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:42:44 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2587.977</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2553.834</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2550.419</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:42:47 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2433.725</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2561.904</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2545.150</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:42:51 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000993</gen>
+	<drop>00000000</drop>
+	<proc>00000993</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2587.549</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2561.352</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2564.659</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:42:54 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>001</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2589.327</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2487.384</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2542.942</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:42:57 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2526.648</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2562.068</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2499.395</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:01 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.201</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2505.658</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2534.339</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:04 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>001</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2588.594</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2517.793</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2535.712</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:07 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2584.520</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2547.883</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2536.187</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:11 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.299</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2498.585</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2542.171</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:14 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.603</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2570.281</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2529.828</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:17 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000001</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2533.646</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2526.734</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2565.439</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:21 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000993</gen>
+	<drop>00000000</drop>
+	<proc>00000993</proc>
+	<dup>00000001</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2470.639</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2573.723</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2485.552</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:24 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000001</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.549</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2531.556</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2546.722</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:27 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000001</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2553.121</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2556.058</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2525.450</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:31 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000993</gen>
+	<drop>00000000</drop>
+	<proc>00000993</proc>
+	<dup>00000001</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2468.181</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2557.879</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2523.181</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:34 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000001</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2442.050</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2563.331</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2547.382</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:38 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000001</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2475.814</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2545.985</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2489.623</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:41 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2589.015</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2559.610</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2552.930</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:44 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2466.006</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2562.202</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2507.830</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:48 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.115</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2553.528</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2505.095</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2551.675</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:51 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2588.429</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2561.947</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2559.495</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2539.335</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:54 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2585.183</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2520.428</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2548.149</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2487.143</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:43:58 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.278</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2530.286</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2559.296</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2572.991</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:01 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2483.970</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2510.092</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2577.122</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2576.819</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:04 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.793</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2528.549</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2569.273</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2581.096</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:08 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2585.319</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2555.078</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2549.479</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2537.537</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:11 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.101</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2505.295</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2562.487</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2539.733</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:14 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.507</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2554.107</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2537.404</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2518.921</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:18 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2584.402</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2553.042</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2542.788</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2530.810</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:21 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2587.190</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2541.002</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2540.810</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2504.879</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:25 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2579.485</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2551.546</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2521.689</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2547.134</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:28 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2457.985</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2520.655</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2539.032</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2519.183</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:31 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.531</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2513.311</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2540.123</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2498.574</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:35 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.036</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2573.526</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2524.568</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2517.775</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:38 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.546</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2542.453</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2538.460</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2476.851</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:41 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2584.926</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2551.438</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2551.627</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2547.813</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:45 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.170</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2511.376</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2551.919</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2567.794</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:48 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000001</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2530.206</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2537.040</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2558.755</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2547.326</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:52 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000001</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.300</cpumhz-t0>
+	<thread1>001</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2515.583</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2529.970</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2523.005</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:55 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000001</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.068</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2522.564</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2529.670</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2570.392</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:44:58 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000001</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2580.429</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2569.497</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2542.783</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2558.083</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:02 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000001</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.880</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2559.780</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2516.882</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2551.928</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:05 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000001</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2586.212</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2540.447</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2533.122</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2514.241</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:08 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000001</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2556.161</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2547.077</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2546.006</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2484.326</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:12 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.020</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2553.716</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2535.562</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2493.764</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:15 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2588.632</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2553.618</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2546.870</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2566.737</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:18 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.217</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2508.646</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2559.561</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:22 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000989</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.557</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2503.142</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2528.671</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:25 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2470.265</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2533.156</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2491.364</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:29 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2525.545</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2559.460</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2485.344</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:32 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.778</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2533.371</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2550.099</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:35 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.818</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2552.041</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2577.251</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:39 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2581.780</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2565.749</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2561.065</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:42 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2533.717</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2580.537</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2500.293</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:45 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.060</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2530.721</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2555.396</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:49 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000993</gen>
+	<drop>00000000</drop>
+	<proc>00000993</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2467.365</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2581.902</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2477.780</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:52 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000993</gen>
+	<drop>00000000</drop>
+	<proc>00000993</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2467.642</cpumhz-t0>
+	<thread1>001</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2580.891</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2517.732</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:55 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.665</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2528.152</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2573.939</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:45:59 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.555</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2583.432</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2562.389</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:02 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2586.372</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2547.641</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2575.641</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:05 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2588.451</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2508.744</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2567.625</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:09 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2534.697</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2551.336</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2581.491</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:12 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.621</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2553.259</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2555.513</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:15 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2588.195</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2546.871</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2569.327</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:19 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000993</gen>
+	<drop>00000000</drop>
+	<proc>00000993</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2473.050</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2543.439</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2477.574</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:22 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000993</gen>
+	<drop>00000000</drop>
+	<proc>00000993</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2533.626</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2518.800</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2491.137</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:25 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2589.059</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2539.896</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2551.833</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:29 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000993</gen>
+	<drop>00000000</drop>
+	<proc>00000993</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2586.452</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2571.898</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2535.883</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:32 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2525.518</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2559.951</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2478.777</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:35 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.734</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2575.691</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2512.415</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:39 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.892</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2557.841</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2548.397</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:42 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>001</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.068</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2538.788</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2535.921</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:45 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.665</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2575.906</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2543.415</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:49 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000989</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2571.979</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2545.511</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2569.628</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2546.823</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:52 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2423.970</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2558.796</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2551.717</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2525.070</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:56 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.004</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2563.992</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2555.707</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2556.941</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:46:59 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.451</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2520.327</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2497.057</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2512.668</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:02 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2526.962</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2549.036</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2537.372</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2513.876</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:06 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.820</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2566.210</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2546.432</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2519.133</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:09 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2464.766</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2579.646</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2489.684</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2463.309</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:12 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2527.148</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2540.261</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2553.975</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2518.015</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:16 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2532.240</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2512.667</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2546.032</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2548.008</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:19 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.169</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2573.752</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2576.646</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2563.110</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:22 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2587.054</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2574.719</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2502.467</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2563.791</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:26 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2421.833</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2575.278</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2578.714</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2535.466</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:29 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2528.692</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2540.796</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2575.655</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2558.984</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:33 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.991</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2543.464</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2585.695</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2494.573</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:36 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.336</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2566.129</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2559.081</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2587.674</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:39 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2579.307</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2571.877</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2567.619</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2585.877</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:43 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2524.289</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2582.959</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2580.228</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2533.651</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:46 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2583.175</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2534.320</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2565.870</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2582.325</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:49 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.885</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2584.912</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2589.370</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2514.624</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:53 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.641</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2567.572</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2532.474</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2572.387</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:47:56 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.058</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2524.220</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2579.617</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2512.439</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:00 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2463.255</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2578.669</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2583.487</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2470.204</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:03 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.001</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2531.544</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2586.014</cpumhz-t2>
+	<thread3>001</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2474.845</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:06 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2586.494</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2573.457</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2553.437</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2485.073</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:10 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2530.574</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2504.993</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2582.942</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2538.163</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:13 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.812</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2540.837</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2583.621</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2584.823</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:16 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>2</row>
+	<column>3</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2529.324</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2572.505</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2580.505</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2560.772</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:20 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.680</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2498.347</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2533.194</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:23 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2588.692</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2533.131</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2553.349</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:26 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.280</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2506.080</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2526.360</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:30 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.012</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2505.086</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2559.736</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:33 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2509.848</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2574.431</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2560.655</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:36 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2526.472</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2591.630</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2557.923</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:40 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.632</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2518.883</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2531.874</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:43 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2586.762</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2554.427</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2525.004</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:46 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.429</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2481.761</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2540.408</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:50 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000993</gen>
+	<drop>00000000</drop>
+	<proc>00000993</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2558.589</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2570.655</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2560.874</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:53 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2587.016</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2572.004</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2551.510</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:48:57 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2581.020</cpumhz-t0>
+	<thread1>001</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2576.039</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2544.131</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:00 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2589.739</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2548.861</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2546.220</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:03 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.064</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2564.351</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2547.050</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:07 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.589</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2516.348</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2529.259</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:10 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2529.850</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2477.385</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2543.658</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:13 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2469.661</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2501.423</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2555.676</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:17 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.819</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2559.474</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2562.439</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:20 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2494.019</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2556.716</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2473.436</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:23 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.623</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2547.196</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2548.978</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:27 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2582.527</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2593.249</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2491.561</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:30 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.860</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2479.168</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2545.641</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:33 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2548.532</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2559.547</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2553.825</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:37 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2475.073</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2572.420</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2555.247</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:40 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.998</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2508.814</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2552.425</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:43 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2588.798</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2524.353</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2563.161</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:47 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2526.238</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2589.434</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2531.675</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:50 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000989</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2531.476</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2555.034</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2488.490</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2534.819</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:53 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.170</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2589.815</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2577.390</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2546.753</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:49:57 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2578.028</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2570.026</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2551.586</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2541.373</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:00 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2589.389</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2502.063</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2544.329</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2530.922</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:03 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2516.743</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2572.346</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2548.719</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2577.615</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:07 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2588.496</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2479.867</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2548.299</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2551.954</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:10 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2531.718</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2564.297</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2534.247</cpumhz-t2>
+	<thread3>001</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2559.221</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:14 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.416</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2542.166</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2553.888</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2499.919</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:17 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2528.110</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2528.799</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2534.108</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2564.831</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:20 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.845</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2551.545</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2548.454</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2535.685</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:24 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.022</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2555.358</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2549.211</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2521.600</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:27 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.829</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2571.516</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2561.129</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2515.454</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:30 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2458.415</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2499.287</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2550.438</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2569.379</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:34 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.815</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2484.462</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2504.267</cpumhz-t2>
+	<thread3>001</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2571.162</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:37 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2587.449</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2577.964</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2564.029</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2553.490</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:41 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.623</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2488.236</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2527.734</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2482.888</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:44 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2532.039</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2556.635</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2566.382</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2509.764</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:47 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2588.269</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2487.019</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2522.907</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2565.177</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:51 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.875</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2554.299</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2530.416</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2546.993</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:54 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.274</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2531.625</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2527.573</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2515.677</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:50:57 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.499</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2510.447</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2557.092</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2481.561</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:01 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.324</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2568.696</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2542.690</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2521.875</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:04 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2535.696</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2478.418</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2540.003</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2487.167</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:07 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.215</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2573.300</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2581.589</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2567.972</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:11 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2538.543</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2560.211</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2555.182</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2503.427</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:14 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.013</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2503.802</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2542.907</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2555.173</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:18 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>2</column>
+	<size>6</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000992</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2463.656</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2571.050</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2538.878</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2497.279</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:21 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.621</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2556.569</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2558.162</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:24 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000989</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2533.105</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2546.864</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2559.733</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:28 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000989</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.472</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2562.762</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2576.347</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:31 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.016</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2563.647</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2473.287</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:34 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2586.440</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2588.417</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2461.242</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:38 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.163</cpumhz-t0>
+	<thread1>001</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2566.673</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2508.701</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:41 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.102</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2523.559</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2551.336</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:44 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2462.701</cpumhz-t0>
+	<thread1>001</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2526.418</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2521.030</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:48 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2586.703</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2571.682</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2552.656</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:51 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000993</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.067</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2567.637</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2543.420</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:54 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000989</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2587.630</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2517.179</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2547.261</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:51:58 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000989</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2533.779</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2549.510</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2570.463</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:01 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2583.506</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2543.466</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2545.812</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:04 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2469.674</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2542.755</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2540.077</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:08 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.982</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2578.141</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2519.739</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:11 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2469.100</cpumhz-t0>
+	<thread1>001</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2506.911</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2484.708</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:14 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000989</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.358</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2546.709</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2535.259</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:18 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000989</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.070</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2582.745</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2534.908</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:21 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000989</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2560.556</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2580.892</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2512.654</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:24 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000989</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2531.966</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2584.895</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2522.990</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:28 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000989</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.710</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2581.895</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2584.962</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:31 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2515.420</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2560.163</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2581.109</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:35 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000989</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.332</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2555.879</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2507.663</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:38 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.717</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2518.928</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2523.951</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:41 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.224</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2575.222</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2558.728</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:45 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000988</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.180</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2577.468</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2520.770</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:48 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.851</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2566.099</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2531.642</cpumhz-t2>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:51 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000989</gen>
+	<drop>00000000</drop>
+	<proc>00000987</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2583.927</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2547.115</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2557.123</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2510.906</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:55 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.400</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2555.544</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2524.387</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2577.238</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:52:58 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.323</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2588.551</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2585.090</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2577.279</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:01 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.041</cpumhz-t0>
+	<thread1>001</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2539.096</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2585.191</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2591.558</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:05 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2588.270</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2567.744</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2538.661</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2587.647</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:08 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.192</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2580.837</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2538.933</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2537.944</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:11 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.563</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2594.102</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2576.561</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2550.482</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:15 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2586.698</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2586.260</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2551.907</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2546.779</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:18 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>1</lower>
+	<upper>99</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.849</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2515.837</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2551.984</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2504.724</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:22 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.158</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2594.240</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2548.985</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2590.020</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:25 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000994</gen>
+	<drop>00000000</drop>
+	<proc>00000993</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2566.463</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2572.060</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2506.189</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2588.700</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:28 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.968</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2544.763</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2550.112</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2563.112</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:32 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.097</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2510.831</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2578.923</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2543.726</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:35 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2590.024</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2539.158</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2547.253</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2570.187</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:38 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2592.293</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2578.301</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2503.641</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2577.637</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:42 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2469.835</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2548.776</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2512.985</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2552.344</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:45 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2589.124</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2585.606</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2568.255</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2549.635</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:49 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>21</lower>
+	<upper>79</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.148</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2537.681</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2569.900</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2578.440</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:52 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>16384</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000990</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2472.599</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2567.768</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2552.645</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2583.989</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:55 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>8192</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.188</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2583.414</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2550.273</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2575.508</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:53:59 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>4096</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000989</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2589.307</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2553.585</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2550.646</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2546.017</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:54:02 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>2048</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2591.819</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2585.653</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2542.720</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2592.947</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:54:05 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>1024</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2589.425</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2521.487</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2582.411</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2584.419</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:54:09 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>512</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2527.111</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2594.251</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2554.211</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2503.042</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:54:12 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>256</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000992</gen>
+	<drop>00000000</drop>
+	<proc>00000991</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2535.514</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2578.290</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2575.371</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2502.552</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:54:15 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>128</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2528.471</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2531.584</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2578.941</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2518.799</cpumhz-t3>
+</stat>
+
+<stat>
+	<nr>000000</nr>
+	<time>000000</time>
+	<date>Sun Apr  3 17:54:19 2022</date>
+	<gen-freq>1</gen-freq>
+	<row>3</row>
+	<column>3</column>
+	<size>9</size>
+	<lower>41</lower>
+	<upper>59</upper>
+	<runtime>1</runtime>
+	<log-freq>1</log-freq>
+	<table>64</table>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512 KB</cache>
+	<cpu> 64</cpu>
+	<gen>00000991</gen>
+	<drop>00000000</drop>
+	<proc>00000990</proc>
+	<dup>00000000</dup>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2587.639</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2582.651</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2572.891</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2579.741</cpumhz-t3>
+</stat>
+
