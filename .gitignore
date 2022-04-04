@@ -9,3 +9,7 @@ not_used/
 eric-test
 .gitmodules
 erc-test
+py/inputs/*
+!py/inputs/.gitkeep
+py/results/*
+!py/results/.gitkeep
