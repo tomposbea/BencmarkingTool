@@ -9,3 +9,7 @@ not_used/
 eric-test
 .gitmodules
 erc-test
+py/inputs/codemodel.json
+py/inputs/suiteinfo.xml
+py/results/data_from_xml.json
+py/results/final.json
