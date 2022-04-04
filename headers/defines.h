@@ -7,6 +7,8 @@
 #define MAX_THREADS 50
 #define THREADS 4
 
+int outside_build;
+
 int thread_nr;
 int max_thread_param;
 int table_size;

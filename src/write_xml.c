@@ -76,6 +76,15 @@ void print_to_xml(){
 	fprintf(f,"\t<proc>%8.8d</proc>\n", ProcessedCtrl);
 	fprintf(f,"\t<dup>%8.8d</dup>\n", DuplicateCtrl);
 
+	//docker limits
+	fprintf(f,"\t<cpu-quota>%s</cpu-quota>\n", "cat /sys/fs/cgroup/cpu/cpu.cfs_quota_us");
+	fprintf(f,"\t<cpu-period>%s</cpu-period>\n", "cat /sys/fs/cgroup/cpu/cpu.cfs_period");
+	fprintf(f,"\t<cpus>%s</cpus>\n", "quota/period");
+	fprintf(f,"\t<cpu-usage>%s</cpu-usage>\n", "cat /sys/fs/cgroup/cpu/cpuacct.usage");
+	fprintf(f,"\t<mem-usage>%s</mem-usage>\n", "cat /sys/fs/cgroup/memory/memory.usage_in_bytes");
+	 fprintf(f,"\t<mem-limit>%s</mem-limit>\n", "cat /sys/fs/cgroup/memory/memory.limit_in_bytes");
+	
+	//threads
 	for (int i = 0; i < thread_nr; i++){ 
 		fprintf(f,"\t<thread%d>%3.3d</thread%d>\n", i, FifoLen[i], i);
 		fprintf(f,"\t<cpucore-t%d>%d</cpucore-t%d>\n", i, i+2, i);

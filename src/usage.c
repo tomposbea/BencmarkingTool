@@ -79,7 +79,9 @@ int GetParameters(int argc, char** argv){
                         	if(strlen(argv[i+1])>=100) {error_over_limit("xml",100); return 0;}
 				char param[100];
 				strcpy(param,argv[i+1]);//filename
-				char path[120]="../results/";
+				char path[120];
+				if(outside_build) strcpy(path, "/results/");
+					else strcpy(path, "../results/");
 				strcat(path, param);//add path
 				strcat(path, ".xml");
 				strcpy(output_file_xml, path);
@@ -89,8 +91,10 @@ int GetParameters(int argc, char** argv){
                                 if(strlen(argv[i+1])>=100) {error_over_limit("csv",100); return 0;}
                                 char param[100];
                                 strcpy(param,argv[i+1]);//filename
-                                char path[120]="../results/";
-                                strcat(path, param);//add path
+				char path[120];
+                                if(outside_build) strcpy(path, "/results/");
+                                        else strcpy(path, "../results/");
+				strcat(path, param);//add path
                                 strcat(path, ".csv");
                                 strcpy(output_file_csv, path);
                         }

@@ -145,8 +145,9 @@ THREADTYPE ThreadReport(void* data) {
 			if(Counter>=running_time){
                                 Enable = 0;
                                 Run = 0;
-				SleepUni(1000); //wait 1s for all processes to finish
-        			printf("\n\nStopped...\n");	
+				SleepUni(500); //wait 1s for all processes to finish
+        			printf("\n\nSTOPPED\n");
+				printf("--------------------------------------------------\n");	
 				close_xml();
 				close_csv();
 				exit(0);
@@ -163,7 +164,7 @@ void InitTiming(){
         TimerFreq = GetFrequency();
         //printf("Reference Freq: %ld MHz\n", TimerFreq / 1000000);
         TimerRef = GetClockValue();
-        SleepUni(1000);
+        //SleepUni(500);
         //printf("Reference Time Measurement for 1 sec: %ld ms\n", (((GetClockValue() - TimerRef) * 1000) / TimerFreq));
 }
 

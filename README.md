@@ -51,11 +51,12 @@ RUN     apt-get update && \
         apt-get -y install cmake
 
 # build the application with cmake
-RUN     mkdir BencmarkingTool/build && \
-        cd BencmarkingTool/build && \
-        cmake .. && \
-        cmake --build .
+#RUN     mkdir BencmarkingTool/build && \
+#        cd BencmarkingTool/build && \
+#        cmake .. && \
+#        cmake --build .
 
+#RUN git submodule add ssh://gerrit.ericsson.se:29418/pc/eric-test
 RUN ["chmod", "+x", "BencmarkingTool/build"]
 
 # run the application
