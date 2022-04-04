@@ -51,11 +51,12 @@ RUN     apt-get update && \
         apt-get -y install cmake
 
 # build the application with cmake
-RUN     mkdir BencmarkingTool/build && \
-        cd BencmarkingTool/build && \
-        cmake .. && \
-        cmake --build .
+#RUN     mkdir BencmarkingTool/build && \
+#        cd BencmarkingTool/build && \
+#        cmake .. && \
+#        cmake --build .
 
+#RUN git submodule add ssh://gerrit.ericsson.se:29418/pc/eric-test
 RUN ["chmod", "+x", "BencmarkingTool/build"]
 
 # run the application
@@ -65,32 +66,21 @@ CMD ["BencmarkingTool/build/Run"]
 ## Script to run program with different parameters
 - Location: in build folder
 - need to give it access rights: chmod 755 <name>
-- ./<name>
-- iterates through row, column, thread numbers -> result in separate files
+- ./script
+- iterates through matrix size, thread numbers, table size -> results in MatrixResults xml and csv files
 
 ```
 #!/bin/bash
 
-# parameters
-time=1
-log=1
-table=16384
-lower=1
-upper=99
-file="Result"
-
-counter=0
-while [[ $counter -lt 1 ]]; do
+for counter in {1..1}; do #nr of repetitions
   for row in {5..6}; do
-    for column in {5..6}; do
-      filename="${file}${counter}"
+    for column in {5..6}; do #matrix size
       for thread in {2..3}; do
-        ./Run -runtime $time -thread $thread -row $row -column $column -xml $filename -csv $filename
-        counter=$((counter+1))
-      done
-    done
-  done
-done
+        for (( lower=1, upper=99; lower<upper; lower+=10, upper-=10 )); do
+          for (( table=16384; table>=64; table/=2 )); do
+             ./Run -runtime 1 -log 1 -thread $thread -row $row -column $column -lower $lower -upper $upper -table $table
+done; done; done; done; done; done
+# no need to change filename, results are appended to existing MatrixResults files
 ```
 
 ## STRUCTURE
@@ -112,6 +102,7 @@ done
 - **write_csv.c**: writes Thread 2 output to an csv file
 - **error.c**: error messages for input parameters
 - **usage.c**: read+check input parameters, --help option
+- **init.c**: initializes parameters
 
 ### headers
 - **defines.h**: variables, constants, defined values
@@ -124,6 +115,7 @@ done
 ### results
 - MatrixReports.xml
 - MatrixReports.csv
+- new file: -xml, -csv parameter 
 
 ## Unit tests
 - test.c: Unit test cases

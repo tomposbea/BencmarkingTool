@@ -3,14 +3,14 @@
 <stat>
 	<nr>000000</nr>
 	<time>000000</time>
-	<date>Wed Mar 30 13:23:18 2022</date>
+	<date>Mon Apr  4 09:21:58 2022</date>
 	<gen-freq>1</gen-freq>
 	<row>3</row>
 	<column>2</column>
 	<size>6</size>
 	<lower>1</lower>
 	<upper>99</upper>
-	<runtime>5</runtime>
+	<runtime>2</runtime>
 	<log-freq>1</log-freq>
 	<table>16384</table>
 	<model> AMD EPYC 7H12 64-Core Processor</model>
@@ -20,61 +20,63 @@
 	<drop>00000000</drop>
 	<proc>00000991</proc>
 	<dup>00000000</dup>
-	<fifo i=0>000</fifo>
-	<fifo i=1>000</fifo>
-	<fifo i=2>000</fifo>
-	<fifo i=3>001</fifo>
+	<cpu-quota>cat /sys/fs/cgroup/cpu/cpu.cfs_quota_us</cpu-quota>
+	<cpu-period>cat /sys/fs/cgroup/cpu/cpu.cfs_period</cpu-period>
+	<cpus>quota/period</cpus>
+	<cpu-usage>cat /sys/fs/cgroup/cpu/cpuacct.usage</cpu-usage>
+	<mem-usage>cat /sys/fs/cgroup/memory/memory.usage_in_bytes</mem-usage>
+	<mem-limit>cat /sys/fs/cgroup/memory/memory.limit_in_bytes</mem-limit>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2535.834</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2579.577</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2550.550</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2474.926</cpumhz-t3>
 </stat>
 
 <stat>
 	<nr>000001</nr>
 	<time>000001</time>
-	<date>Wed Mar 30 13:23:19 2022</date>
+	<date>Mon Apr  4 09:22:00 2022</date>
 	<gen-freq>1</gen-freq>
 	<row>3</row>
 	<column>2</column>
 	<size>6</size>
 	<lower>1</lower>
 	<upper>99</upper>
-	<runtime>5</runtime>
+	<runtime>2</runtime>
 	<log-freq>1</log-freq>
 	<table>16384</table>
 	<model> AMD EPYC 7H12 64-Core Processor</model>
 	<cache> 512 KB</cache>
 	<cpu> 64</cpu>
-	<gen>00000983</gen>
+	<gen>00000990</gen>
 	<drop>00000000</drop>
-	<proc>00000983</proc>
+	<proc>00000990</proc>
 	<dup>00000000</dup>
-	<fifo i=0>000</fifo>
-	<fifo i=1>000</fifo>
-	<fifo i=2>000</fifo>
-	<fifo i=3>000</fifo>
-</stat>
-
-<stat>
-	<nr>000002</nr>
-	<time>000002</time>
-	<date>Wed Mar 30 13:23:20 2022</date>
-	<gen-freq>1</gen-freq>
-	<row>3</row>
-	<column>2</column>
-	<size>6</size>
-	<lower>1</lower>
-	<upper>99</upper>
-	<runtime>5</runtime>
-	<log-freq>1</log-freq>
-	<table>16384</table>
-	<model> AMD EPYC 7H12 64-Core Processor</model>
-	<cache> 512 KB</cache>
-	<cpu> 64</cpu>
-	<gen>00000982</gen>
-	<drop>00000000</drop>
-	<proc>00000982</proc>
-	<dup>00000000</dup>
-	<fifo i=0>000</fifo>
-	<fifo i=1>000</fifo>
-	<fifo i=2>000</fifo>
-	<fifo i=3>000</fifo>
+	<cpu-quota>cat /sys/fs/cgroup/cpu/cpu.cfs_quota_us</cpu-quota>
+	<cpu-period>cat /sys/fs/cgroup/cpu/cpu.cfs_period</cpu-period>
+	<cpus>quota/period</cpus>
+	<cpu-usage>cat /sys/fs/cgroup/cpu/cpuacct.usage</cpu-usage>
+	<mem-usage>cat /sys/fs/cgroup/memory/memory.usage_in_bytes</mem-usage>
+	<mem-limit>cat /sys/fs/cgroup/memory/memory.limit_in_bytes</mem-limit>
+	<thread0>000</thread0>
+	<cpucore-t0>2</cpucore-t0>
+	<cpumhz-t0>2593.121</cpumhz-t0>
+	<thread1>000</thread1>
+	<cpucore-t1>3</cpucore-t1>
+	<cpumhz-t1>2556.634</cpumhz-t1>
+	<thread2>000</thread2>
+	<cpucore-t2>4</cpucore-t2>
+	<cpumhz-t2>2559.439</cpumhz-t2>
+	<thread3>000</thread3>
+	<cpucore-t3>5</cpucore-t3>
+	<cpumhz-t3>2574.790</cpumhz-t3>
 </stat>
 

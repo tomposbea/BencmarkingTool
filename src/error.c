@@ -27,4 +27,8 @@ void error_lower_upper(){
         PrintUsage();
 }
 
+void error_wrong_parameter(char* mess){
+        printf("Error: %s wrong parameter!\n", mess);
+        PrintUsage();
+}
 

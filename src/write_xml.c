@@ -6,10 +6,16 @@
 #include "../headers/functions.h"
 
 FILE *f;
+FILE *p;
 
 void init_xml(const char *filename){
-	f = fopen(filename,"w");
-	fprintf (f,"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n\n");
+	f = fopen(filename,"a");
+
+	//writer header if new file
+	fseek(f, 0, SEEK_END);
+	if( ftell(f) == 0) {
+		fprintf (f,"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n\n");
+	}
 }
 
 void print_to_xml(){
@@ -22,31 +28,27 @@ void print_to_xml(){
 
 	//get system info
         char command[100];
-        FILE *pop;
-        pop = popen(command, "r");
 
         sprintf(command,"cat /proc/cpuinfo | grep \"model name\" | uniq | cut -d : -f 2");
         char model[100];
-        pop = popen(command, "r");
-        if(fgets(model, 100, pop)!=NULL);
+        p = popen(command, "r");
+        if(fgets(model, 100, p)!=NULL);
 	len=strlen(model);
 	model[len-1]='\0';
 
         sprintf(command,"cat /proc/cpuinfo | grep \"cache size\" | uniq | cut -d : -f 2");
         char cache[100];
-        pop = popen(command, "r");
-        if(fgets(cache, 100, pop)!=NULL);
+        p = popen(command, "r");
+        if(fgets(cache, 100, p)!=NULL);
 	len=strlen(cache);
 	cache[len-1]='\0';
 
         sprintf(command,"cat /proc/cpuinfo | grep \"cpu cores\" | uniq | cut -d : -f 2");
         char cpu[100];
-        pop = popen(command, "r");
-        if(fgets(cpu, 100, pop)!=NULL);
+        p = popen(command, "r");
+        if(fgets(cpu, 100, p)!=NULL);
 	len=strlen(cpu);
 	cpu[len-1]='\0';
-
-        pclose(pop);
 	
 	//write
 	fprintf(f,"<stat>\n");
@@ -74,8 +76,28 @@ void print_to_xml(){
 	fprintf(f,"\t<proc>%8.8d</proc>\n", ProcessedCtrl);
 	fprintf(f,"\t<dup>%8.8d</dup>\n", DuplicateCtrl);
 
+	//docker limits
+	fprintf(f,"\t<cpu-quota>%s</cpu-quota>\n", "cat /sys/fs/cgroup/cpu/cpu.cfs_quota_us");
+	fprintf(f,"\t<cpu-period>%s</cpu-period>\n", "cat /sys/fs/cgroup/cpu/cpu.cfs_period");
+	fprintf(f,"\t<cpus>%s</cpus>\n", "quota/period");
+	fprintf(f,"\t<cpu-usage>%s</cpu-usage>\n", "cat /sys/fs/cgroup/cpu/cpuacct.usage");
+	fprintf(f,"\t<mem-usage>%s</mem-usage>\n", "cat /sys/fs/cgroup/memory/memory.usage_in_bytes");
+	 fprintf(f,"\t<mem-limit>%s</mem-limit>\n", "cat /sys/fs/cgroup/memory/memory.limit_in_bytes");
+	
+	//threads
 	for (int i = 0; i < thread_nr; i++){ 
-		fprintf(f,"\t<fifo i=%d>%3.3d</fifo>\n", i, FifoLen[i]);
+		fprintf(f,"\t<thread%d>%3.3d</thread%d>\n", i, FifoLen[i], i);
+		fprintf(f,"\t<cpucore-t%d>%d</cpucore-t%d>\n", i, i+2, i);
+		
+		//mhz
+		char comm[150];
+		sprintf(comm,"cat /proc/cpuinfo | grep -E 'processor|cpu MHz' | cut -d : -f 2 | paste - - | sed '%dq;d' | cut -d \" \" -f 3", i+2);
+        	char mhz[100];
+        	p = popen(comm, "r");
+        	if(fgets(mhz, 100, p)!=NULL);
+		len=strlen(mhz);
+        	mhz[len-1]='\0';
+		fprintf(f,"\t<cpumhz-t%d>%s</cpumhz-t%d>\n", i, mhz, i);
 	}
 
 	fprintf(f,"</stat>\n\n");
@@ -83,4 +105,5 @@ void print_to_xml(){
 
 void close_xml() {
 	fclose(f);
+	pclose(p);
 }

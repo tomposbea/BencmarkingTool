@@ -27,75 +27,83 @@ int CheckParameter(int i, int len, char** argv, char* option){
 
 int GetParameters(int argc, char** argv){
         if(argc>1){
-                for(int i=1;i<argc;i++){
+                for(int i=1;i<argc;i+=2){
                         if(!strcmp(argv[i],"--help") || !strcmp(argv[i],"-h")) {
                                 PrintUsage();
                                 return 0;
                         }
-                        if(!strcmp(argv[i], "-runtime")) {
+			else if(!strcmp(argv[i], "-runtime")) {
                                 if(!CheckParameter(i, argc, argv, "runtime")) return 0;
                                 running_time=atoi(argv[i+1]);
                         }
-                        if(!strcmp(argv[i], "-log")) {
+			else if(!strcmp(argv[i], "-log")) {
                                 if(!CheckParameter(i, argc, argv, "log")) return 0;
                                 log_frequency=atoi(argv[i+1]);
                         }
-                        if(!strcmp(argv[i], "-row")) {
+			else if(!strcmp(argv[i], "-row")) {
                                 if(!CheckParameter(i, argc, argv, "matrix row")) return 0;
                                 if(atoi(argv[i+1])>6) {error_over_limit("row", 6); return 0;}
 				row=atoi(argv[i+1]);
                         }
-                        if(!strcmp(argv[i], "-column")) {
+			else if(!strcmp(argv[i], "-column")) {
                                 if(!CheckParameter(i, argc, argv, "matrix column")) return 0;
                                 if(atoi(argv[i+1])>6) {error_over_limit("column", 6); return 0;}
 				column=atoi(argv[i+1]);
                         }
-			if(!strcmp(argv[i], "-thread")) {
+			else if(!strcmp(argv[i], "-thread")) {
                                 if(!CheckParameter(i, argc, argv, "processing thread")) return 0;
 				if(atoi(argv[i+1])>MAX_THREADS) {error_over_limit("thread", MAX_THREADS); return 0;}
                                 if(atoi(argv[i+1])<1) {error_under_limit("thread", 1); return 0;}
 				thread_nr=atoi(argv[i+1]);
+				if(thread_nr > max_thread_param) max_thread_param = thread_nr;
                         }
-			if(!strcmp(argv[i], "-table")) {
+			else if(!strcmp(argv[i], "-table")) {
                                 if(!CheckParameter(i, argc, argv, "table")) return 0;
                                 if(atoi(argv[i+1])>MAXTABLE) {error_over_limit("table", MAXTABLE); return 0;}
                                 table_size=atoi(argv[i+1]);
                         }
-			if(!strcmp(argv[i], "-upper")) {
+			else if(!strcmp(argv[i], "-upper")) {
                                 if(!CheckParameter(i, argc, argv, "upper")) return 0;
                                 if(atoi(argv[i+1])<lower) {error_lower_upper(); return 0;}
                                 upper=atoi(argv[i+1]);
                         }
-			if(!strcmp(argv[i], "-lower")) {
+			else if(!strcmp(argv[i], "-lower")) {
                                 if(!CheckParameter(i, argc, argv, "lower")) return 0;
                                 if(atoi(argv[i+1])<0) {error_under_limit("lower", 0); return 0;}
 				if(atoi(argv[i+1])>upper) {error_lower_upper(); return 0;}
                                 lower=atoi(argv[i+1]);
                         }
 	
-                	if(!strcmp(argv[i], "-xml")) {
+			else if(!strcmp(argv[i], "-xml")) {
                                 if(i==argc-1) { error_no_value("xml"); return 0;}
                         	if(strlen(argv[i+1])>=100) {error_over_limit("xml",100); return 0;}
 				char param[100];
 				strcpy(param,argv[i+1]);//filename
-				char path[120]="../results/";
+				char path[120];
+				if(outside_build) strcpy(path, "/results/");
+					else strcpy(path, "../results/");
 				strcat(path, param);//add path
 				strcat(path, ".xml");
 				strcpy(output_file_xml, path);
 			}
-			if(!strcmp(argv[i], "-csv")) {
+			else if(!strcmp(argv[i], "-csv")) {
                                 if(i==argc-1) { error_no_value("csv"); return 0;}
                                 if(strlen(argv[i+1])>=100) {error_over_limit("csv",100); return 0;}
                                 char param[100];
                                 strcpy(param,argv[i+1]);//filename
-                                char path[120]="../results/";
-                                strcat(path, param);//add path
+				char path[120];
+                                if(outside_build) strcpy(path, "/results/");
+                                        else strcpy(path, "../results/");
+				strcat(path, param);//add path
                                 strcat(path, ".csv");
                                 strcpy(output_file_csv, path);
                         }
+			else {
+				error_wrong_parameter(argv[i]);
+				return 0;
+			}
 		}
         }
 	size=row*column;
         return 1;
 }
-

@@ -37,7 +37,7 @@ void PrintParams(){
         printf(", Log frequency: %d", log_frequency);
         printf(", Thread nr: %d", thread_nr);
         printf(", Table size: %d", table_size);
-        printf(", Matrix size: row-%d, column-%d, size-%d\n", row, column, size);
-        printf(", Matrix value between: %d - %d", lower, upper);
+        printf(", Matrix size: row-%d, column-%d, size-%d", row, column, size);
+        printf(", Matrix value between: %d - %d\n", lower, upper);
 }
 

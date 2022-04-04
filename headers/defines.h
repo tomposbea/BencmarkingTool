@@ -4,10 +4,13 @@
 #define STRINGLEN 128
 #define MAXTABLE 16384
 #define ALPHABET 15
-#define MAX_THREADS 256
+#define MAX_THREADS 50
 #define THREADS 4
 
+int outside_build;
+
 int thread_nr;
+int max_thread_param;
 int table_size;
 struct Transport
 {

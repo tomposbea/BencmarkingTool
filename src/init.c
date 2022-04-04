@@ -2,13 +2,14 @@
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <sys/stat.h>
 #include "../headers/defines.h"
 #include "../headers/functions.h"
 #include "../headers/def_linux.h"
 
 void StopProcess(){
         SleepUni(1);
-        printf("\nRun...\n");
+        printf("\nRUNNING\n");
         Enable = 1;
 
         // Wait for enter
@@ -20,17 +21,27 @@ void StopProcess(){
         SleepUni(1);
         close_xml();
         close_csv();
-        printf("\n\nStopped...\n");
+        printf("\n\nSTOPPED\n");
+	printf("-------------------------------------------------------------------\n");
 }
 
 void ReadConfig(){
-        const char config[] = "../inputs/matrix_conf.cfg";
+        char config[] = "../inputs/matrix_conf.cfg";
+	struct stat stat_record;
+	if(stat(config, &stat_record)) {
+      		printf("Config file not found\n");
+		strcpy(config, "/inputs/matrix_conf.cfg");
+		outside_build = 1;
+	}
+	printf("Config file: %s\n", config);
         read_matrix_config(config, &row, &column, &speed);
         size=row*column;
 }
 
 int InitSubsystem(int argc, char** argv){
-        TableBusy = 0;
+        outside_build = 0;
+	
+	TableBusy = 0;
         TablePtr = 0;
 
         DuplicateCtrl = 0;
@@ -42,13 +53,20 @@ int InitSubsystem(int argc, char** argv){
         Enable = 0;
 
         thread_nr = 4;
+	max_thread_param = 4;
         running_time = 2;
         log_frequency = 1;
         lower=1;
         upper=99;
+	table_size  = 16384;
 
-        strcpy(output_file_xml,"../results/MatrixReports.xml");
-        strcpy(output_file_csv,"../results/MatrixReports.csv");
+	if(outside_build){
+		strcpy(output_file_xml,"/results/MatrixReports.xml");
+        	strcpy(output_file_csv,"/results/MatrixReports.csv");
+	} else {
+        	strcpy(output_file_xml,"../results/MatrixReports.xml");
+        	strcpy(output_file_csv,"../results/MatrixReports.csv");
+	}
 
         ReadConfig();
         if(GetParameters(argc, argv)==0) return 0;
@@ -62,7 +80,6 @@ int InitSubsystem(int argc, char** argv){
                 FifoLen[i] = 0;
         }
         // Init table
-        table_size  = 16384;
         for (int i = 0; i < table_size; i++) Table[i][0] = 0;
 
         init_xml(output_file_xml);
