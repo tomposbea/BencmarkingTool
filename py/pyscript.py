@@ -50,6 +50,7 @@ for i in items_testcase:
 
 with open('results/data_from_xml.json', 'w') as outfile:
     json.dump(json_converted, outfile)
+
 with open("inputs/codemodel.json", "r") as read_file:
     data=json.load(read_file)
     data.update(json_converted)
