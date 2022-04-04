@@ -77,12 +77,47 @@ void print_to_xml(){
 	fprintf(f,"\t<dup>%8.8d</dup>\n", DuplicateCtrl);
 
 	//docker limits
-	fprintf(f,"\t<cpu-quota>%s</cpu-quota>\n", "cat /sys/fs/cgroup/cpu/cpu.cfs_quota_us");
-	fprintf(f,"\t<cpu-period>%s</cpu-period>\n", "cat /sys/fs/cgroup/cpu/cpu.cfs_period");
-	fprintf(f,"\t<cpus>%s</cpus>\n", "quota/period");
-	fprintf(f,"\t<cpu-usage>%s</cpu-usage>\n", "cat /sys/fs/cgroup/cpu/cpuacct.usage");
-	fprintf(f,"\t<mem-usage>%s</mem-usage>\n", "cat /sys/fs/cgroup/memory/memory.usage_in_bytes");
-	 fprintf(f,"\t<mem-limit>%s</mem-limit>\n", "cat /sys/fs/cgroup/memory/memory.limit_in_bytes");
+	sprintf(command, "cat /sys/fs/cgroup/cpu/cpu.cfs_quota_us");
+	char quota[100];
+	p = popen(command, "r");
+	if(fgets(quota, 100, p) != NULL);
+	len=strlen(quota);
+	quota[len-1]='\0';
+
+	sprintf(command, "cat /sys/fs/cgroup/cpu/cpu.cfs_period_us");
+        char period[100];
+        p = popen(command, "r");
+        if(fgets(period, 100, p) != NULL);
+        len=strlen(period);
+        period[len-1]='\0';
+
+	sprintf(command, "cat /sys/fs/cgroup/cpu/cpuacct.usage");
+        char usage[100];
+        p = popen(command, "r");
+        if(fgets(usage, 100, p) != NULL);
+        len=strlen(usage);
+        usage[len-1]='\0';
+
+	sprintf(command, "cat /sys/fs/cgroup/memory/memory.usage_in_bytes");
+        char usage2[100];
+        p = popen(command, "r");
+        if(fgets(usage2, 100, p) != NULL);
+        len=strlen(usage2);
+        usage2[len-1]='\0';
+
+	sprintf(command, "cat /sys/fs/cgroup/memory/memory.limit_in_bytes");
+        char limit[100];
+        p = popen(command, "r");
+        if(fgets(limit, 100, p) != NULL);
+        len=strlen(limit);
+        limit[len-1]='\0';
+
+	fprintf(f,"\t<cpu-quota>%s</cpu-quota>\n", quota);
+	fprintf(f,"\t<cpu-period>%s</cpu-period>\n", period);
+	fprintf(f,"\t<cpus>%d</cpus>\n", atoi(quota)/atoi(period));
+	fprintf(f,"\t<cpu-usage>%s</cpu-usage>\n", usage);
+	fprintf(f,"\t<mem-usage>%s</mem-usage>\n", usage2);
+	 fprintf(f,"\t<mem-limit>%s</mem-limit>\n",limit);
 	
 	//threads
 	for (int i = 0; i < thread_nr; i++){ 
