@@ -14,7 +14,7 @@ void init_csv(const char *filename){
 	// write header if new file
 	fseek(fp, 0, SEEK_END);
 	if( ftell(fp) == 0) {
-        	fprintf (fp,"counter, nr, time, date, startdate, genfreq, row, column, size, lower, upper, runtime, logfreq, table, model, cache, cpu, gen, drop, proc, dup, cpuquota, cpuperiod, cpus, cpuusage, memusage, memlimit");
+        	fprintf (fp,"runsec, runcounter, lognr, logsec, date, genfreq, row, column, size, lower, upper, runtime, logfreq, table, model, cache, cpu, gen, drop, proc, dup, cpuquota, cpuperiod, cpus, cpuusage, memusage, memlimit");
 	 	for (int i = 0; i < MAX_THREADS; i++)
 			fprintf(fp, ", thread%d, cpucoret%d, cpufreqt%d", i, i, i);
 	 	fprintf(fp,"\n");
@@ -97,9 +97,10 @@ void print_to_csv(){
         len=strlen(limit);
         limit[len-1]='\0';	
 
+	int run_sec = (run_counter-1) * running_time + Counter*log_frequency;
 	//print
-	fprintf(fp, "%d, %6.6d, %6.6d, %s, %s, %d, %d, %d, %d, %d, %d, %d, %d, %d, %s, %s, %s, %8.8d, %8.8d, %8.8d, %8.8d, %s, %s, %d, %s, %s, %s",
-		   run_counter, Counter, Counter*log_frequency, time, start_time,
+	fprintf(fp, "%d, %d, %6.6d, %6.6d, %s, %d, %d, %d, %d, %d, %d, %d, %d, %d, %s, %s, %s, %8.8d, %8.8d, %8.8d, %8.8d, %s, %s, %d, %s, %s, %s",
+		   run_sec, run_counter, Counter, Counter*log_frequency, time,
 		   speed, row, column, size, lower, upper, running_time, log_frequency, table_size,
 		   model, cache, cpu,
     		   GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl,
