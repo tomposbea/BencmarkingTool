@@ -112,9 +112,10 @@ void print_to_xml(){
         len=strlen(limit);
         limit[len-1]='\0';
 
+	int cpus =  atoll(quota)/atoll(period);
 	fprintf(f,"\t<cpu-quota>%s</cpu-quota>\n", quota);
 	fprintf(f,"\t<cpu-period>%s</cpu-period>\n", period);
-	fprintf(f,"\t<cpus>%d</cpus>\n", atoi(quota)/atoi(period));
+	fprintf(f,"\t<cpus>%d</cpus>\n", cpus);
 	fprintf(f,"\t<cpu-usage>%s</cpu-usage>\n", usage);
 	fprintf(f,"\t<mem-usage>%s</mem-usage>\n", usage2);
 	 fprintf(f,"\t<mem-limit>%s</mem-limit>\n",limit);
