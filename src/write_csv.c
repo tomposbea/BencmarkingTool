@@ -14,9 +14,9 @@ void init_csv(const char *filename){
 	// write header if new file
 	fseek(fp, 0, SEEK_END);
 	if( ftell(fp) == 0) {
-        	fprintf (fp,"nr, time, date, gen-freq, row, column, size, lower, upper, runtime, log-freq, table, model, cache, cpu, gen, drop, proc, dup, cpu-quota, cpu-period, cpus, cpu-usage, mem-usage, mem-limit");
+        	fprintf (fp,"counter, nr, time, date, startdate, genfreq, row, column, size, lower, upper, runtime, logfreq, table, model, cache, cpu, gen, drop, proc, dup, cpuquota, cpuperiod, cpus, cpuusage, memusage, memlimit");
 	 	for (int i = 0; i < MAX_THREADS; i++)
-			fprintf(fp, ", thread%d, cpucore-t%d, cpumhz-t%d", i, i, i);
+			fprintf(fp, ", thread%d, cpucoret%d, cpufreqt%d", i, i, i);
 	 	fprintf(fp,"\n");
 	}
 }
@@ -28,6 +28,11 @@ void print_to_csv(){
         char* time= asctime(tm);
         int len=strlen(time);
         time[len-1]='\0';
+
+	int hour, min, sec;
+
+	printf("TIME: %s", start_time);
+
 
 	//get system info
 	char command[100];
@@ -45,6 +50,9 @@ void print_to_csv(){
         if(fgets(cache, 100, pop)!=NULL);
 	len=strlen(cache);
         cache[len-1]='\0';
+	cache[len-2]='\0';
+	cache[len-3]='\0';
+	cache[len-4]='\0';
 
         sprintf(command,"cat /proc/cpuinfo | grep \"cpu cores\" | uniq | cut -d : -f 2");
         char cpu[100];
@@ -90,8 +98,8 @@ void print_to_csv(){
         limit[len-1]='\0';	
 
 	//print
-	fprintf(fp, "%6.6d, %6.6d, %s, %d, %d, %d, %d, %d, %d, %d, %d, %d, %s, %s, %s, %8.8d, %8.8d, %8.8d, %8.8d, %s, %s, %d, %s, %s, %s",
-		   Counter, Counter*log_frequency, time, 
+	fprintf(fp, "%d, %6.6d, %6.6d, %s, %s, %d, %d, %d, %d, %d, %d, %d, %d, %d, %s, %s, %s, %8.8d, %8.8d, %8.8d, %8.8d, %s, %s, %d, %s, %s, %s",
+		   run_counter, Counter, Counter*log_frequency, time, start_time,
 		   speed, row, column, size, lower, upper, running_time, log_frequency, table_size,
 		   model, cache, cpu,
     		   GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl,
@@ -109,7 +117,7 @@ void print_to_csv(){
 		fprintf(fp, ", %s", mhz);
 	 }
 	 for (int i = thread_nr; i < MAX_THREADS; i++)
-		 fprintf(fp, ", %3.3d, %d, %s", 0, 0, "");
+		 fprintf(fp, ", %s, %s, %s", "", "", "");
 	fprintf(fp,"\n");	 
 }
 

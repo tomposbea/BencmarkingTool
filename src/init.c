@@ -29,11 +29,11 @@ void ReadConfig(){
         char config[] = "../inputs/matrix_conf.cfg";
 	struct stat stat_record;
 	if(stat(config, &stat_record)) {
-      		printf("Config file not found\n");
+  //    		printf("Config file not found\n");
 		strcpy(config, "/inputs/matrix_conf.cfg");
 		outside_build = 1;
 	}
-	printf("Config file: %s\n", config);
+//	printf("Config file: %s\n", config);
         read_matrix_config(config, &row, &column, &speed);
         size=row*column;
 }

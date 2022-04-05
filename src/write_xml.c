@@ -42,6 +42,9 @@ void print_to_xml(){
         if(fgets(cache, 100, p)!=NULL);
 	len=strlen(cache);
 	cache[len-1]='\0';
+	cache[len-2]='\0';
+        cache[len-3]='\0';
+        cache[len-4]='\0';
 
         sprintf(command,"cat /proc/cpuinfo | grep \"cpu cores\" | uniq | cut -d : -f 2");
         char cpu[100];
@@ -53,18 +56,19 @@ void print_to_xml(){
 	//write
 	fprintf(f,"<stat>\n");
 
+	fprintf(f,"\t<counter>%6.6d</counter>\n", run_counter);
 	fprintf(f,"\t<nr>%6.6d</nr>\n", Counter);
 	fprintf(f,"\t<time>%6.6d</time>\n", Counter*log_frequency);
 	fprintf(f,"\t<date>%s</date>\n", time);
 
-	fprintf(f,"\t<gen-freq>%d</gen-freq>\n", speed);
+	fprintf(f,"\t<genfreq>%d</genfreq>\n", speed);
         fprintf(f,"\t<row>%d</row>\n", row);
         fprintf(f,"\t<column>%d</column>\n", column);
         fprintf(f,"\t<size>%d</size>\n", size);
 	fprintf(f,"\t<lower>%d</lower>\n", lower);
  	fprintf(f,"\t<upper>%d</upper>\n", upper);
  	fprintf(f,"\t<runtime>%d</runtime>\n", running_time);
-        fprintf(f,"\t<log-freq>%d</log-freq>\n", log_frequency);
+        fprintf(f,"\t<logfreq>%d</logfreq>\n", log_frequency);
         fprintf(f,"\t<table>%d</table>\n", table_size);
 
 	fprintf(f,"\t<model>%s</model>\n", model);
@@ -113,17 +117,17 @@ void print_to_xml(){
         limit[len-1]='\0';
 
 	int cpus =  atoll(quota)/atoll(period);
-	fprintf(f,"\t<cpu-quota>%s</cpu-quota>\n", quota);
-	fprintf(f,"\t<cpu-period>%s</cpu-period>\n", period);
+	fprintf(f,"\t<cpuquota>%s</cpuquota>\n", quota);
+	fprintf(f,"\t<cpuperiod>%s</cpuperiod>\n", period);
 	fprintf(f,"\t<cpus>%d</cpus>\n", cpus);
-	fprintf(f,"\t<cpu-usage>%s</cpu-usage>\n", usage);
-	fprintf(f,"\t<mem-usage>%s</mem-usage>\n", usage2);
-	 fprintf(f,"\t<mem-limit>%s</mem-limit>\n",limit);
+	fprintf(f,"\t<cpuusage>%s</cpu-sage>\n", usage);
+	fprintf(f,"\t<memusage>%s</memusage>\n", usage2);
+	 fprintf(f,"\t<memlimit>%s</memlimit>\n",limit);
 	
 	//threads
 	for (int i = 0; i < thread_nr; i++){ 
 		fprintf(f,"\t<thread%d>%3.3d</thread%d>\n", i, FifoLen[i], i);
-		fprintf(f,"\t<cpucore-t%d>%d</cpucore-t%d>\n", i, i+2, i);
+		fprintf(f,"\t<cpucoret%d>%d</cpucoret%d>\n", i, i+2, i);
 		
 		//mhz
 		char comm[150];
@@ -133,7 +137,7 @@ void print_to_xml(){
         	if(fgets(mhz, 100, p)!=NULL);
 		len=strlen(mhz);
         	mhz[len-1]='\0';
-		fprintf(f,"\t<cpumhz-t%d>%s</cpumhz-t%d>\n", i, mhz, i);
+		fprintf(f,"\t<cpufreqt%d>%s</cpumfreqt%d>\n", i, mhz, i);
 	}
 
 	fprintf(f,"</stat>\n\n");

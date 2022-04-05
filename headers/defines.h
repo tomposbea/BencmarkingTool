@@ -2,12 +2,14 @@
 #define CHAR_BUF 128
 #define FIFO 8
 #define STRINGLEN 128
-#define MAXTABLE 16384
+#define MAXTABLE 65536
 #define ALPHABET 15
-#define MAX_THREADS 50
+#define MAX_THREADS 64
 #define THREADS 4
 
+char start_time[100];
 int outside_build;
+int run_counter;
 
 int thread_nr;
 int max_thread_param;

@@ -16,6 +16,8 @@ void PrintUsage(){
 	printf("\t-upper \t\t matrix member highest value, default between %d - %d\n", lower, upper);
 	printf("\t-xml \t output XML file name, default = %s, ex. MatrixReport\n", output_file_xml);
 	printf("\t-csv \t output CSV file name, default = %s, ex. MatrixReport\n", output_file_csv);
+	printf("\t-counter \t nth run of script\n");
+	printf("\t-starttime \t start of first run\n");
 }
 
 int CheckParameter(int i, int len, char** argv, char* option){
@@ -97,6 +99,15 @@ int GetParameters(int argc, char** argv){
 				strcat(path, param);//add path
                                 strcat(path, ".csv");
                                 strcpy(output_file_csv, path);
+                        }
+			else if(!strcmp(argv[i], "-counter")) {
+				if(i==argc-1) { error_no_value("counter"); return 0;}
+				run_counter = atoi(argv[i+1]);
+			} 
+			 else if(!strcmp(argv[i], "-starttime")) {
+                                if(i==argc-1) { error_no_value("startime"); return 0;}
+                                strcpy(start_time, argv[i+1]);
+				printf("time:%s",  start_time);
                         }
 			else {
 				error_wrong_parameter(argv[i]);
