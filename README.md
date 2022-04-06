@@ -32,35 +32,22 @@ touch .cmake/api/v1/query/codemodel-v2
 cmake ..
 ```
 
-## Dockerfile
-- Location: outside of BenchmarkingTool folder
-- TODO: unit tests
+## Dockerization
 
-```bash
-FROM gcc:9.2
-ENV DEBIAN_FRONTEND noninteractive
+Create volume based on working directory
+```
+docker volume create --name [volume_name] --opt type=none --opt device=~[path_to_working_dir] --opt o=bind
+docker volume ls
+docker inspect [volume_name]
+ls -l $(sudo docker volume inspect [volume_name] | jq -r '.[0].Mountpoint')
+```
 
-# copy from host to working directory
-COPY . /BencmarkingTool
-
-WORKDIR /BencmarkingTool/
-
-# install cmake
-RUN     apt-get update && \
-        apt-get install -y --no-install-recommends apt-utils && \
-        apt-get -y install cmake
-
-# build the application with cmake
-#RUN     mkdir BencmarkingTool/build && \
-#        cd BencmarkingTool/build && \
-#        cmake .. && \
-#        cmake --build .
-
-#RUN git submodule add ssh://gerrit.ericsson.se:29418/pc/eric-test
-RUN ["chmod", "+x", "BencmarkingTool/build"]
-
-# run the application
-CMD ["BencmarkingTool/build/Run"]
+Run container
+- mount volume
+- cpu limits: memory, cpu
+```
+docker run -ti --memory=[memory_limit] --cpus=[cpu_limit] -v [source]:[destination] [img_name] /bin/bash
+docker commit [id] [name]
 ```
 
 ## Script to run program with different parameters
@@ -68,19 +55,19 @@ CMD ["BencmarkingTool/build/Run"]
 - need to give it access rights: chmod 755 <name>
 - ./script
 - iterates through matrix size, thread numbers, table size -> results in MatrixResults xml and csv files
+- run in Docker container
 
 ```
 #!/bin/bash
 
-for counter in {1..1}; do #nr of repetitions
-  for row in {5..6}; do
-    for column in {5..6}; do #matrix size
-      for thread in {2..3}; do
-        for (( lower=1, upper=99; lower<upper; lower+=10, upper-=10 )); do
-          for (( table=16384; table>=64; table/=2 )); do
-             ./Run -runtime 1 -log 1 -thread $thread -row $row -column $column -lower $lower -upper $upper -table $table
-done; done; done; done; done; done
-# no need to change filename, results are appended to existing MatrixResults files
+for row in {2..3}; do
+  for column in {3..4}; do #matrix size
+    for (( thread=3; thread<=9; thread+=3 )); do
+      for (( lower=10, upper=30; lower<upper; lower+=20, upper-=20 )); do
+        for (( table=16384; table>=64; table/=8 )); do
+            counter=$((counter+1))
+            ./Run -runtime 4 -log 1 -thread $thread -row $row -column $column -lower $lower -upper $upper -table $table -counter $counter
+done; done; done; done; done;
 ```
 
 ## STRUCTURE
@@ -103,6 +90,7 @@ done; done; done; done; done; done
 - **error.c**: error messages for input parameters
 - **usage.c**: read+check input parameters, --help option
 - **init.c**: initializes parameters
+- **system_data.c**: gets platform parameters, cgroup limitations
 
 ### headers
 - **defines.h**: variables, constants, defined values
@@ -115,7 +103,7 @@ done; done; done; done; done; done
 ### results
 - MatrixReports.xml
 - MatrixReports.csv
-- new file: -xml, -csv parameter 
+- new file: -xml, -csv parameter
 
 ## Unit tests
 - test.c: Unit test cases

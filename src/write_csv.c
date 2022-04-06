@@ -15,7 +15,7 @@ void init_csv(const char *filename){
 	if( ftell(fp) == 0) {
 		fprintf(fp, "runsec, runcounter, lognr, logsec, "); //time data
 		fprintf(fp, "runtime, logfreq, genfreq, row, column, size, lower, upper, table, threads, "); //configuration parameeters
-		fprintf(fp, "model, cache, cpu, cpuquota, cpuperiod, cpuusage, memusage, memlimit"); //platform parameters
+		fprintf(fp, "model, cache, cpu, cpuquota, cpuperiod, cpuusage, memusage, memlimit, "); //platform parameters
 		fprintf(fp, "gen, drop, proc, dup"); //program output
 		
 		for (int i = 0; i < MAX_THREADS; i++) //write header for max threadnumber
