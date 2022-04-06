@@ -30,7 +30,8 @@ add_executable(Run
 	src/error.c
 	src/usage.c
 	src/write_csv.c
-	src/init.c)
+	src/init.c
+	src/system_data.c)
 
 add_library(Lib SHARED src/generate.c src/lcm.c src/conversions.c)
 

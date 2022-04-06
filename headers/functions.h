@@ -61,3 +61,7 @@ int GetParameters(int argc, char** argv);
 void StopProcess();
 int InitSubsystem(int argc, char** argv);
 void ReadConfig();
+
+//system_data.c
+void do_popen(char command[100], char *res);
+void get_system_data();

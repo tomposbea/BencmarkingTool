@@ -7,6 +7,8 @@
 #define MAX_THREADS 64
 #define THREADS 4
 
+char command[100], comm[150], model[100], cache[100], cpu[100], quota[100], period[100], usage[100], usage2[100], limit[100], mhz[100];
+
 char start_time[100];
 int outside_build;
 int run_counter;

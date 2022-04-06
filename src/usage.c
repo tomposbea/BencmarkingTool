@@ -101,7 +101,6 @@ int GetParameters(int argc, char** argv){
                                 strcpy(output_file_csv, path);
                         }
 			else if(!strcmp(argv[i], "-counter")) {
-				if(i==argc-1) { error_no_value("counter"); return 0;}
 				run_counter = atoi(argv[i+1]);
 			} 
 			 else if(!strcmp(argv[i], "-starttime")) {
