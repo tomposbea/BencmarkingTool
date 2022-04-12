@@ -2,7 +2,7 @@
 #define CHAR_BUF 128
 #define FIFO 8
 #define STRINGLEN 128
-#define MAXTABLE 65536
+#define MAXTABLE 131072
 #define ALPHABET 15
 #define MAX_THREADS 64
 #define THREADS 4
@@ -48,7 +48,6 @@ unsigned long TimerRef;
 
 int running_time;
 int log_frequency;
-
 
 char output_file_xml[120];
 char output_file_csv[120];

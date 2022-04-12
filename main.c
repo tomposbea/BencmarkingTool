@@ -110,7 +110,7 @@ THREADTYPE ThreadGen(void* data) {
 			GenerateAndWriteToFIFO(roundrobin);
 			roundrobin++;
 			if (roundrobin >= thread_nr) roundrobin = 0;
-			SleepUni(speed);
+			//SleepUni(speed);
 		}
 		else SleepUni(0);
 	}
@@ -145,7 +145,7 @@ THREADTYPE ThreadReport(void* data) {
 			if(Counter>=running_time){
                                 Enable = 0;
                                 Run = 0;
-				SleepUni(500); //wait 1s for all processes to finish
+				SleepUni(500); //wait for all processes to finish
         			printf("\n\nSTOPPED\n");
 				printf("--------------------------------------------------\n");	
 				close_xml();

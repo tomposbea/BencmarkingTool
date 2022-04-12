@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
 #include <sys/stat.h>
 #include "../headers/defines.h"
 #include "../headers/functions.h"
@@ -21,8 +22,9 @@ void StopProcess(){
         SleepUni(1);
         close_xml();
         close_csv();
-        printf("\n\nSTOPPED\n");
+	printf("\n\nSTOPPED\n");
 	printf("-------------------------------------------------------------------\n");
+	exit(0);
 }
 
 void ReadConfig(){
