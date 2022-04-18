@@ -86,7 +86,8 @@ int InitSubsystem(int argc, char** argv){
 
         init_xml(output_file_xml);
         init_csv(output_file_csv);
-
+	
+	root_node=NULL;
         return 1;
 }
 

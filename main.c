@@ -140,7 +140,7 @@ THREADTYPE ThreadReport(void* data) {
 
 			Counter++;
 			GeneratedCtrl = DroppedCtrl = ProcessedCtrl = DuplicateCtrl = 0;
-		
+			root_node=NULL;	
 			// stop is runtime is up
 			if(Counter>=running_time){
                                 Enable = 0;
@@ -184,5 +184,6 @@ int main(int argc, char** argv) {
 	
 	if(Counter>running_time) return 0;
 	StopProcess();
+
 	return 0;
 }

@@ -20,14 +20,48 @@
 #include "../headers/def_windows.h"
 #endif
 
-int ProcessStringAndCalculate(char* instring) {
-        if (FindDuplicate(instring) != -1) {
-                // Duplicate found, step counter.
-            // Step counters.
+int found_tree, found_table;
+
+// if matrix not in red and black tree, a new node is created for it
+void *SearchInRBTree(void *str){
+	char *instring = str;
+	if(!search(root_node, instring)) {
+                struct node* temp = (struct node*)malloc(sizeof(struct node));
+                temp->r = NULL;
+                temp->l = NULL;
+                temp->p = NULL;
+                strncpy(temp->d, instring, strlen(instring));
+                temp->c = 1;
+
+                root_node = insert(root_node, temp);
+                fixup(root_node, temp);
+        } else {
                 ProcessedCtrl++;
                 DuplicateCtrl++;
-                return 1; // Found, can skip it.
+		found_tree=1;
         }
+	found_tree=0;
+}
+
+// searching for matrix in table, insert if not found
+void SearchInTable(void *str){
+	 char *instring = str;
+	 if (FindDuplicate(instring) != -1) {
+                ProcessedCtrl++;
+                DuplicateCtrl++;
+        	found_table=1;
+	 }
+	 found_table=0;
+}
+
+int ProcessStringAndCalculate(char* instring) {
+	// create threads fo different search methods, wait for them to finish
+	pthread_t threadID;
+    	pthread_create(&threadID, NULL, SearchInRBTree, instring);
+    	pthread_create(&threadID, NULL, SearchInTable, instring);
+	pthread_join(threadID, NULL);
+
+	if(found_table || found_tree) return 1;
 
         //calculate LCM, GCD for matrix
         int mess[size];

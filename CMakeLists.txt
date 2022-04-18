@@ -31,7 +31,8 @@ add_executable(Run
 	src/usage.c
 	src/write_csv.c
 	src/init.c
-	src/system_data.c)
+	src/system_data.c
+	src/redblacktree.c)
 
 add_library(Lib SHARED src/generate.c src/lcm.c src/conversions.c)
 

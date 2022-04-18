@@ -7,6 +7,18 @@
 #define MAX_THREADS 64
 #define THREADS 4
 
+// Structure to represent each node in a red-black tree
+struct node {
+    char d[STRINGLEN]; //data
+    int c; // 1-red, 0-black
+    struct node* p; // parent
+    struct node* r; // right-child
+    struct node* l; // left child
+};
+
+struct node* root_node;
+
+
 char command[100], comm[150], model[100], cache[100], cpu[100], quota[100], period[100], usage[100], usage2[100], limit[100], mhz[100];
 
 char start_time[100];

@@ -65,3 +65,10 @@ void ReadConfig();
 //system_data.c
 void do_popen(char command[100], char *res);
 void get_system_data();
+
+//redblacktree.c
+struct node* insert(struct node* trav, struct node * temp);
+void fixup(struct node* root, struct node* pt);
+void left_rotate(struct node* temp);
+void right_rotate(struct node* temp);
+int search(struct node* trav, char* instring);
