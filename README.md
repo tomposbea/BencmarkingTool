@@ -78,7 +78,7 @@ done; done; done; done; done;
 - Thread 2: log how many matrixes were generated, calculated, lost and how many were duplicates
 
 ### src
-- **fifo.c**: read/write to fifos, check if message is duplicate, do calculations
+- **fifo.c**: read/write to fifos, check if message is duplicate(threads for different methods), do calculations
 - **lcm.c**: calculate LCM, GCD for 2 values, an array, a matrix
 - **file_io.c**: reading NxM matrix from file, writing results to txt file, NOT USED
 - **print.c**: printing array, matrix, results, logs to terminal
@@ -91,6 +91,7 @@ done; done; done; done; done;
 - **usage.c**: read+check input parameters, --help option
 - **init.c**: initializes parameters
 - **system_data.c**: gets platform parameters, cgroup limitations
+- **redblacktree.c**: insert into tree, fix coloring, rotate, inodered search
 
 ### headers
 - **defines.h**: variables, constants, defined values
