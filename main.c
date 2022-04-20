@@ -140,7 +140,8 @@ THREADTYPE ThreadReport(void* data) {
 
 			Counter++;
 			GeneratedCtrl = DroppedCtrl = ProcessedCtrl = DuplicateCtrl = 0;
-			root_node=NULL;	
+			root_node=NULL;
+			void empty_hash();	
 			// stop is runtime is up
 			if(Counter>=running_time){
                                 Enable = 0;

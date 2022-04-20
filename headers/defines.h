@@ -6,6 +6,7 @@
 #define ALPHABET 15
 #define MAX_THREADS 64
 #define THREADS 4
+#define SIZE 660000
 
 // Structure to represent each node in a red-black tree
 struct node {
@@ -18,6 +19,15 @@ struct node {
 
 struct node* root_node;
 
+// structure for hash map
+struct DataItem {
+   char data[STRINGLEN];
+   long int key;
+};
+
+struct DataItem* hashArray[SIZE];
+struct DataItem* dummyItem;
+struct DataItem* item;
 
 char command[100], comm[150], model[100], cache[100], cpu[100], quota[100], period[100], usage[100], usage2[100], limit[100], mhz[100];
 

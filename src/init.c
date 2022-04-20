@@ -88,6 +88,11 @@ int InitSubsystem(int argc, char** argv){
         init_csv(output_file_csv);
 	
 	root_node=NULL;
-        return 1;
+
+	//hash map deleted item
+	dummyItem = (struct DataItem*) malloc(sizeof(struct DataItem));
+   	strcpy(dummyItem->data,"000");
+   	dummyItem->key = -1;
+	return 1;
 }
 

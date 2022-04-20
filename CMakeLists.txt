@@ -32,7 +32,8 @@ add_executable(Run
 	src/write_csv.c
 	src/init.c
 	src/system_data.c
-	src/redblacktree.c)
+	src/redblacktree.c
+	src/hash_map.c)
 
 add_library(Lib SHARED src/generate.c src/lcm.c src/conversions.c)
 
@@ -41,5 +42,5 @@ target_link_libraries(Run Lib Threads::Threads)
 target_compile_options(Run PUBLIC ${COMPILER_OPTIONS})
 
 enable_testing()
-add_subdirectory(eric-test)
+add_subdirectory(eric-test/eric-test)
 add_subdirectory(test)
