@@ -42,23 +42,47 @@ docker inspect [volume_name]
 ls -l $(sudo docker volume inspect [volume_name] | jq -r '.[0].Mountpoint')
 ```
 
-Run container
+Run container:
 - mount volume
-- cpu limits: memory, cpu
+- memory: amount of memory container can use
+	- Format: <int> b/k/m/g
+	-	Default: 125.5GiB
+	-	Min: 6MB
+- memory-swap: amount of memory container is allowed to swap on disk
+	- =memory: no access to swap
+	- \>memory: excess is swap
+	- =0: unset, can use as much swap as memory
+	- =-1: unlimited swap
+- cpus: how much of available CPU resources container can use
+	- cpu-period: CPU CFS scheduler period
+	- cpu-quota: CPU CFS quota on container
+	- cpus=quota/period
+
 ```
-docker run -ti --memory=[memory_limit] --cpus=[cpu_limit] -v [source]:[destination] [img_name] /bin/bash
+docker run -ti --memory=[memory_limit] --memory-swap=[swap_limit] --cpus=[cpu_limit] -v [source]:[destination] [img_name] /bin/bash
 docker commit [id] [name]
 ```
+
+!! Output files created in container are read-only, need to change permissions to avoid segmentation fault !!
 
 ## Script to run program with different parameters
 - Location: in build folder
 - need to give it access rights: chmod 755 <name>
 - ./script
-- iterates through matrix size, thread numbers, table size -> results in MatrixResults xml and csv files
-- run in Docker container
+- iterates through matrix size, values, thread numbers, table size -> results in MatrixResults xml and csv files
+- run in Docker container to be able to measure cgroup limits
 
 ```
 #!/bin/bash
+
+if [[ $# -eq 0 ]]
+then
+        echo Please input new run counter value, tip:MatrixReports.runcounter+1
+        exit 1
+fi
+
+counter=$1
+echo Run counter: $counter
 
 for row in {2..3}; do
   for column in {3..4}; do #matrix size
@@ -68,6 +92,8 @@ for row in {2..3}; do
             counter=$((counter+1))
             ./Run -runtime 4 -log 1 -thread $thread -row $row -column $column -lower $lower -upper $upper -table $table -counter $counter
 done; done; done; done; done;
+
+echo Last run counter: $counter
 ```
 
 ## STRUCTURE
@@ -92,6 +118,7 @@ done; done; done; done; done;
 - **init.c**: initializes parameters
 - **system_data.c**: gets platform parameters, cgroup limitations
 - **redblacktree.c**: insert into tree, fix coloring, rotate, inodered search
+- **hash_map.c**: create key based on matrix, search, insert, delete
 
 ### headers
 - **defines.h**: variables, constants, defined values
