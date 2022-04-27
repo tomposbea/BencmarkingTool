@@ -1,0 +1,4304 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<stat>
+	<runsec>000003</runsec>
+	<runcounter>000002</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>32768</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1120473836</cpuusage>
+	<memusage>43532288</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00326158</gen>
+	<drop>00325035</drop>
+	<proc>00001102</proc>
+	<dup>00001096</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2548.311</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2542.658</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2540.191</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000004</runsec>
+	<runcounter>000002</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>32768</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>5239482945</cpuusage>
+	<memusage>127815680</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00620221</gen>
+	<drop>00618407</drop>
+	<proc>00001814</proc>
+	<dup>00001815</dup>
+	<thread0>005</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2560.060</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2551.840</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2533.216</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000005</runsec>
+	<runcounter>000002</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>32768</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>14935248770</cpuusage>
+	<memusage>319811584</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01310326</gen>
+	<drop>01306408</drop>
+	<proc>00003918</proc>
+	<dup>00003918</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2565.223</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2560.154</cpufreq1>
+	<thread2>005</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2539.142</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000006</runsec>
+	<runcounter>000003</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>4096</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>29926636920</cpuusage>
+	<memusage>39645184</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00346769</gen>
+	<drop>00345649</drop>
+	<proc>00001099</proc>
+	<dup>00001093</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2538.968</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2551.915</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2564.106</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000007</runsec>
+	<runcounter>000003</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>4096</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>34036318280</cpuusage>
+	<memusage>122765312</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00580921</gen>
+	<drop>00579075</drop>
+	<proc>00001846</proc>
+	<dup>00001846</dup>
+	<thread0>005</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2535.768</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2551.548</cpufreq1>
+	<thread2>004</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2551.294</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000008</runsec>
+	<runcounter>000003</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>4096</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>43675741043</cpuusage>
+	<memusage>311980032</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01212386</gen>
+	<drop>01208742</drop>
+	<proc>00003645</proc>
+	<dup>00003645</dup>
+	<thread0>006</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2572.830</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2581.849</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2565.828</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000009</runsec>
+	<runcounter>000004</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>512</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>58133014192</cpuusage>
+	<memusage>40017920</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00367378</gen>
+	<drop>00366223</drop>
+	<proc>00001131</proc>
+	<dup>00001128</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2555.592</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2507.884</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2541.236</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000010</runsec>
+	<runcounter>000004</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>512</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>62348891308</cpuusage>
+	<memusage>127311872</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00647140</gen>
+	<drop>00645218</drop>
+	<proc>00001924</proc>
+	<dup>00001924</dup>
+	<thread0>006</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2565.716</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2534.532</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2556.599</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000011</runsec>
+	<runcounter>000004</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>512</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>72906623985</cpuusage>
+	<memusage>342634496</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01267291</gen>
+	<drop>01263086</drop>
+	<proc>00004206</proc>
+	<dup>00004206</dup>
+	<thread0>004</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2546.750</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2565.791</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2594.041</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000012</runsec>
+	<runcounter>000005</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>64</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>88291506832</cpuusage>
+	<memusage>33198080</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00322723</gen>
+	<drop>00321812</drop>
+	<proc>00000885</proc>
+	<dup>00000885</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2529.983</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2548.525</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2498.409</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000013</runsec>
+	<runcounter>000005</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>64</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>92067318014</cpuusage>
+	<memusage>113479680</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00567125</gen>
+	<drop>00565402</drop>
+	<proc>00001722</proc>
+	<dup>00001722</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2573.289</cpufreq0>
+	<thread1>002</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2516.504</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2562.567</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000014</runsec>
+	<runcounter>000005</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>64</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>101396203869</cpuusage>
+	<memusage>302686208</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01244122</gen>
+	<drop>01240380</drop>
+	<proc>00003741</proc>
+	<dup>00003741</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2555.518</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2568.446</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2546.595</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000015</runsec>
+	<runcounter>000006</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>32768</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>115159929823</cpuusage>
+	<memusage>41385984</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00350730</gen>
+	<drop>00349682</drop>
+	<proc>00001027</proc>
+	<dup>00001021</dup>
+	<thread0>004</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2538.152</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2526.728</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2561.067</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000016</runsec>
+	<runcounter>000006</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>32768</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>119315238095</cpuusage>
+	<memusage>126046208</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00629240</gen>
+	<drop>00627347</drop>
+	<proc>00001883</proc>
+	<dup>00001883</dup>
+	<thread0>005</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2545.339</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2526.537</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2530.255</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000017</runsec>
+	<runcounter>000006</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>32768</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>129437041452</cpuusage>
+	<memusage>325230592</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01337945</gen>
+	<drop>01333975</drop>
+	<proc>00003965</proc>
+	<dup>00003965</dup>
+	<thread0>004</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2575.758</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2558.572</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2558.086</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000018</runsec>
+	<runcounter>000007</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>4096</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>143828145992</cpuusage>
+	<memusage>39739392</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00360445</gen>
+	<drop>00359297</drop>
+	<proc>00001128</proc>
+	<dup>00001122</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2538.472</cpufreq0>
+	<thread1>002</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2536.004</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2566.238</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000019</runsec>
+	<runcounter>000007</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>4096</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>147822385803</cpuusage>
+	<memusage>119521280</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00579985</gen>
+	<drop>00578172</drop>
+	<proc>00001801</proc>
+	<dup>00001801</dup>
+	<thread0>005</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2553.736</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2542.990</cpufreq1>
+	<thread2>006</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2546.827</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000020</runsec>
+	<runcounter>000007</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>4096</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>157924562979</cpuusage>
+	<memusage>322777088</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01421505</gen>
+	<drop>01417483</drop>
+	<proc>00004020</proc>
+	<dup>00004020</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2594.129</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2481.871</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2557.793</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000021</runsec>
+	<runcounter>000008</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>512</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>172682125736</cpuusage>
+	<memusage>36470784</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00325131</gen>
+	<drop>00324090</drop>
+	<proc>00001020</proc>
+	<dup>00001014</dup>
+	<thread0>004</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2537.434</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2523.242</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2545.690</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000022</runsec>
+	<runcounter>000008</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>512</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>176569726812</cpuusage>
+	<memusage>113487872</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00616262</gen>
+	<drop>00614524</drop>
+	<proc>00001738</proc>
+	<dup>00001738</dup>
+	<thread0>005</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2575.974</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2537.720</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2526.269</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000023</runsec>
+	<runcounter>000008</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>512</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>186039887524</cpuusage>
+	<memusage>305664000</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01357090</gen>
+	<drop>01353214</drop>
+	<proc>00003877</proc>
+	<dup>00003877</dup>
+	<thread0>003</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2518.427</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2562.145</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2543.520</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000024</runsec>
+	<runcounter>000009</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>64</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>200244085348</cpuusage>
+	<memusage>39964672</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00351600</gen>
+	<drop>00350450</drop>
+	<proc>00001122</proc>
+	<dup>00001123</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2525.672</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2570.638</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2532.382</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000025</runsec>
+	<runcounter>000009</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>64</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>204177719824</cpuusage>
+	<memusage>115933184</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00592966</gen>
+	<drop>00591159</drop>
+	<proc>00001806</proc>
+	<dup>00001806</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2573.579</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2524.415</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2526.978</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000026</runsec>
+	<runcounter>000009</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>64</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>214176476339</cpuusage>
+	<memusage>315600896</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01350543</gen>
+	<drop>01346515</drop>
+	<proc>00004030</proc>
+	<dup>00004030</dup>
+	<thread0>004</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2595.020</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2518.292</cpufreq1>
+	<thread2>003</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2551.630</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000027</runsec>
+	<runcounter>000010</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>32768</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>229215307531</cpuusage>
+	<memusage>42405888</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00380456</gen>
+	<drop>00379323</drop>
+	<proc>00001106</proc>
+	<dup>00001106</dup>
+	<thread0>005</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2563.837</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2565.885</cpufreq1>
+	<thread2>004</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2527.498</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000028</runsec>
+	<runcounter>000010</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>32768</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>233404542461</cpuusage>
+	<memusage>127062016</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00630565</gen>
+	<drop>00628674</drop>
+	<proc>00001890</proc>
+	<dup>00001890</dup>
+	<thread0>006</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2550.504</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2533.254</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2561.717</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000029</runsec>
+	<runcounter>000010</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>32768</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>243621932737</cpuusage>
+	<memusage>329306112</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01281488</gen>
+	<drop>01277432</drop>
+	<proc>00004054</proc>
+	<dup>00004054</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2573.311</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2546.879</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2546.036</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000030</runsec>
+	<runcounter>000011</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>4096</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>258994785689</cpuusage>
+	<memusage>35934208</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00329335</gen>
+	<drop>00328307</drop>
+	<proc>00001008</proc>
+	<dup>00001002</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2558.930</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2560.335</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2536.011</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000031</runsec>
+	<runcounter>000011</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>4096</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>262807738272</cpuusage>
+	<memusage>111263744</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00541411</gen>
+	<drop>00539695</drop>
+	<proc>00001716</proc>
+	<dup>00001716</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2558.072</cpufreq0>
+	<thread1>004</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2536.918</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2546.884</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000032</runsec>
+	<runcounter>000011</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>4096</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>272038535793</cpuusage>
+	<memusage>291233792</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01209040</gen>
+	<drop>01205632</drop>
+	<proc>00003408</proc>
+	<dup>00003408</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2594.960</cpufreq0>
+	<thread1>005</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2548.196</cpufreq1>
+	<thread2>006</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2567.891</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000033</runsec>
+	<runcounter>000012</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>512</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>284495264045</cpuusage>
+	<memusage>32976896</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00313028</gen>
+	<drop>00312088</drop>
+	<proc>00000922</proc>
+	<dup>00000920</dup>
+	<thread0>001</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2556.343</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2540.806</cpufreq1>
+	<thread2>005</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2543.612</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000034</runsec>
+	<runcounter>000012</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>512</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>287877701868</cpuusage>
+	<memusage>108507136</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00518803</gen>
+	<drop>00517144</drop>
+	<proc>00001663</proc>
+	<dup>00001663</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2356.340</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2548.797</cpufreq1>
+	<thread2>003</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2547.880</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000035</runsec>
+	<runcounter>000012</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>512</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>295927405216</cpuusage>
+	<memusage>290713600</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00941903</gen>
+	<drop>00938216</drop>
+	<proc>00003686</proc>
+	<dup>00003686</dup>
+	<thread0>006</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2537.772</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2548.349</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2543.746</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000036</runsec>
+	<runcounter>000013</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>64</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>308702257606</cpuusage>
+	<memusage>33329152</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00259260</gen>
+	<drop>00258298</drop>
+	<proc>00000943</proc>
+	<dup>00000937</dup>
+	<thread0>006</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2534.976</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2554.760</cpufreq1>
+	<thread2>005</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2547.222</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000037</runsec>
+	<runcounter>000013</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>64</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>312379057503</cpuusage>
+	<memusage>116674560</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00517097</gen>
+	<drop>01162579</drop>
+	<proc>00001976</proc>
+	<dup>00001976</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2560.260</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2555.724</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2547.085</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000038</runsec>
+	<runcounter>000013</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>64</table>
+	<threads>3</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>321461903365</cpuusage>
+	<memusage>322957312</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00920585</gen>
+	<drop>00916561</drop>
+	<proc>00004022</proc>
+	<dup>00004024</dup>
+	<thread0>001</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2566.090</cpufreq0>
+	<thread1>000</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2538.065</cpufreq1>
+	<thread2>005</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2556.256</cpufreq2>
+</stat>
+
+<stat>
+	<runsec>000039</runsec>
+	<runcounter>000014</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>32768</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>335001364252</cpuusage>
+	<memusage>49106944</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00226152</gen>
+	<drop>00224795</drop>
+	<proc>00001310</proc>
+	<dup>00001310</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2559.670</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2536.593</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2543.306</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2552.441</cpufreq3>
+	<thread4>001</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2561.019</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000040</runsec>
+	<runcounter>000014</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>32768</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>340961090620</cpuusage>
+	<memusage>188907520</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00507250</gen>
+	<drop>00504387</drop>
+	<proc>00002854</proc>
+	<dup>00002854</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2554.008</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2561.493</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2551.557</cpufreq2>
+	<thread3>003</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2571.479</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2553.879</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000041</runsec>
+	<runcounter>000014</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>32768</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>359540443744</cpuusage>
+	<memusage>638525440</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01357801</gen>
+	<drop>01349975</drop>
+	<proc>00007776</proc>
+	<dup>00007775</dup>
+	<thread0>006</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2564.840</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2555.820</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2545.113</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2563.516</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2543.435</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000042</runsec>
+	<runcounter>000015</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>4096</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>399297017541</cpuusage>
+	<memusage>49328128</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00225799</gen>
+	<drop>00224302</drop>
+	<proc>00001486</proc>
+	<dup>00001479</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2552.136</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2552.960</cpufreq1>
+	<thread2>005</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2555.243</cpufreq2>
+	<thread3>006</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2546.108</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2483.499</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000043</runsec>
+	<runcounter>000015</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>4096</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>413350902206</cpuusage>
+	<memusage>485736448</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01657720</gen>
+	<drop>01646340</drop>
+	<proc>00011374</proc>
+	<dup>00011374</dup>
+	<thread0>004</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2553.852</cpufreq0>
+	<thread1>005</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2568.284</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2548.996</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2552.368</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2582.606</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000044</runsec>
+	<runcounter>000015</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>4096</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>469137848580</cpuusage>
+	<memusage>1962041344</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>03512812</gen>
+	<drop>03488610</drop>
+	<proc>00024155</proc>
+	<dup>00024153</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2564.997</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2565.036</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2543.233</cpufreq2>
+	<thread3>006</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2542.880</cpufreq3>
+	<thread4>004</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2528.696</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000045</runsec>
+	<runcounter>000016</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>512</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>589723162942</cpuusage>
+	<memusage>41242624</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00257895</gen>
+	<drop>00256772</drop>
+	<proc>00001099</proc>
+	<dup>00001089</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2554.524</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2567.525</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2565.353</cpufreq2>
+	<thread3>004</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2574.655</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2544.734</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000046</runsec>
+	<runcounter>000016</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>512</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>595326798652</cpuusage>
+	<memusage>178151424</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00514153</gen>
+	<drop>00511030</drop>
+	<proc>00003115</proc>
+	<dup>00003115</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2519.209</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2562.349</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2487.353</cpufreq2>
+	<thread3>006</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2541.197</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2559.206</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000047</runsec>
+	<runcounter>000016</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>512</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>615532616876</cpuusage>
+	<memusage>689922048</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01611486</gen>
+	<drop>01602419</drop>
+	<proc>00009008</proc>
+	<dup>00009009</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2580.542</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2519.568</cpufreq1>
+	<thread2>006</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2565.211</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2547.510</cpufreq3>
+	<thread4>005</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2579.138</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000048</runsec>
+	<runcounter>000017</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>64</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>655566571215</cpuusage>
+	<memusage>36937728</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00247365</gen>
+	<drop>00246365</drop>
+	<proc>00000968</proc>
+	<dup>00000962</dup>
+	<thread0>006</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2538.755</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2543.047</cpufreq1>
+	<thread2>006</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2572.464</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2560.127</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2548.547</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000049</runsec>
+	<runcounter>000017</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>64</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>660599611716</cpuusage>
+	<memusage>161865728</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00442932</gen>
+	<drop>00440138</drop>
+	<proc>00002786</proc>
+	<dup>00002786</dup>
+	<thread0>006</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2585.056</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2563.061</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2551.610</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2548.875</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2532.626</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000050</runsec>
+	<runcounter>000017</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>64</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>678932912779</cpuusage>
+	<memusage>631250944</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01442676</gen>
+	<drop>01434551</drop>
+	<proc>00008083</proc>
+	<dup>00008081</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2556.963</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2561.762</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2572.268</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2567.773</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2579.888</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000051</runsec>
+	<runcounter>000018</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>32768</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>717551224931</cpuusage>
+	<memusage>41455616</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00217307</gen>
+	<drop>00216246</drop>
+	<proc>00001018</proc>
+	<dup>00001014</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2554.461</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2568.969</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2547.184</cpufreq2>
+	<thread3>004</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2549.028</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2552.075</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000052</runsec>
+	<runcounter>000018</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>32768</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>726064603425</cpuusage>
+	<memusage>281047040</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00788326</gen>
+	<drop>00782085</drop>
+	<proc>00006218</proc>
+	<dup>00006218</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2565.852</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2553.055</cpufreq1>
+	<thread2>005</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2574.651</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2557.564</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2571.222</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000053</runsec>
+	<runcounter>000018</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>32768</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>776299812346</cpuusage>
+	<memusage>1643102208</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>03404121</gen>
+	<drop>03383176</drop>
+	<proc>00020932</proc>
+	<dup>00020932</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2579.778</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2514.727</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2557.794</cpufreq2>
+	<thread3>005</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2554.614</cpufreq3>
+	<thread4>005</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2572.295</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000054</runsec>
+	<runcounter>000019</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>4096</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>871885047172</cpuusage>
+	<memusage>68521984</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00400354</gen>
+	<drop>00398165</drop>
+	<proc>00002160</proc>
+	<dup>00002158</dup>
+	<thread0>003</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2577.493</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2564.215</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2557.834</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2549.759</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2556.067</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000055</runsec>
+	<runcounter>000019</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>4096</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>879233100252</cpuusage>
+	<memusage>245571584</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00717418</gen>
+	<drop>00713518</drop>
+	<proc>00003906</proc>
+	<dup>00003906</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2549.196</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2560.264</cpufreq1>
+	<thread2>001</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2509.435</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2572.769</cpufreq3>
+	<thread4>000</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2589.925</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000056</runsec>
+	<runcounter>000019</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>4096</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>930773219382</cpuusage>
+	<memusage>1704214528</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>03852469</gen>
+	<drop>03830884</drop>
+	<proc>00021565</proc>
+	<dup>00021564</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2568.602</cpufreq0>
+	<thread1>002</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2560.828</cpufreq1>
+	<thread2>005</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2552.608</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2556.154</cpufreq3>
+	<thread4>004</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2556.131</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000057</runsec>
+	<runcounter>000020</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>512</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1027617897835</cpuusage>
+	<memusage>41775104</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00220020</gen>
+	<drop>00218806</drop>
+	<proc>00001170</proc>
+	<dup>00001170</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2548.164</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2548.098</cpufreq1>
+	<thread2>006</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2570.267</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2567.617</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2551.671</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000058</runsec>
+	<runcounter>000020</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>512</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1032846107312</cpuusage>
+	<memusage>160858112</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00668404</gen>
+	<drop>00665340</drop>
+	<proc>00003060</proc>
+	<dup>00003060</dup>
+	<thread0>006</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2558.605</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2545.938</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2551.325</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2556.047</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2544.229</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000059</runsec>
+	<runcounter>000020</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>512</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1053333904833</cpuusage>
+	<memusage>767598592</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01922538</gen>
+	<drop>01906009</drop>
+	<proc>00016481</proc>
+	<dup>00016481</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2556.810</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2535.580</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2580.105</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2549.934</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2548.384</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000060</runsec>
+	<runcounter>000021</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>64</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1124416153290</cpuusage>
+	<memusage>39936000</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00206708</gen>
+	<drop>00205604</drop>
+	<proc>00001065</proc>
+	<dup>00001065</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2557.567</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2573.207</cpufreq1>
+	<thread2>005</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2541.771</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2568.402</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2555.308</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000061</runsec>
+	<runcounter>000021</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>64</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1130782639450</cpuusage>
+	<memusage>191840256</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00538993</gen>
+	<drop>00535700</drop>
+	<proc>00003294</proc>
+	<dup>00003294</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2568.107</cpufreq0>
+	<thread1>005</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2567.025</cpufreq1>
+	<thread2>005</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2556.623</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2550.270</cpufreq3>
+	<thread4>005</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2548.270</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000062</runsec>
+	<runcounter>000021</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>64</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1149647696372</cpuusage>
+	<memusage>669294592</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01453748</gen>
+	<drop>01444584</drop>
+	<proc>00009160</proc>
+	<dup>00009160</dup>
+	<thread0>005</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2569.860</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2576.566</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2571.476</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2575.245</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2576.300</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000063</runsec>
+	<runcounter>000022</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>32768</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1191147780584</cpuusage>
+	<memusage>42442752</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00208975</gen>
+	<drop>00207882</drop>
+	<proc>00001067</proc>
+	<dup>00001057</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2550.925</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2543.591</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2534.384</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2559.670</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2540.168</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000064</runsec>
+	<runcounter>000022</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>32768</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1198760400339</cpuusage>
+	<memusage>221294592</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00621091</gen>
+	<drop>00617751</drop>
+	<proc>00003339</proc>
+	<dup>00003339</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2558.607</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2565.998</cpufreq1>
+	<thread2>006</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2594.397</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2582.262</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2565.784</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000065</runsec>
+	<runcounter>000022</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>32768</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1230039664117</cpuusage>
+	<memusage>1127329792</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>02755507</gen>
+	<drop>02732111</drop>
+	<proc>00023291</proc>
+	<dup>00023288</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2539.413</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2550.152</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2589.687</cpufreq2>
+	<thread3>000</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2561.346</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2527.934</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000066</runsec>
+	<runcounter>000023</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>4096</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1317550325031</cpuusage>
+	<memusage>37347328</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00216939</gen>
+	<drop>00215848</drop>
+	<proc>00001048</proc>
+	<dup>00001048</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2544.371</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2536.496</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2563.357</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2534.947</cpufreq3>
+	<thread4>002</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2549.598</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000067</runsec>
+	<runcounter>000023</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>4096</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1323405814078</cpuusage>
+	<memusage>175747072</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00519140</gen>
+	<drop>00516445</drop>
+	<proc>00002688</proc>
+	<dup>00002688</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2572.313</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2545.860</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2579.845</cpufreq2>
+	<thread3>003</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2546.230</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2549.022</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000068</runsec>
+	<runcounter>000023</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>4096</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1344747275828</cpuusage>
+	<memusage>717758464</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01923383</gen>
+	<drop>01913426</drop>
+	<proc>00009946</proc>
+	<dup>00009945</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2570.926</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2570.433</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2572.998</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2567.217</cpufreq3>
+	<thread4>005</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2569.868</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000069</runsec>
+	<runcounter>000024</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>512</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1390816902345</cpuusage>
+	<memusage>36904960</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00231787</gen>
+	<drop>00230739</drop>
+	<proc>00001014</proc>
+	<dup>00001011</dup>
+	<thread0>006</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2554.148</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2543.179</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2557.923</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2536.759</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2548.357</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000070</runsec>
+	<runcounter>000024</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>512</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1397290384548</cpuusage>
+	<memusage>191156224</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00529557</gen>
+	<drop>00526569</drop>
+	<proc>00002990</proc>
+	<dup>00002991</dup>
+	<thread0>004</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2554.369</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2560.574</cpufreq1>
+	<thread2>005</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2538.129</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2543.125</cpufreq3>
+	<thread4>006</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2560.827</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000071</runsec>
+	<runcounter>000024</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>512</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1435798944886</cpuusage>
+	<memusage>1314508800</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>03174950</gen>
+	<drop>03155288</drop>
+	<proc>00019661</proc>
+	<dup>00019661</dup>
+	<thread0>004</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2569.514</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2565.095</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2521.980</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2538.578</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2531.351</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000072</runsec>
+	<runcounter>000025</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>64</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1515905086749</cpuusage>
+	<memusage>39944192</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00262064</gen>
+	<drop>00260888</drop>
+	<proc>00001148</proc>
+	<dup>00001140</dup>
+	<thread0>005</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2551.881</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2573.140</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2544.902</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2529.768</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2556.936</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000073</runsec>
+	<runcounter>000025</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>64</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1521503629873</cpuusage>
+	<memusage>160681984</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00561020</gen>
+	<drop>00558669</drop>
+	<proc>00002357</proc>
+	<dup>00002357</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2561.462</cpufreq0>
+	<thread1>004</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2590.787</cpufreq1>
+	<thread2>005</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2543.717</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2587.467</cpufreq3>
+	<thread4>006</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2558.248</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000074</runsec>
+	<runcounter>000025</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>64</table>
+	<threads>5</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1539441620238</cpuusage>
+	<memusage>626970624</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01304457</gen>
+	<drop>01295738</drop>
+	<proc>00008728</proc>
+	<dup>00008728</dup>
+	<thread0>006</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2520.823</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2572.419</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2561.140</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2578.991</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2520.702</cpufreq4>
+</stat>
+
+<stat>
+	<runsec>000075</runsec>
+	<runcounter>000026</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>32768</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1585230085094</cpuusage>
+	<memusage>51560448</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00308435</gen>
+	<drop>00307036</drop>
+	<proc>00001336</proc>
+	<dup>00001332</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2554.867</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2513.218</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2549.372</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2528.567</cpufreq3>
+	<thread4>006</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2544.924</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2529.232</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2574.219</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000076</runsec>
+	<runcounter>000026</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>32768</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1599518429664</cpuusage>
+	<memusage>400814080</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01104443</gen>
+	<drop>01099248</drop>
+	<proc>00005186</proc>
+	<dup>00005185</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2534.871</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2559.097</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2593.084</cpufreq2>
+	<thread3>006</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2587.089</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2529.716</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2527.023</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2591.501</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000077</runsec>
+	<runcounter>000026</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>32768</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1640764109544</cpuusage>
+	<memusage>1303986176</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>03335275</gen>
+	<drop>03321648</drop>
+	<proc>00013601</proc>
+	<dup>00013601</dup>
+	<thread0>006</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2568.060</cpufreq0>
+	<thread1>005</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2572.883</cpufreq1>
+	<thread2>005</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2563.233</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2591.348</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2594.001</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2592.700</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2593.241</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000078</runsec>
+	<runcounter>000027</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>4096</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1735398164684</cpuusage>
+	<memusage>95772672</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00433767</gen>
+	<drop>00430365</drop>
+	<proc>00003390</proc>
+	<dup>00003388</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2554.916</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2582.321</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2593.829</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2571.260</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2558.545</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2471.107</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2589.150</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000079</runsec>
+	<runcounter>000027</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>4096</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>1794329315185</cpuusage>
+	<memusage>1758785536</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>04275107</gen>
+	<drop>04253503</drop>
+	<proc>00021554</proc>
+	<dup>00021553</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2594.957</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2553.013</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2581.734</cpufreq2>
+	<thread3>006</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2570.579</cpufreq3>
+	<thread4>004</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2570.315</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2563.453</cpufreq5>
+	<thread6>006</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2592.374</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000080</runsec>
+	<runcounter>000027</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>4096</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>2015679821365</cpuusage>
+	<memusage>6967586816</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>17400889</gen>
+	<drop>17306633</drop>
+	<proc>00094073</proc>
+	<dup>00094070</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2571.486</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2546.152</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2555.832</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2532.669</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2575.091</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2556.994</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2593.536</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000081</runsec>
+	<runcounter>000028</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>512</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>2182083485935</cpuusage>
+	<memusage>54517760</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00348235</gen>
+	<drop>00346306</drop>
+	<proc>00001885</proc>
+	<dup>00001878</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2540.088</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2550.439</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2552.233</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2554.433</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2541.619</cpufreq4>
+	<thread5>003</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2555.111</cpufreq5>
+	<thread6>005</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2543.554</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000082</runsec>
+	<runcounter>000028</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>512</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>2202396165214</cpuusage>
+	<memusage>624914432</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>01825483</gen>
+	<drop>01815890</drop>
+	<proc>00009578</proc>
+	<dup>00009577</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2566.569</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2565.956</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2590.932</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2590.530</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2580.399</cpufreq4>
+	<thread5>003</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2591.825</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2591.677</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000083</runsec>
+	<runcounter>000028</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>512</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>2357834274504</cpuusage>
+	<memusage>5569482752</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>12234288</gen>
+	<drop>12109430</drop>
+	<proc>00124721</proc>
+	<dup>00124715</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2594.867</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2553.457</cpufreq1>
+	<thread2>006</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2563.645</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2585.432</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2582.742</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2544.629</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2575.981</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000084</runsec>
+	<runcounter>000029</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>64</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>2561606571569</cpuusage>
+	<memusage>89780224</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00345628</gen>
+	<drop>00342179</drop>
+	<proc>00003404</proc>
+	<dup>00003393</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2260.654</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2576.525</cpufreq1>
+	<thread2>000</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2529.810</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2560.603</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2585.690</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2550.020</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2488.482</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000085</runsec>
+	<runcounter>000029</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>64</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>2601239140994</cpuusage>
+	<memusage>1121611776</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>03130985</gen>
+	<drop>03117718</drop>
+	<proc>00013255</proc>
+	<dup>00013255</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2560.169</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2547.221</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2556.087</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2571.097</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2545.467</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2566.952</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2568.270</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000086</runsec>
+	<runcounter>000029</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>1</lower>
+	<upper>50</upper>
+	<table>64</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>2729170403414</cpuusage>
+	<memusage>4622798848</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>10542718</gen>
+	<drop>10458953</drop>
+	<proc>00083627</proc>
+	<dup>00083630</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2571.476</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2562.531</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2575.466</cpufreq2>
+	<thread3>006</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2592.140</cpufreq3>
+	<thread4>004</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2531.916</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2577.489</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2426.386</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000087</runsec>
+	<runcounter>000030</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>32768</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>2944074603031</cpuusage>
+	<memusage>74088448</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00261346</gen>
+	<drop>00259016</drop>
+	<proc>00002280</proc>
+	<dup>00002280</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2583.753</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2571.177</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2584.360</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2574.090</cpufreq3>
+	<thread4>006</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2484.270</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2529.468</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2563.596</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000088</runsec>
+	<runcounter>000030</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>32768</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>3021265679925</cpuusage>
+	<memusage>2433536000</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>05655318</gen>
+	<drop>05606861</drop>
+	<proc>00048360</proc>
+	<dup>00048358</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2391.445</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2154.586</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2592.527</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2570.166</cpufreq3>
+	<thread4>006</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2552.780</cpufreq4>
+	<thread5>006</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2571.116</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2580.151</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000089</runsec>
+	<runcounter>000030</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>32768</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>3273427384164</cpuusage>
+	<memusage>6964445184</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>24991681</gen>
+	<drop>24611481</drop>
+	<proc>00380195</proc>
+	<dup>00380195</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2553.410</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2528.165</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2541.716</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2545.049</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2512.288</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2508.662</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2577.167</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000090</runsec>
+	<runcounter>000031</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>4096</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>3432972924435</cpuusage>
+	<memusage>85610496</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00304151</gen>
+	<drop>00301206</drop>
+	<proc>00002896</proc>
+	<dup>00002890</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2567.205</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2594.799</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2572.413</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2590.908</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2589.361</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2577.049</cpufreq5>
+	<thread6>006</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2506.432</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000091</runsec>
+	<runcounter>000031</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>4096</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>3542511884960</cpuusage>
+	<memusage>3837153280</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>08403352</gen>
+	<drop>08311151</drop>
+	<proc>00091859</proc>
+	<dup>00091861</dup>
+	<thread0>005</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2580.715</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2594.945</cpufreq1>
+	<thread2>006</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2577.795</cpufreq2>
+	<thread3>006</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2560.461</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2575.340</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2567.865</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2567.769</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000092</runsec>
+	<runcounter>000031</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>4096</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>3814171779957</cpuusage>
+	<memusage>6960406528</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>25384123</gen>
+	<drop>25001326</drop>
+	<proc>00382792</proc>
+	<dup>00382792</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2571.867</cpufreq0>
+	<thread1>006</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2589.938</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2577.152</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2553.632</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2576.148</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2532.990</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2575.713</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000093</runsec>
+	<runcounter>000032</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>512</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>3989226274077</cpuusage>
+	<memusage>55140352</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00392682</gen>
+	<drop>00391009</drop>
+	<proc>00001615</proc>
+	<dup>00001614</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2579.442</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2537.375</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2563.210</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2551.333</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2548.485</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2577.687</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2548.714</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000094</runsec>
+	<runcounter>000032</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>512</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>3997808343613</cpuusage>
+	<memusage>236421120</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00833435</gen>
+	<drop>00829922</drop>
+	<proc>00003510</proc>
+	<dup>00003510</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2594.872</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2567.192</cpufreq1>
+	<thread2>004</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2568.559</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2581.436</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2557.119</cpufreq4>
+	<thread5>005</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2570.397</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2555.420</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000095</runsec>
+	<runcounter>000032</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>512</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>4028696026278</cpuusage>
+	<memusage>952352768</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>02576014</gen>
+	<drop>02564743</drop>
+	<proc>00011272</proc>
+	<dup>00011273</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2593.421</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2576.968</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2572.009</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2497.190</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2560.536</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2512.038</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2589.850</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000096</runsec>
+	<runcounter>000033</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>64</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>4179946331842</cpuusage>
+	<memusage>112611328</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00470471</gen>
+	<drop>00466157</drop>
+	<proc>00004247</proc>
+	<dup>00004243</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2562.039</cpufreq0>
+	<thread1>005</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2506.370</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2315.695</cpufreq2>
+	<thread3>006</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2586.586</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2536.123</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2590.492</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2586.306</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000097</runsec>
+	<runcounter>000033</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>64</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>4284190356796</cpuusage>
+	<memusage>3289903104</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>07489577</gen>
+	<drop>07440600</drop>
+	<proc>00048844</proc>
+	<dup>00048849</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2591.865</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2592.780</cpufreq1>
+	<thread2>004</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2564.701</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2257.044</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2594.516</cpufreq4>
+	<thread5>006</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2574.741</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2515.744</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000098</runsec>
+	<runcounter>000033</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>11</lower>
+	<upper>40</upper>
+	<table>64</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>4530308978291</cpuusage>
+	<memusage>6959493120</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>18943619</gen>
+	<drop>18799592</drop>
+	<proc>00144026</proc>
+	<dup>00144026</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2549.057</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2572.575</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2537.221</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2583.123</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2569.737</cpufreq4>
+	<thread5>006</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2592.755</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2547.606</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000099</runsec>
+	<runcounter>000034</runcounter>
+	<lognr>000000</lognr>
+	<logsec>000000</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>32768</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>4706339498523</cpuusage>
+	<memusage>57012224</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00408032</gen>
+	<drop>00406369</drop>
+	<proc>00001616</proc>
+	<dup>00001612</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2558.621</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2573.183</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2511.318</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2555.118</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2553.881</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2527.643</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2574.204</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000100</runsec>
+	<runcounter>000034</runcounter>
+	<lognr>000001</lognr>
+	<logsec>000001</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>32768</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>4722842242571</cpuusage>
+	<memusage>502312960</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>00773029</gen>
+	<drop>00764743</drop>
+	<proc>00008279</proc>
+	<dup>00008279</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2576.136</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2567.452</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2593.592</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2476.547</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2554.818</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2567.176</cpufreq5>
+	<thread6>007</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2590.354</cpufreq6>
+</stat>
+
+<stat>
+	<runsec>000101</runsec>
+	<runcounter>000034</runcounter>
+	<lognr>000002</lognr>
+	<logsec>000002</logsec>
+	<runtime>3</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>21</lower>
+	<upper>30</upper>
+	<table>32768</table>
+	<threads>7</threads>
+	<model> AMD EPYC 7H12 64-Core Processor</model>
+	<cache> 512</cache>
+	<cpu> 64</cpu>
+	<cpuquota>50000</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>4824855744059</cpuusage>
+	<memusage>3371204608</memusage>
+	<memlimit>134217728000</memlimit>
+	<gen>04955920</gen>
+	<drop>04903857</drop>
+	<proc>00052011</proc>
+	<dup>00052009</dup>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2594.948</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2591.112</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2594.266</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2573.664</cpufreq3>
+	<thread4>007</thread4>
+	<cpucore4>6</cpucore4>
+	<cpufreq4>2566.133</cpufreq4>
+	<thread5>007</thread5>
+	<cpucore5>7</cpucore5>
+	<cpufreq5>2574.623</cpufreq5>
+	<thread6>006</thread6>
+	<cpucore6>8</cpucore6>
+	<cpufreq6>2563.069</cpufreq6>
+</stat>
+
