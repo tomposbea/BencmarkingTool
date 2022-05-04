@@ -54,6 +54,10 @@ int InitSubsystem(int argc, char** argv){
         Run = 1;
         Enable = 0;
 
+	found_hash = 0;
+	found_tree = 0;
+	found_table = 0;
+
         thread_nr = 4;
 	max_thread_param = 4;
         running_time = 2;

@@ -20,11 +20,12 @@
 #include "../headers/def_windows.h"
 #endif
 
-int found_tree, found_table, found_hash;
+int tree, table, hash;
 
 // if matrix not in red and black tree, a new node is created for it
 void *SearchInRBTree(void *str){
 	char *instring = str;
+	search(root_node, instring);
 	if(!search(root_node, instring)) {
                 struct node* temp = (struct node*)malloc(sizeof(struct node));
                 temp->r = NULL;
@@ -32,45 +33,51 @@ void *SearchInRBTree(void *str){
                 temp->p = NULL;
                 strncpy(temp->d, instring, strlen(instring));
                 temp->c = 1;
-
                 root_node = insert(root_node, temp);
-                fixup(root_node, temp);
-        	found_tree=0;
+		fixup(root_node, temp);
+        	tree=0;
 	} else {
-                ProcessedCtrl++;
-                DuplicateCtrl++;
-		found_tree=1;
+		tree=1;
+		found_tree++;
         }
-	//found_tree=0;
 }
 
 // searching for matrix in table, insert if not found
 void *SearchInTable(void *str){
 	 char *instring = str;
 	 if (FindDuplicate(instring) != -1) {
-                ProcessedCtrl++;
-                DuplicateCtrl++;
-		found_table=1;
-	 } else found_table=0;
+		table=1;
+		found_table++;
+	 } else table=0;
 }
 
 void *SearchInHashTable(void *str){
+	 //insert_to_hash(make_key(str), str);
 	if(!search_in_hash(make_key(str))) {
 		insert_to_hash(make_key(str), str);
-		found_table=0;
-	} else found_table=1;
+		hash=0;
+	} else {
+		hash=1;
+		found_hash++;
+	}
 }
 
 int ProcessStringAndCalculate(char* instring) {
-	// create threads fo different search methods, wait for them to finish
-	pthread_t threadID;
-	pthread_create(&threadID, NULL, SearchInRBTree, instring);
-	pthread_create(&threadID, NULL, SearchInTable, instring);
-	pthread_create(&threadID, NULL, SearchInHashTable, instring);
-	pthread_join(threadID, NULL);
+	 hash = table = tree = 0;
+	// create threads fo different search methods
+	pthread_t threadID[3];
+	pthread_create(&threadID[0], NULL, SearchInTable, instring);
+	pthread_create(&threadID[1], NULL, SearchInHashTable, instring);
+	//pthread_create(&threadID[2], NULL, SearchInRBTree, instring);
+	//wait for threads to finish
+	for(int i=0;i<2;i++)
+		pthread_join(threadID[i], NULL);
 
-	if(found_table || found_tree) return 1;
-
+	if(table || hash || tree) {
+		//ProcessedCtrl++;
+                DuplicateCtrl++;
+		return 1;
+	}
 	//calculate LCM, GCD for matrix
 	int mess[size];
 	int matrix[row][column];

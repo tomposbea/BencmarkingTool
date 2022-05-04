@@ -57,7 +57,9 @@ void print_to_xml(){
 	fprintf(f,"\t<drop>%8.8d</drop>\n", DroppedCtrl);
 	fprintf(f,"\t<proc>%8.8d</proc>\n", ProcessedCtrl);
 	fprintf(f,"\t<dup>%8.8d</dup>\n", DuplicateCtrl);
-
+	fprintf(f,"\t<duphash>%8.8d</duphash>\n", found_hash);
+	fprintf(f,"\t<duptable>%8.8d</duptable>\n", found_table);
+	fprintf(f,"\t<duptree>%8.8d</duptree>\n", found_tree);
 	//threads
 	for (int i = 0; i < thread_nr; i++){ 
 		sprintf(comm,"cat /proc/cpuinfo | grep -E 'processor|cpu MHz' | cut -d : -f 2 | paste - - | sed '%dq;d' | cut -d \" \" -f 3", i+2);

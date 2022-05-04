@@ -28,8 +28,9 @@ void print_array(int size, int m[size]){
 }
 
 void print_report(){
+	printf("\n\nFOUND tree: %6.6d   hash:%6.6d   table: %6.6d", found_tree, found_hash, found_table); 
 	printf("\nCounter:%6.6d Gen:%8.8d   Dropped: %8.8d  Processed:%8.8d   Duplicates: %8.8d\nFifo: ", Counter, GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl);
-        for (int i = 0; i < thread_nr; i++) printf("%d:%3.3d  ", i, FifoLen[i]);
+	for (int i = 0; i < thread_nr; i++) printf("%d:%3.3d  ", i, FifoLen[i]);
 }
 
 void PrintParams(){

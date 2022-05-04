@@ -72,6 +72,7 @@ void fixup(struct node* root, struct node* pt);
 void left_rotate(struct node* temp);
 void right_rotate(struct node* temp);
 int search(struct node* trav, char* instring);
+void delete_tree(struct node* trav);
 
 //hash_map.c
 struct DataItem *search_in_hash(long int key);

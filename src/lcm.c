@@ -68,7 +68,6 @@ void lcm_init(int* lcm, int* gcd, int column, int matrix[column]) {
 		len=counter;
 		repetition/=2;
 	}
-	
 	*lcm=res[counter-1].res_lcm;
 	*gcd=res[counter-1].res_gcd;
 }

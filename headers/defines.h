@@ -63,6 +63,10 @@ int Counter;
 int Run;
 int Enable;
 
+int found_hash;
+int found_table;
+int found_tree;
+
 int size, row, column, speed;
 int upper, lower;
 unsigned long TimerFreq;

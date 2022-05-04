@@ -6,8 +6,8 @@
 #include "../headers/functions.h"
 
 struct node* insert(struct node* trav, struct node * temp){
-	if(trav==NULL) return temp; // tree is empty
-	
+	if(!(trav->d)) return temp;
+	if(strcmp(temp->d, trav->d)==0) return temp;
 	//go left if smaller than trav, right if bigger
 	if(strcmp(temp->d, trav->d)<0)
     	{
@@ -19,7 +19,7 @@ struct node* insert(struct node* trav, struct node * temp){
         	trav->r = insert(trav->r, temp);
         	trav->r->p = trav;
     	}
-
+	
 	//return unchange parent node
 	return trav;
 }
@@ -97,14 +97,13 @@ void fixup(struct node* root, struct node* pt){
                 uncle_pt->c = 0;
                 pt = grand_parent_pt;
             }
-            else {
+            else if(uncle_pt!=NULL) {
                 // Case 2: pt is left child of its parent -> right-rotation required
                 if (pt == parent_pt->l) {
                     right_rotate(parent_pt);
                     pt = parent_pt;
                     parent_pt = pt->p;
                 }
- 
                 // Case 3: pt is right child of its parent -> left-rotation required
                 left_rotate(grand_parent_pt);
                 int t = parent_pt->c;
@@ -117,10 +116,20 @@ void fixup(struct node* root, struct node* pt){
     root->c = 0;
 }
 
+void delete_tree(struct node* trav){
+	if(trav){
+		delete_tree(trav->l);
+		delete_tree(trav->r);
+		trav=NULL;
+	}
+}
+
 int search(struct node* trav, char* instring) {
-	if (trav == NULL) return; //empty/end
-	search(trav->l, instring);
-	if(!strcmp(trav->d, instring)) return 1;
-	search(trav->r, instring);
-	return 0;
+	if(trav){
+		search(trav->l, instring);
+		if(!strcmp(trav->d, instring)) {
+			return 1;
+		}
+		search(trav->r, instring);
+	} else return 0;
 }

@@ -139,8 +139,8 @@ THREADTYPE ThreadReport(void* data) {
 			print_report();
 
 			Counter++;
-			GeneratedCtrl = DroppedCtrl = ProcessedCtrl = DuplicateCtrl = 0;
-			root_node=NULL;
+			GeneratedCtrl = DroppedCtrl = ProcessedCtrl = DuplicateCtrl = found_tree = found_hash = found_table =  0;
+			delete_tree(root_node);
 			void empty_hash();	
 			// stop is runtime is up
 			if(Counter>=running_time){

@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
+#include <unistd.h>
 #include "../headers/defines.h"
 #include "../headers/functions.h"
 int generate_int(int lowerl, int upperl){
@@ -18,7 +19,7 @@ void generate_matrix(int row, int column, int m[row][column]){
 
 int GenerateString(char * char_array, int row, int column, int size) {
         int array[size], matrix[row][column];
-
+	//usleep(10000);
         generate_matrix(row, column, matrix);
         matrix_to_array(row, column, matrix,size,array);
         convert_array_to_char(size,array,char_array);

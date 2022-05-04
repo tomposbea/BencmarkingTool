@@ -18,6 +18,16 @@ cmake --build .
 - ./Run -h
 - ./Run --help
 
+## gprof with CMake
+```bash
+cmake -DCMAKE_C_FLAGS=-pg -DCMAKE_CXX_FLAGS=-pg -DCMAKE_BUILD_TYPE=Debug ..
+make
+./Run [parameters]
+gprof ./Run [parameters] gmon.out > gprof1.txt
+gprof ./Run [parameters] -l gmon.out > gprof2.txt
+
+```
+
 ## Running Unit Tests
 ```bash
 cd build
