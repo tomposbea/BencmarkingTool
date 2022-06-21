@@ -16,7 +16,13 @@
 #include <stdbool.h>
 
 #include "headers/defines.h"
-#include "headers/functions.h"
+#include "headers/process/binary_search_tree.h"
+#include "headers/process/redblacktree.h"
+#include "headers/process/hash_map.h"
+#include "headers/report/write_xml.h"
+#include "headers/report/write_csv.h"
+#include "headers/report/print.h"
+
 #include "headers/def_linux.h"
 
 #ifdef __aarch64__  // Linux ARM
@@ -139,9 +145,15 @@ THREADTYPE ThreadReport(void* data) {
 			print_report();
 
 			Counter++;
-			GeneratedCtrl = DroppedCtrl = ProcessedCtrl = DuplicateCtrl = found_tree = found_hash = found_table =  0;
+			GeneratedCtrl = DroppedCtrl = ProcessedCtrl = DuplicateCtrl = found_tree = found_hash = found_table = found_bstree = 0;
+			
 			delete_tree(root_node);
+			root_node=NULL;
+			
+			bsroot=NULL;
+
 			void empty_hash();	
+			
 			// stop is runtime is up
 			if(Counter>=running_time){
                                 Enable = 0;

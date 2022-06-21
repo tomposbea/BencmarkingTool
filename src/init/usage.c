@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../headers/defines.h"
-#include "../headers/functions.h"
+#include "../../headers/defines.h"
+#include "../../headers/init/error.h"
+#include "../../headers/init/usage.h"
 
+// print help if parameter is -h or --help
 void PrintUsage(){
         printf("Usage: ./Run [options]\n");
         printf("\t-runtime \t runtime in seconds, default = %ds\n", running_time);
@@ -20,6 +22,7 @@ void PrintUsage(){
 	printf("\t-starttime \t start of first run\n");
 }
 
+// check if there is a correct value after parameter
 int CheckParameter(int i, int len, char** argv, char* option){
 	 if(i==len-1) { error_no_value(option); return 0;}
 	 int param = atoi(argv[i+1]);
@@ -27,6 +30,7 @@ int CheckParameter(int i, int len, char** argv, char* option){
 	 return 1;
 }
 
+// get command line parameters
 int GetParameters(int argc, char** argv){
         if(argc>1){
                 for(int i=1;i<argc;i+=2){

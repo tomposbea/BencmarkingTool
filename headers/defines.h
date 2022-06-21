@@ -8,29 +8,6 @@
 #define THREADS 4
 #define SIZE 660000
 
-// Structure to represent each node in a red-black tree
-struct node {
-    char d[STRINGLEN]; //data
-    int c; // 1-red, 0-black
-    struct node* p; // parent
-    struct node* r; // right-child
-    struct node* l; // left child
-};
-
-struct node* root_node;
-
-// structure for hash map
-struct DataItem {
-   char data[STRINGLEN];
-   long int key;
-};
-
-struct DataItem* hashArray[SIZE];
-struct DataItem* dummyItem;
-struct DataItem* item;
-
-char command[100], comm[150], model[100], cache[100], cpu[100], quota[100], period[100], usage[100], usage2[100], limit[100], mhz[100];
-
 char start_time[100];
 int outside_build;
 int run_counter;
@@ -66,6 +43,7 @@ int Enable;
 int found_hash;
 int found_table;
 int found_tree;
+int found_bstree;
 
 int size, row, column, speed;
 int upper, lower;

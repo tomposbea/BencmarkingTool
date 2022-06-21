@@ -12,7 +12,13 @@
 #include <time.h>
 #include <math.h>
 #include "../headers/defines.h"
-#include "../headers/functions.h"
+#include "../headers/process/binary_search_tree.h"
+#include "../headers/process/redblacktree.h"
+#include "../headers/process/hash_map.h"
+#include "../headers/process/lcm.h"
+
+#include "../headers/generate/generate.h"
+#include "../headers/generate/conversions.h"
 
 #if defined(__linux__)
 #include "../headers/def_linux.h"
@@ -20,19 +26,22 @@
 #include "../headers/def_windows.h"
 #endif
 
-int tree, table, hash;
+int tree, table, hash, bstree;
 
 // if matrix not in red and black tree, a new node is created for it
 void *SearchInRBTree(void *str){
 	char *instring = str;
-	search(root_node, instring);
+	//search(root_node, instring);
+	//printf("search: %s\n", str);
 	if(!search(root_node, instring)) {
                 struct node* temp = (struct node*)malloc(sizeof(struct node));
                 temp->r = NULL;
                 temp->l = NULL;
                 temp->p = NULL;
-                strncpy(temp->d, instring, strlen(instring));
+		int len = strlen(instring);
+                strncpy(temp->d, instring, len);
                 temp->c = 1;
+	//	printf("insert: %s\n", temp->d);
                 root_node = insert(root_node, temp);
 		fixup(root_node, temp);
         	tree=0;
@@ -43,37 +52,65 @@ void *SearchInRBTree(void *str){
 }
 
 // searching for matrix in table, insert if not found
+// found_table: number of duplicates in the table
+// table: 0 - matrix not found, 1 - matrix found
 void *SearchInTable(void *str){
-	 char *instring = str;
-	 if (FindDuplicate(instring) != -1) {
+	 //char *instring = str;
+	 
+	 if (FindDuplicate(str) != -1) { //duplicate
 		table=1;
 		found_table++;
-	 } else table=0;
+	 } else { //not found
+		 table=0;
+	 } 
 }
 
+// searching for matrix in hash table, insert if not found
+// found_hash: number of duplicates in the hash table
+// hash: 0 - matrix not found, 1 - matrix found
 void *SearchInHashTable(void *str){
-	 //insert_to_hash(make_key(str), str);
-	if(!search_in_hash(make_key(str))) {
+	if(!search_in_hash(make_key(str))) { //not found
 		insert_to_hash(make_key(str), str);
 		hash=0;
-	} else {
+	} else { //duplicate
 		hash=1;
 		found_hash++;
 	}
 }
 
+// searching for matrix in binary search tree, insert if not found
+// found_bstree: number of duplicates in the hash table
+// bstree: 0 - matrix not found, 1 - matrix found
+void *SearchInBSTree(void *str) {
+	if(search_bs(bsroot, str)){ //found it, duplicate
+		bstree = 1;
+                found_bstree++;
+	} else { //not found
+		bsroot = insert_bs(bsroot, str);
+                bstree = 0;
+	}
+
+}
+
+// search for duplicates using: table, hash table, red black tree, binary search tree
+// calculate LCM, GCD for new matrixes
+// return: 1 - instring is a duplicate, 0 - instring is processed
 int ProcessStringAndCalculate(char* instring) {
 	 hash = table = tree = 0;
-	// create threads fo different search methods
-	pthread_t threadID[3];
+
+	// create threads for different search methods
+	int search_threads = 3;
+	pthread_t threadID[search_threads];
 	pthread_create(&threadID[0], NULL, SearchInTable, instring);
 	pthread_create(&threadID[1], NULL, SearchInHashTable, instring);
-	//pthread_create(&threadID[2], NULL, SearchInRBTree, instring);
+	pthread_create(&threadID[2], NULL, SearchInBSTree, instring);
+	//pthread_create(&threadID[3], NULL, SearchInRBTree, instring);
+	
 	//wait for threads to finish
-	for(int i=0;i<2;i++)
+	for(int i=0;i<search_threads;i++)
 		pthread_join(threadID[i], NULL);
 
-	if(table || hash || tree) {
+	if(table || hash || tree || bstree) {
 		//ProcessedCtrl++;
                 DuplicateCtrl++;
 		return 1;

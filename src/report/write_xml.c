@@ -2,15 +2,18 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-#include "../headers/defines.h"
-#include "../headers/functions.h"
+#include "../../headers/defines.h"
+#include "../../headers/report/write_xml.h"
+#include "../../headers/report/system_data.h"
 
+// file pointer
 FILE *f;
 
 void init_xml(const char *filename){
+	// open file for read and write
 	f = fopen(filename,"a");
 
-	//writer header if new file
+	//write header if new file
 	fseek(f, 0, SEEK_END);
 	if( ftell(f) == 0) {
 		fprintf (f,"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n\n");
@@ -60,6 +63,7 @@ void print_to_xml(){
 	fprintf(f,"\t<duphash>%8.8d</duphash>\n", found_hash);
 	fprintf(f,"\t<duptable>%8.8d</duptable>\n", found_table);
 	fprintf(f,"\t<duptree>%8.8d</duptree>\n", found_tree);
+	
 	//threads
 	for (int i = 0; i < thread_nr; i++){ 
 		sprintf(comm,"cat /proc/cpuinfo | grep -E 'processor|cpu MHz' | cut -d : -f 2 | paste - - | sed '%dq;d' | cut -d \" \" -f 3", i+2);
@@ -73,6 +77,7 @@ void print_to_xml(){
 	fprintf(f,"</stat>\n\n");
 }
 
+// close file pointer
 void close_xml() {
 	fclose(f);
 }

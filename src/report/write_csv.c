@@ -2,13 +2,17 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-#include "../headers/defines.h"
-#include "../headers/functions.h"
+#include "../../headers/defines.h"
+#include "../../headers/report/write_csv.h"
+#include "../../headers/report/system_data.h"
 
+// filepointer
 FILE *fp;
 
+// initialize csv
 void init_csv(const char *filename){
-        fp = fopen(filename,"a");
+        // open file for read and write
+	fp = fopen(filename,"a");
 
 	// write header if new file
 	fseek(fp, 0, SEEK_END);
@@ -24,8 +28,12 @@ void init_csv(const char *filename){
 	}
 }
 
+// print one line to csv
 void print_to_csv(){
+	// get conatiner, platform configuration
 	get_system_data();
+
+	// calculate output time since first run (different runs with different configurations)
 	int run_sec = (run_counter-1) * running_time + Counter*log_frequency;
 	
 	//print to CSV
@@ -34,7 +42,9 @@ void print_to_csv(){
         fprintf(fp, "%s, %s, %s, %s, %s, %s, %s, %s, ", model, cache, cpu, quota, period, usage, usage2, limit); //platform parameters
 	fprintf(fp, "%8.8d, %8.8d, %8.8d, %8.8d, %8.8d, %8.8d, %8.8d", GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl, found_hash, found_table, found_tree); //program output
 
+	// print for every thread
 	for (int i = 0; i < thread_nr; i++){
+		// cpu mhz for thread
                 sprintf(comm,"cat /proc/cpuinfo | grep -E 'processor|cpu MHz' | cut -d : -f 2 | paste - - | sed '%dq;d' | cut -d \" \" -f 3", i+2);
                 do_popen(comm, mhz);
 
@@ -47,6 +57,7 @@ void print_to_csv(){
 	fprintf(fp,"\n");	 
 }
 
+// close file pointer
 void close_csv(){
 	fclose(fp);
 }

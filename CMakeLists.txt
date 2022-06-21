@@ -23,24 +23,25 @@ find_package(Threads REQUIRED)
 
 add_executable(Run 
 	main.c
-	src/print.c
-	src/read_conf.c
 	src/fifo.c
-	src/write_xml.c
-	src/error.c
-	src/usage.c
-	src/write_csv.c
-	src/init.c
-	src/system_data.c
-	src/redblacktree.c
-	src/hash_map.c)
+	src/init/read_conf.c
+	src/init/init.c
+	src/init/error.c
+	src/init/usage.c
+	src/report/write_xml.c
+	src/report/write_csv.c
+	src/report/system_data.c
+	src/report/print.c
+	src/process/redblacktree.c
+	src/process/hash_map.c
+	src/process/binary_search_tree.c)
 
-add_library(Lib SHARED src/generate.c src/lcm.c src/conversions.c)
+add_library(Lib SHARED src/generate/generate.c src/process/lcm.c src/generate/conversions.c)
 
 SET_TARGET_PROPERTIES(Lib PROPERTIES LINKER_LANGUAGE C)
 target_link_libraries(Run Lib Threads::Threads)
 target_compile_options(Run PUBLIC ${COMPILER_OPTIONS})
 
-enable_testing()
-add_subdirectory(eric-test/eric-test)
-add_subdirectory(test)
+#enable_testing()
+#add_subdirectory(eric-test/eric-test)
+#add_subdirectory(test)

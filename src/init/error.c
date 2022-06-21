@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "../headers/defines.h"
-#include "../headers/functions.h"
+#include "../../headers/defines.h"
+#include "../../headers/init/error.h"
 
 void error_no_value(char* mess){
         printf("Error: no %s value defined!\n", mess);

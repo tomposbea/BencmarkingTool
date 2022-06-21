@@ -4,9 +4,17 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <sys/stat.h>
-#include "../headers/defines.h"
-#include "../headers/functions.h"
-#include "../headers/def_linux.h"
+#include "../../headers/defines.h"
+#include "../../headers/process/binary_search_tree.h"
+#include "../../headers/process/redblacktree.h"
+#include "../../headers/process/hash_map.h"
+#include "../../headers/report/write_xml.h"
+#include "../../headers/report/write_csv.h"
+#include "../../headers/init/usage.h"
+#include "../../headers/init/read_conf.h"
+#include "../../headers/init/init.h"
+
+#include "../../headers/def_linux.h"
 
 void StopProcess(){
         SleepUni(1);
@@ -57,12 +65,13 @@ int InitSubsystem(int argc, char** argv){
 	found_hash = 0;
 	found_tree = 0;
 	found_table = 0;
+	found_bstree = 0;
 
         thread_nr = 4;
 	max_thread_param = 4;
         running_time = 2;
         log_frequency = 1;
-        lower=1;
+        lower=10;
         upper=99;
 	table_size  = 16384;
 
@@ -91,12 +100,12 @@ int InitSubsystem(int argc, char** argv){
         init_xml(output_file_xml);
         init_csv(output_file_csv);
 	
-	root_node=NULL;
+	InitBSTree();
+	InitRBTree();
 
-	//hash map deleted item
-	dummyItem = (struct DataItem*) malloc(sizeof(struct DataItem));
-   	strcpy(dummyItem->data,"000");
-   	dummyItem->key = -1;
+	// hash map deleted item replacer
+	InitDummyItem();
+
 	return 1;
 }
 

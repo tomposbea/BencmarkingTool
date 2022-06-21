@@ -2,11 +2,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-#include "../headers/defines.h"
-#include "../headers/functions.h"
+#include "../../headers/defines.h"
+#include "../../headers/report/system_data.h"
 
+// file pointer for popen
 FILE *pop;
 
+// popen for a line a command, result is written in res
 void do_popen(char command[100], char *res){
         pop = popen(command, "r");
         if(fgets(res, 100, pop)!=NULL);
@@ -15,10 +17,13 @@ void do_popen(char command[100], char *res){
 	pclose(pop);
 }
 
+// get platform parameters
 void get_system_data() {
+	// model name
         sprintf(command,"cat /proc/cpuinfo | grep \"model name\" | uniq | cut -d : -f 2");
         do_popen(command, model);
 
+	// cache size
         sprintf(command,"cat /proc/cpuinfo | grep \"cache size\" | uniq | cut -d : -f 2");
         do_popen(command, cache);
         int len=strlen(cache);
@@ -26,6 +31,7 @@ void get_system_data() {
         cache[len-3]='\0';
         cache[len-1]='\0';
 
+	// cpu cores
         sprintf(command,"cat /proc/cpuinfo | grep \"cpu cores\" | uniq | cut -d : -f 2");
         do_popen(command, cpu);
 
