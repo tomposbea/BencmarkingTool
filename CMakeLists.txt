@@ -32,7 +32,7 @@ add_executable(Run
 	src/report/write_csv.c
 	src/report/system_data.c
 	src/report/print.c
-	#src/process/redblacktree.c
+	src/process/redblacktree2.c
 	#src/process/hash_map.c
 	#src/process/binary_search_tree.c
 )
@@ -43,6 +43,6 @@ SET_TARGET_PROPERTIES(Lib PROPERTIES LINKER_LANGUAGE C)
 target_link_libraries(Run Lib Threads::Threads)
 target_compile_options(Run PUBLIC ${COMPILER_OPTIONS})
 
-enable_testing()
-add_subdirectory(eric-test)
-add_subdirectory(test)
+#enable_testing()
+#add_subdirectory(eric-test/eric-test)
+#add_subdirectory(test)

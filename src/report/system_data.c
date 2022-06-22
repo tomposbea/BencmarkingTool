@@ -1,3 +1,9 @@
+#ifdef __linux__
+#include "../../headers/def_linux.h"
+#else
+#include "../../headers/def_windows.h"
+#endif
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -19,6 +25,8 @@ void do_popen(char command[100], char *res){
 
 // get platform parameters
 void get_system_data() {
+	
+#ifdef __linux__
 	// model name
         sprintf(command,"cat /proc/cpuinfo | grep \"model name\" | uniq | cut -d : -f 2");
         do_popen(command, model);
@@ -50,4 +58,5 @@ void get_system_data() {
 
         sprintf(command, "cat /sys/fs/cgroup/memory/memory.limit_in_bytes");
         do_popen(command, limit);
+#endif
 }

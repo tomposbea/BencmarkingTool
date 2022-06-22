@@ -7,6 +7,8 @@
 #define MAX_THREADS 64
 #define THREADS 4
 #define SIZE 660000
+#define MAX_COLUMNS 32
+#define MAX_ROWS 32
 
 char start_time[100];
 int outside_build;

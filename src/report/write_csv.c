@@ -45,10 +45,12 @@ void print_to_csv(){
 	// print for every thread
 	for (int i = 0; i < thread_nr; i++){
 		// cpu mhz for thread
+		#ifdef __linux__
                 sprintf(comm,"cat /proc/cpuinfo | grep -E 'processor|cpu MHz' | cut -d : -f 2 | paste - - | sed '%dq;d' | cut -d \" \" -f 3", i+2);
                 do_popen(comm, mhz);
 
 		fprintf(fp, ", %3.3d, %d, %s",FifoLen[i], i+2, mhz); //thread info
+		#endif
 	}
 
 	for (int i = thread_nr; i < MAX_THREADS; i++) //write something to all other threads, so csv is formatted

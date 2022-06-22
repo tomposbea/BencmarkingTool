@@ -65,6 +65,7 @@ void print_to_xml(){
 	fprintf(f,"\t<duptree>%8.8d</duptree>\n", found_tree);
 	
 	//threads
+	#ifdef __linux__
 	for (int i = 0; i < thread_nr; i++){ 
 		sprintf(comm,"cat /proc/cpuinfo | grep -E 'processor|cpu MHz' | cut -d : -f 2 | paste - - | sed '%dq;d' | cut -d \" \" -f 3", i+2);
                 do_popen(comm, mhz);
@@ -73,6 +74,7 @@ void print_to_xml(){
 		fprintf(f,"\t<cpucore%d>%d</cpucore%d>\n", i, i+2, i);
 		fprintf(f,"\t<cpufreq%d>%s</cpufreq%d>\n", i, mhz, i);
 	}
+	#endif
 
 	fprintf(f,"</stat>\n\n");
 }
