@@ -133,7 +133,7 @@ int ProcessStringAndCalculate(char* instring, int fifonum) {
 
 	HANDLE threadID[4];
 	if(1 == fifonum % 4) SearchInTable(instring);
-	else if(2 == fifonum % 4) SearchInTable(instring);
+	else if(2 == fifonum % 4) SearchInHashTable(instring);
 	else if(3 == fifonum % 4) SearchInBSTree(instring);
 	else SearchInRBTree2(instring);
 
