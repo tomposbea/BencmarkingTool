@@ -1,9 +1,17 @@
 // Generate random number, matrix, array, check if array is unique
+#if defined(__linux__)
+#define _GNU_SOURCE
+#include <stdio.h>
+#include <stdlib.h>
+#else
+#include "windows.h"
+#endif
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
-#include <unistd.h>
+
 #include "../../headers/defines.h"
 #include "../../headers/generate/generate.h"
 
@@ -22,11 +30,15 @@ void generate_matrix(int row, int column, int m[row][column]){
 
 // generate a random string: generate matrix, flatten it and convert to char array
 int GenerateString(char * char_array, int row, int column, int size) {
-        int array[size], matrix[row][column];
-	//usleep(100000);
-        generate_matrix(row, column, matrix);
-        matrix_to_array(row, column, matrix,size,array);
-        convert_array_to_char(size,array,char_array);
+	int arr[1024];
+    	int* matrix = malloc(row * column * sizeof(int));
+
+	//usleep(10000);
+    	generate_matrix(row, column, matrix);
+    	matrix_to_array(row, column, matrix, size, arr);
+    	convert_array_to_char(size, arr, char_array);
+
+    	free(matrix);
 
         return sizeof(char_array);
 }

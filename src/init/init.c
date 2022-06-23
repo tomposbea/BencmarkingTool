@@ -1,9 +1,21 @@
-#include <time.h>
-#include <string.h>
+#ifdef __linux__
+#define _GNU_SOURCE
 #include <stdio.h>
-#include <unistd.h>
 #include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <pthread.h>
+#include <string.h>
+#include <sched.h>
+#include <sys/sysinfo.h>
+#include <errno.h>
+#include <ctype.h>      /* Character Type Classification */
+#include <inttypes.h>
+#include <time.h>
+#include <math.h>
+#include <stdbool.h>
 #include <sys/stat.h>
+
 #include "../../headers/defines.h"
 #include "../../headers/process/binary_search_tree.h"
 #include "../../headers/process/redblacktree.h"
@@ -15,6 +27,26 @@
 #include "../../headers/init/init.h"
 
 #include "../../headers/def_linux.h"
+
+#else
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <Windows.h>
+#include <profileapi.h>
+#include <sys/stat.h>
+#include "windows.h"
+#include "../../headers/defines.h"
+#include "../../headers/process/binary_search_tree.h"
+#include "../../headers/process/redblacktree.h"
+#include "../../headers/process/hash_map.h"
+#include "../../headers/report/write_xml.h"
+#include "../../headers/report/write_csv.h"
+#include "../../headers/init/usage.h"
+#include "../../headers/init/read_conf.h"
+#include "../../headers/init/init.h"
+#endif
 
 void StopProcess(){
         SleepUni(1);
@@ -36,11 +68,20 @@ void StopProcess(){
 }
 
 void ReadConfig(){
-        char config[] = "../inputs/matrix_conf.cfg";
+	#ifdef __linux__
+    		char config[] = "../inputs/matrix_conf.cfg";
+	#else
+    		char config[] = "..\\inputs\\matrix_conf.cfg";
+	#endif
+	
 	struct stat stat_record;
 	if(stat(config, &stat_record)) {
   //    		printf("Config file not found\n");
-		strcpy(config, "/inputs/matrix_conf.cfg");
+		#ifdef __linux__
+        		strcpy(config, "/inputs/matrix_conf.cfg");
+		#else
+        		strcpy(config, "inputs\\matrix_conf.cfg");
+		#endif
 		outside_build = 1;
 	}
 //	printf("Config file: %s\n", config);
@@ -69,12 +110,16 @@ int InitSubsystem(int argc, char** argv){
 
         thread_nr = 4;
 	max_thread_param = 4;
-        running_time = 2;
+        running_time = 10;
         log_frequency = 1;
         lower=10;
         upper=99;
 	table_size  = 16384;
 
+	ReadConfig();
+        if(GetParameters(argc, argv)==0) return 0;
+
+	#ifdef __linux__
 	if(outside_build){
 		strcpy(output_file_xml,"/results/MatrixReports.xml");
         	strcpy(output_file_csv,"/results/MatrixReports.csv");
@@ -82,9 +127,16 @@ int InitSubsystem(int argc, char** argv){
         	strcpy(output_file_xml,"../results/MatrixReports.xml");
         	strcpy(output_file_csv,"../results/MatrixReports.csv");
 	}
-
-        ReadConfig();
-        if(GetParameters(argc, argv)==0) return 0;
+	#else
+	if (outside_build) {
+      		strcpy(output_file_xml, "results\\MatrixReports.xml");
+        	strcpy(output_file_csv, "results\\MatrixReports.csv");
+    	}
+    	else {
+        	strcpy(output_file_xml, "..\\results\\MatrixReports.xml");
+        	strcpy(output_file_csv, "..\\results\\MatrixReports.csv");
+    	}
+	#endif
 
         // Init Fifo System.
         for (int i = 0; i < thread_nr; i++) {

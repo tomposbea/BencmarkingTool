@@ -1,16 +1,22 @@
+#ifdef __linux__
+#include <unistd.h>
+#include <pthread.h>
+#include <sched.h>
+#include <sys/sysinfo.h>
+#else
+#include <windows.h>
+#endif
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <unistd.h>
-#include <pthread.h>
 #include <string.h>
-#include <sched.h>
-#include <sys/sysinfo.h>
 #include <errno.h>
 #include <ctype.h>      /* Character Type Classification */
 #include <inttypes.h>
 #include <time.h>
 #include <math.h>
+
 #include "../headers/defines.h"
 #include "../headers/process/binary_search_tree.h"
 #include "../headers/process/redblacktree.h"
@@ -27,6 +33,24 @@
 #endif
 
 int tree, table, hash, bstree;
+
+int insertion(char* data);
+void deletion(char* data);
+
+// RB tree by Zsigmond
+void* SearchInRBTree2(void* str) {
+	if (NULL == str) {
+		printf("OOPs. RB Tree zero parameter.\n");
+		return NULL;
+	}
+
+	int ret = insertion(str);
+	if (ret == 0) {
+		// Duplicate found/
+		found_tree++;
+	}
+	return NULL;
+}
 
 // if matrix not in red and black tree, a new node is created for it
 void *SearchInRBTree(void *str){
@@ -89,17 +113,16 @@ void *SearchInBSTree(void *str) {
 		bsroot = insert_bs(bsroot, str);
                 bstree = 0;
 	}
-
 }
 
 // search for duplicates using: table, hash table, red black tree, binary search tree
 // calculate LCM, GCD for new matrixes
 // return: 1 - instring is a duplicate, 0 - instring is processed
-int ProcessStringAndCalculate(char* instring) {
-	 hash = table = tree = 0;
+int ProcessStringAndCalculate(char* instring, int fifonum) {
+	 hash = table = tree = bstree = 0;
 
 	// create threads for different search methods
-	int search_threads = 3;
+	/*int search_threads = 3;
 	pthread_t threadID[search_threads];
 	pthread_create(&threadID[0], NULL, SearchInTable, instring);
 	pthread_create(&threadID[1], NULL, SearchInHashTable, instring);
@@ -107,17 +130,25 @@ int ProcessStringAndCalculate(char* instring) {
 	//pthread_create(&threadID[3], NULL, SearchInRBTree, instring);
 	
 	//wait for threads to finish
-	for(int i=0;i<search_threads;i++)
-		pthread_join(threadID[i], NULL);
+        for(int i=0;i<search_threads;i++)
+                pthread_join(threadID[i], NULL);
+	*/
 
+	HANDLE threadID[4];
+	if(1 == fifonum % 4) SearchInTable(instring);
+	else if(2 == fifonum % 4) SearchInTable(instring);
+	else if(3 == fifonum % 4) SearchInBSTree(instring);
+	else SearchInRBTree(instring);
+
+	// if a search method found a duplicate increase the duplicate number
 	if(table || hash || tree || bstree) {
-		//ProcessedCtrl++;
                 DuplicateCtrl++;
 		return 1;
 	}
+
 	//calculate LCM, GCD for matrix
-	int mess[size];
-	int matrix[row][column];
+	int mess[MAX_ROWS * MAX_COLUMNS];
+	int *matrix = malloc(row * column * sizeof(int));
 	convert_array_to_int(size, instring, mess);
 	array_to_matrix(row, column, size, mess,matrix);
 	lcm(row, column, matrix);
@@ -142,6 +173,8 @@ int ProcessStringAndCalculate(char* instring) {
 	ProcessedCtrl++;
 	// Release table
 	AtomicExhange(&TableBusy, 0);
+	
+	free(matrix);
 	return 0;
 }
 
@@ -174,7 +207,7 @@ int GetFromFIFOAndProcess(int fifonum) {
 	AtomicExhange(&(FifoBusy[fifonum]), 0);
 
 	// Process string
-	return ProcessStringAndCalculate(intext);
+	return ProcessStringAndCalculate(intext, fifonum);
 }
 
 int WriteToFifo(int fifonum, char* Temp, int *DroppedCtrl) {
