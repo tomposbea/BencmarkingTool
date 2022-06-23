@@ -62,8 +62,9 @@ void print_to_xml(){
 	fprintf(f,"\t<dup>%8.8d</dup>\n", DuplicateCtrl);
 	fprintf(f,"\t<duphash>%8.8d</duphash>\n", found_hash);
 	fprintf(f,"\t<duptable>%8.8d</duptable>\n", found_table);
-	fprintf(f,"\t<duptree>%8.8d</duptree>\n", found_tree);
-	
+	fprintf(f,"\t<duprbtree>%8.8d</duprbtree>\n", found_tree);
+	fprintf(f,"\t<dupbstree>%8.8d</dupbstree>\n", found_bstree);
+
 	//threads
 	#ifdef __linux__
 	for (int i = 0; i < thread_nr; i++){ 

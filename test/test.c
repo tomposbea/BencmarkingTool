@@ -2,12 +2,13 @@
 #include "et/et.h"
 #include "../headers/def_linux.h"
 #include "../headers/defines.h"
-//#include "../../headers/process/hash_map.h"
-//#include "../headers/process/binary_search_tree.h"
-//#include "../headers/process/redblacktree.h"
-//#include "../headers/process/lcm.h"
-//#include "../headers/generate/generate.h"
-//#include "../headers/generate/conversions.h"
+#include "../headers/process/hash_map.h"
+#include "../headers/process/binary_search_tree.h"
+#include "../headers/process/redblacktree.h"
+#include "../headers/process/lcm.h"
+#include "../headers/generate/generate.h"
+#include "../headers/generate/conversions.h"
+
 #define CONFIG_SIZE (256)
 #define SPEED_SET (1)
 #define n_SET (2)

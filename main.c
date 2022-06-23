@@ -19,9 +19,11 @@
 #include "headers/process/binary_search_tree.h"
 #include "headers/process/redblacktree.h"
 #include "headers/process/hash_map.h"
+#include "headers/process/fifo.h"
 #include "headers/report/write_xml.h"
 #include "headers/report/write_csv.h"
 #include "headers/report/print.h"
+#include "headers/init/init.h"
 
 #include "headers/def_linux.h"
 

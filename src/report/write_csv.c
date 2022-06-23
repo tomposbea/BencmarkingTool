@@ -20,7 +20,7 @@ void init_csv(const char *filename){
 		fprintf(fp, "runsec, runcounter, lognr, logsec, "); //time data
 		fprintf(fp, "runtime, logfreq, genfreq, row, column, size, lower, upper, table, threads, "); //configuration parameeters
 		fprintf(fp, "model, cache, cpu, cpuquota, cpuperiod, cpuusage, memusage, memlimit, "); //platform parameters
-		fprintf(fp, "gen, drop, proc, dup, duphash, duptable, duptree"); //program output
+		fprintf(fp, "gen, drop, proc, dup, duphash, duptable, duprbtree, dupbstree"); //program output
 		
 		for (int i = 0; i < MAX_THREADS; i++) //write header for max threadnumber
 			fprintf(fp, ", thread%d, cpucore%d, cpufreq%d", i, i, i);
@@ -40,7 +40,7 @@ void print_to_csv(){
 	fprintf(fp, "%d, %d, %6.6d, %6.6d, ", run_sec, run_counter, Counter, Counter*log_frequency); //time data
         fprintf(fp, "%d, %d, %d, %d, %d, %d, %d, %d, %d, %d, ", running_time, log_frequency, speed, row, column, size, lower, upper, table_size, thread_nr); //configuration parameters
         fprintf(fp, "%s, %s, %s, %s, %s, %s, %s, %s, ", model, cache, cpu, quota, period, usage, usage2, limit); //platform parameters
-	fprintf(fp, "%8.8d, %8.8d, %8.8d, %8.8d, %8.8d, %8.8d, %8.8d", GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl, found_hash, found_table, found_tree); //program output
+	fprintf(fp, "%8.8d, %8.8d, %8.8d, %8.8d, %8.8d, %8.8d, %8.8d, %8.8d", GeneratedCtrl, DroppedCtrl, ProcessedCtrl, DuplicateCtrl, found_hash, found_table, found_tree, found_bstree); //program output
 
 	// print for every thread
 	for (int i = 0; i < thread_nr; i++){

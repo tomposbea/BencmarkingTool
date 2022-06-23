@@ -14,4 +14,6 @@ py/inputs/*
 py/results/*
 !py/results/.gitkeep
 install-docker.sh
- results/MatrixReports.*
+results/
+/results/
+CMakeLists.txt

@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/function_test_suite.dir/test.c.o  -o function_test_suite  -Wl,-rpath,/home/etombea/BencmarkingTool/build ../eric-test/eric-test/libet_main.a ../eric-test/eric-test/libet.a ../libLib.so -lunwind-x86_64 -lunwind -lrt -lm 

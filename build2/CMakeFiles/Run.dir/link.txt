@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/Run.dir/main.c.o CMakeFiles/Run.dir/src/init/init.c.o CMakeFiles/Run.dir/src/report/write_xml.c.o CMakeFiles/Run.dir/src/report/write_csv.c.o CMakeFiles/Run.dir/src/report/system_data.c.o CMakeFiles/Run.dir/src/report/print.c.o  -o Run  -Wl,-rpath,/home/etombea/BencmarkingTool/build libLib.so -pthread 

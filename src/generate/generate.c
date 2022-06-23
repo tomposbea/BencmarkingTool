@@ -14,6 +14,7 @@
 
 #include "../../headers/defines.h"
 #include "../../headers/generate/generate.h"
+#include "../../headers/generate/conversions.h"
 
 // generate a random int between a lower and upper value
 int generate_int(int lowerl, int upperl){

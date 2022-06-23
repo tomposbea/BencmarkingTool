@@ -72,6 +72,29 @@ void *SearchInRBTree(void *str){
         }
 }
 
+void InsertToTable( char *instring) {
+	// Critical section
+        int oldbusy = 1;            // Always check busy flag
+        while (oldbusy) {
+                oldbusy = AtomicExhange(&TableBusy, 1); // Read TableBusy AND write 1 to it.
+                if (oldbusy) {          // Check if ours
+                        // No. Someone is already in the loop.
+                        while (AtomicLoad(&TableBusy)) SleepUni(0); // Table is Busy. Wait.
+                        oldbusy = 1;        // Table is free, but there is a race for it. Try to catch again.
+                }
+        }
+
+        // Write to table
+        strncpy_s(Table[TablePtr], STRINGLEN, instring, STRINGLEN);
+        // Set pointer
+        TablePtr = (TablePtr + 1) % table_size;
+
+        // Step counter.
+        ProcessedCtrl++;
+        // Release table
+        AtomicExhange(&TableBusy, 0);
+}
+
 // searching for matrix in table, insert if not found
 // found_table: number of duplicates in the table
 // table: 0 - matrix not found, 1 - matrix found
@@ -83,6 +106,7 @@ void *SearchInTable(void *str){
 		found_table++;
 	 } else { //not found
 		 table=0;
+		 InsertToTable(str);
 	 } 
 }
 
@@ -119,18 +143,6 @@ int ProcessStringAndCalculate(char* instring, int fifonum) {
 	 hash = table = tree = bstree = 0;
 
 	// create threads for different search methods
-	/*int search_threads = 3;
-	pthread_t threadID[search_threads];
-	pthread_create(&threadID[0], NULL, SearchInTable, instring);
-	pthread_create(&threadID[1], NULL, SearchInHashTable, instring);
-	pthread_create(&threadID[2], NULL, SearchInBSTree, instring);
-	//pthread_create(&threadID[3], NULL, SearchInRBTree, instring);
-	
-	//wait for threads to finish
-        for(int i=0;i<search_threads;i++)
-                pthread_join(threadID[i], NULL);
-	*/
-
 	HANDLE threadID[4];
 	if(1 == fifonum % 4) SearchInTable(instring);
 	else if(2 == fifonum % 4) SearchInHashTable(instring);
@@ -146,32 +158,15 @@ int ProcessStringAndCalculate(char* instring, int fifonum) {
 	//calculate LCM, GCD for matrix
 	int mess[MAX_ROWS * MAX_COLUMNS];
 	int *matrix = malloc(row * column * sizeof(int));
+	
 	convert_array_to_int(size, instring, mess);
-	array_to_matrix(row, column, size, mess,matrix);
+	array_to_matrix(row, column, size, mess, matrix);
 	lcm(row, column, matrix);
-
-	// Critical section
-	int oldbusy = 1;            // Always check busy flag
-	while (oldbusy) {
-		oldbusy = AtomicExhange(&TableBusy, 1); // Read TableBusy AND write 1 to it.
-		if (oldbusy) {          // Check if ours
-			// No. Someone is already in the loop.
-			while (AtomicLoad(&TableBusy)) SleepUni(0); // Table is Busy. Wait.
-			oldbusy = 1;        // Table is free, but there is a race for it. Try to catch again.
-		}
-	}
-
-	// Write to table
-	strncpy_s(Table[TablePtr], STRINGLEN, instring, STRINGLEN);
-	// Set pointer
-	TablePtr = (TablePtr + 1) % table_size;
-
-	// Step counter.
-	ProcessedCtrl++;
-	// Release table
-	AtomicExhange(&TableBusy, 0);
 	
 	free(matrix);
+	
+	//InsertToTable(instring);
+	
 	return 0;
 }
 
