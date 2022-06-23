@@ -122,3 +122,64 @@ ET_TEST(generate_and_write_to_fifo){
 
 //	et_asserteq(1,GetFromFIFOAndProcess(fifonum));
 //}
+//ET_TEST(new_node){
+//	struct bstree {
+//	char data[STRINGLEN];
+//	struct bstree *left, *right;
+//	};
+//	struct bstree *bsroot = NULL;
+//
+//	char v[10] = "101";
+//	struct bstree *temp = (struct bstree *)malloc(sizeof(struct bstree));
+//	strcpy(temp->data, v);
+//	temp->left = temp->right = NULL;
+
+	//struct bstree *result = newNode(v);
+//	bsroot = newNode(v);
+
+//	et_assert(*temp->data==bsroot->data);
+//}
+ET_TEST(search_bs_false){
+	 struct bstree {
+      char data[STRINGLEN];
+      struct bstree *left, *right;
+      };
+      struct bstree *bsroot = NULL;
+
+      char v[10] = "101";
+
+	et_asserteq(false,search_bs(bsroot,v));
+}
+//ET_TEST(search_bs_true){
+//	struct bstree {
+//      char data[STRINGLEN];
+//      struct bstree *left, *right;
+//      };
+//      struct bstree *bsroot;bsroot = NULL;
+
+//      char* v = "100";
+//	char* w = "200";
+//	bsroot=insert_bs(bsroot,v);
+//	bsroot=insert_bs(bsroot,w);
+//        et_asserteq(true,search_bs(bsroot,v));
+
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
