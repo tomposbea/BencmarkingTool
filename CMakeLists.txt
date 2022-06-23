@@ -32,12 +32,23 @@ add_executable(Run
 	src/report/write_csv.c
 	src/report/system_data.c
 	src/report/print.c
-	src/process/redblacktree2.c
+	#src/process/redblacktree2.c
 	#src/process/hash_map.c
 	#src/process/binary_search_tree.c
 )
 
-add_library(Lib SHARED src/generate/generate.c src/process/lcm.c src/generate/conversions.c src/init/usage.c src/init/error.c src/init/read_conf.c src/process/hash_map.c src/fifo.c src/process/binary_search_tree.c src/process/redblacktree.c)
+add_library(Lib SHARED 
+	src/generate/generate.c 
+	src/process/lcm.c 
+	src/generate/conversions.c 
+	src/init/usage.c 
+	src/init/error.c 
+	src/init/read_conf.c 
+	src/process/hash_map.c 
+	src/process/fifo.c 
+	src/process/binary_search_tree.c 
+	src/process/redblacktree.c
+	src/process/redblacktree2.c)
 
 SET_TARGET_PROPERTIES(Lib PROPERTIES LINKER_LANGUAGE C)
 target_link_libraries(Run Lib Threads::Threads)
