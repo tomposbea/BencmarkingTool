@@ -2,12 +2,12 @@
 #include "et/et.h"
 #include "../headers/def_linux.h"
 #include "../headers/defines.h"
-#include "../../headers/process/hash_map.h"
-#include "../headers/process/binary_search_tree.h"
-#include "../headers/process/redblacktree.h"
-#include "../headers/process/lcm.h"
-#include "../headers/generate/generate.h"
-#include "../headers/generate/conversions.h"
+//#include "../../headers/process/hash_map.h"
+//#include "../headers/process/binary_search_tree.h"
+//#include "../headers/process/redblacktree.h"
+//#include "../headers/process/lcm.h"
+//#include "../headers/generate/generate.h"
+//#include "../headers/generate/conversions.h"
 #define CONFIG_SIZE (256)
 #define SPEED_SET (1)
 #define n_SET (2)
@@ -96,20 +96,29 @@ ET_TEST(generate_and_write_to_fifo){
 
 	et_asserteq(0,GenerateAndWriteToFIFO(fifonum));
 }
-ET_TEST(process_string_and_calcualte){
-	char v[10] = "12 31 42 5";
-	insert_to_hash(make_key(v), v);
+//ET_TEST(process_string_and_calcualte){
+//	int fifonum = 1;
+//	char v[10] = "10 01 20";
+	//insert_to_hash(make_key(v), v);
+//	struct bstree {
+//  		char data[STRINGLEN];
+//  		struct bstree *left, *right;
+//	};
+//	struct bstree *bsroot = NULL;
+//	bsroot = insert_bs(bsroot, v);
 
-	et_asserteq(1,ProcessStringAndCalculate(v));
-}
-ET_TEST(get_from_fifo_and_process){
-	int fifonum = 1;
-	GenerateAndWriteToFIFO(fifonum);
-	char v[10] = "12 31 42 5";
-	int DroppedCtrl=0;
-	insert_to_hash(make_key(v), v);
-	WriteToFifo(fifonum, v, DroppedCtrl);
+//	fifonum = 2;
+//	et_asserteq(0,ProcessStringAndCalculate(v,fifonum));
+//	bsroot = delete_bs(bsroot, v);
+//}
+//ET_TEST(get_from_fifo_and_process){
+//	int fifonum = 1;
+//	GenerateAndWriteToFIFO(fifonum);
+//	char v[10] = "12 31 42 5";
+//	int DroppedCtrl=0;
+//	insert_to_hash(make_key(v), v);
+//	WriteToFifo(fifonum, v, DroppedCtrl);
 
 
-	et_asserteq(1,GetFromFIFOAndProcess(fifonum));
-}
+//	et_asserteq(1,GetFromFIFOAndProcess(fifonum));
+//}
