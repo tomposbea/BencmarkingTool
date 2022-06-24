@@ -124,7 +124,8 @@ echo Last run counter: $counter
 - **conversions.c**: necessary matrix conversions to write matrixes as char arrays
 
 #### process
-- **fifo.c**: read/write to fifos, check if message is duplicate(threads for different methods), do calculations
+- **fifo.c**: read/write to fifos and do calculations if message/matrix is unique
+- **search_duplicate.c**: check if message is duplicate(threads for different methods)
 - **lcm.c**: calculate LCM, GCD for 2 values, an array, a matrix
 - **redblacktree.c**: insert into red and black tree, fix coloring, rotate, search, delete -> 2 versions, redblacktree2 is used
 - **binary_search_tree.c**: insert into binary search tree tree, , search, delete node
