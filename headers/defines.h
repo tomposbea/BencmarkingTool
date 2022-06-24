@@ -10,6 +10,9 @@
 #define MAX_COLUMNS 32
 #define MAX_ROWS 32
 
+// count number of duplicates
+int tree, table, hash, bstree;
+
 char start_time[100];
 int outside_build;
 int run_counter;

@@ -16,4 +16,3 @@ py/results/*
 install-docker.sh
 results/
 /results/
-CMakeLists.txt

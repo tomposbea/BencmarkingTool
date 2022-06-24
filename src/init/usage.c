@@ -16,8 +16,8 @@ void PrintUsage(){
         printf("\t-column \t matrix row size, default from inputs/matrix_conf = %d\n", column);
 	printf("\t-lower \t\t matrix member lowest value, default between %d - %d\n", lower, upper);
 	printf("\t-upper \t\t matrix member highest value, default between %d - %d\n", lower, upper);
-	printf("\t-xml \t output XML file name, default = %s, ex. MatrixReport\n", output_file_xml);
-	printf("\t-csv \t output CSV file name, default = %s, ex. MatrixReport\n", output_file_csv);
+	printf("\t-xml \t\t output XML file name, default = %s, ex. MatrixReport\n", output_file_xml);
+	printf("\t-csv \t\t output CSV file name, default = %s, ex. MatrixReport\n", output_file_csv);
 	printf("\t-counter \t nth run of script\n");
 	printf("\t-starttime \t start of first run\n");
 }
