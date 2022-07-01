@@ -1,3 +1,3 @@
-[submodule "eric-test"]
-	path = eric-test
-	url = ssh://gerrit.ericsson.se:29418/pc/eric-test
+[submodule "modet"]
+	path = modet
+	url = ssh://edidgio@gerrit.ericsson.se:29418/pc/modet
