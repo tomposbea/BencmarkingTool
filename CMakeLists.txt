@@ -49,5 +49,5 @@ target_link_libraries(Run Lib Threads::Threads)
 target_compile_options(Run PUBLIC ${COMPILER_OPTIONS})
 
 enable_testing()
-add_subdirectory(eric-test)
+add_subdirectory(modet)
 add_subdirectory(test)
