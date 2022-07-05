@@ -67,6 +67,11 @@ void StopProcess(){
 	exit(0);
 }
 
+bool file_exists (char *filename) {
+  	struct stat   buffer;   
+  	return (stat (filename, &buffer) == 0);
+}
+
 void ReadConfig(){
 	#ifdef __linux__
     		char config[] = "../inputs/matrix_conf.cfg";
@@ -74,19 +79,28 @@ void ReadConfig(){
     		char config[] = "..\\inputs\\matrix_conf.cfg";
 	#endif
 	
-	struct stat stat_record;
-	if(stat(config, &stat_record)) {
-  //    		printf("Config file not found\n");
+	if (file_exists(config)){
+		struct stat stat_record;
+		if(stat(config, &stat_record)) {
 		#ifdef __linux__
         		strcpy(config, "/inputs/matrix_conf.cfg");
 		#else
         		strcpy(config, "inputs\\matrix_conf.cfg");
 		#endif
 		outside_build = 1;
+		}
+
+		read_matrix_config(config, &row, &column, &speed);
+        	size=row*column;
+	}	
+	else // config file not in the location/dufferent name than config[]
+	{
+		printf("\nError: config file not found. Using default values\n");
+		row = 2;
+        	column = 2;
+        	speed = 1;
+        	size = 4;
 	}
-//	printf("Config file: %s\n", config);
-        read_matrix_config(config, &row, &column, &speed);
-        size=row*column;
 }
 
 int InitSubsystem(int argc, char** argv){
@@ -117,6 +131,7 @@ int InitSubsystem(int argc, char** argv){
 	table_size  = 16384;
 
 	ReadConfig();
+	
         if(GetParameters(argc, argv)==0) return 0;
 
 	#ifdef __linux__

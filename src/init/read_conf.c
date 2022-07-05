@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<errno.h>
 #include "../../headers/defines.h"
 #include "../../headers/init/read_conf.h"
 #define CONFIG_SIZE (256)
@@ -52,14 +53,14 @@ void init_config(CONFIG *config) {
 
 void read_matrix_config(const char *filename, int *n, int *m, int *fr){
 	FILE *f = fopen(filename, "r");
-  	char buf[CONFIG_SIZE];
-  	CONFIG config[1];
-  	init_config(config);
+	
+	char buf[CONFIG_SIZE];
+	CONFIG config[1];
+	init_config(config);
   	int line_number = 0;
   	while (fgets(buf, sizeof buf, f)) {
     		++line_number;
     		int err = parse_config(buf, config);
-    		//if (err) fprintf(stderr, "error line %d: %d\n", line_number, err);
   	}
   	*n=config->n;
   	*m=config->m;
