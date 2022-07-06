@@ -14,5 +14,3 @@ py/inputs/*
 py/results/*
 !py/results/.gitkeep
 install-docker.sh
-results/
-/results/
