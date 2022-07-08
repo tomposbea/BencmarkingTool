@@ -15,8 +15,11 @@ cmake --build .
 ./Run [parameters]
 ```
 
-- ./Run -h
-- ./Run --help
+## Help, parameterlist
+```
+./Run -h
+./Run --help
+```
 
 ## gprof with CMake
 ```bash
@@ -145,11 +148,14 @@ echo Last run counter: $counter
 - **matrix_conf.cfg**: row, column nunmber and generating speed
 
 ## results
-- MatrixReports.xml
-- MatrixReports.csv
+- default output file: MatrixReports.xml, MatrixReports.csv
 - new file: -xml, -csv parameter
+- dut37 results
+
+## scripts
+- generating scripts configuring one parameter
+- build script
 
 ## Unit tests
 - test.c: Unit test cases
 - build/test/function_test_suite.xml: Info about the test case results
-
