@@ -132,7 +132,6 @@ int InitSubsystem(int argc, char** argv){
 
 	ReadConfig();
 	
-        if(GetParameters(argc, argv)==0) return 0;
 
 	#ifdef __linux__
 	if(outside_build){
@@ -152,6 +151,9 @@ int InitSubsystem(int argc, char** argv){
         	strcpy(output_file_csv, "..\\results\\MatrixReports.csv");
     	}
 	#endif
+
+	// read and process command line parameters
+	if(GetParameters(argc, argv)==0) return 0;
 
         // Init Fifo System.
         for (int i = 0; i < thread_nr; i++) {

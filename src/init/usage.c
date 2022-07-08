@@ -32,92 +32,209 @@ int CheckParameter(int i, int len, char** argv, char* option){
 
 // get command line parameters
 int GetParameters(int argc, char** argv){
-        if(argc>1){
+        // if there are parameters check them
+	// stop the program if any of the paramters are missing/wrong
+	if(argc>1){
                 for(int i=1;i<argc;i+=2){
                         if(!strcmp(argv[i],"--help") || !strcmp(argv[i],"-h")) {
-                                PrintUsage();
+                                // print the help, possible parameters
+				PrintUsage();
                                 return 0;
                         }
 			else if(!strcmp(argv[i], "-runtime")) {
+				// check if it is a positive integer
                                 if(!CheckParameter(i, argc, argv, "runtime")) return 0;
+
+				// save runtime
                                 running_time=atoi(argv[i+1]);
                         }
 			else if(!strcmp(argv[i], "-log")) {
+				 // check if it is a positive integer
                                 if(!CheckParameter(i, argc, argv, "log")) return 0;
-                                log_frequency=atoi(argv[i+1]);
+                                
+				// save logging frequency
+				log_frequency=atoi(argv[i+1]);
                         }
 			else if(!strcmp(argv[i], "-row")) {
+				 // check if it is a positive integer
                                 if(!CheckParameter(i, argc, argv, "matrix row")) return 0;
-                                if(atoi(argv[i+1])>6) {error_over_limit("row", 6); return 0;}
+                                
+				// check if it under the max row value
+				if(atoi(argv[i+1])>6) {
+					error_over_limit("row", 6); 
+					return 0;
+				}
+
+				// save matrix row number
 				row=atoi(argv[i+1]);
                         }
 			else if(!strcmp(argv[i], "-column")) {
+				 // check if it is a positive integer
                                 if(!CheckParameter(i, argc, argv, "matrix column")) return 0;
-                                if(atoi(argv[i+1])>6) {error_over_limit("column", 6); return 0;}
+                                
+				// check if it is under the max column value
+				if(atoi(argv[i+1])>6) {
+					error_over_limit("column", 6); 
+					return 0;
+				}
+
+				// save matrix column number
 				column=atoi(argv[i+1]);
                         }
 			else if(!strcmp(argv[i], "-thread")) {
+				 // check if it is a positive integer
                                 if(!CheckParameter(i, argc, argv, "processing thread")) return 0;
-				if(atoi(argv[i+1])>MAX_THREADS) {error_over_limit("thread", MAX_THREADS); return 0;}
-                                if(atoi(argv[i+1])<1) {error_under_limit("thread", 1); return 0;}
+				// check if it is under max thread value
+				if(atoi(argv[i+1])>MAX_THREADS) {
+					error_over_limit("thread", MAX_THREADS); 
+					return 0;
+				}
+                                
+				// check if it is over min thread value
+				if(atoi(argv[i+1])<1) {error_under_limit("thread", 4); return 0;}
+				// save thread number
 				thread_nr=atoi(argv[i+1]);
-				if(thread_nr > max_thread_param) max_thread_param = thread_nr;
+				if(thread_nr > max_thread_param) 
+					max_thread_param = thread_nr;
                         }
 			else if(!strcmp(argv[i], "-table")) {
+				 // check if it is a positive integer
                                 if(!CheckParameter(i, argc, argv, "table")) return 0;
-                                if(atoi(argv[i+1])>MAXTABLE) {error_over_limit("table", MAXTABLE); return 0;}
+                                
+				// check if it is under max table size
+				if(atoi(argv[i+1])>MAXTABLE) {
+					error_over_limit("table", MAXTABLE); 
+					return 0;
+				}
+
+				// save table size
                                 table_size=atoi(argv[i+1]);
                         }
 			else if(!strcmp(argv[i], "-upper")) {
+				 // check if it is a positive integer
                                 if(!CheckParameter(i, argc, argv, "upper")) return 0;
-                                if(atoi(argv[i+1])<lower) {error_lower_upper(); return 0;}
+                                
+				// check if it is big than lower interval value
+				if(atoi(argv[i+1])<lower) {
+					error_lower_upper(); 
+					return 0;
+				}
+
+				// save upper generating limit
                                 upper=atoi(argv[i+1]);
                         }
 			else if(!strcmp(argv[i], "-lower")) {
+				 // check if it is a positive integer
                                 if(!CheckParameter(i, argc, argv, "lower")) return 0;
-                                if(atoi(argv[i+1])<0) {error_under_limit("lower", 0); return 0;}
-				if(atoi(argv[i+1])>upper) {error_lower_upper(); return 0;}
+
+				// check if it a positive number
+                                if(atoi(argv[i+1])<0) {
+					error_under_limit("lower", 0); 
+					return 0;
+				}
+
+				// check if it is smaller than the upper limit
+				if(atoi(argv[i+1])>upper) {
+					error_lower_upper(); 
+					return 0;
+				}
+
+				// save lower generating limit
                                 lower=atoi(argv[i+1]);
                         }
 	
 			else if(!strcmp(argv[i], "-xml")) {
-                                if(i==argc-1) { error_no_value("xml"); return 0;}
-                        	if(strlen(argv[i+1])>=100) {error_over_limit("xml",100); return 0;}
+				// no file name
+                                if(i==argc-1) { 
+					error_no_value("xml"); 
+					return 0;
+				}
+
+				// file name too long
+                        	if(strlen(argv[i+1])>=100) {
+					error_over_limit("xml",100); 
+					return 0;
+				}
+
+				// file name is a path
+                                if(strstr(argv[i+1],"/")!=NULL) {
+                                        printf("Error: output file name can't be a path\n");
+                                        return 0;
+                                }
+
+				// save filename into param
 				char param[100];
 				strcpy(param,argv[i+1]);//filename
+
+				// build path to results folder
 				char path[120];
 				if(outside_build) strcpy(path, "/results/");
 					else strcpy(path, "../results/");
 				strcat(path, param);//add path
+
+				// add extension
 				strcat(path, ".xml");
+
+				// save as xml output file for the program
 				strcpy(output_file_xml, path);
 			}
 			else if(!strcmp(argv[i], "-csv")) {
-                                if(i==argc-1) { error_no_value("csv"); return 0;}
-                                if(strlen(argv[i+1])>=100) {error_over_limit("csv",100); return 0;}
-                                char param[100];
+                                // no file name
+				if(i==argc-1) { 
+					error_no_value("csv"); 
+					return 0;
+				}
+
+				// file name too long
+                                if(strlen(argv[i+1])>=100) {
+					error_over_limit("csv",100); 
+					return 0;
+				}
+
+				// file name is a path
+				if(strstr(argv[i+1],"/")!=NULL) {
+					printf("Error: output file name can't be a path\n");
+					return 0;
+				}
+				
+				// save filename into param
+				char param[100];
                                 strcpy(param,argv[i+1]);//filename
+
+				// build path to the results folder
 				char path[120];
                                 if(outside_build) strcpy(path, "/results/");
                                         else strcpy(path, "../results/");
 				strcat(path, param);//add path
+
+				// add extension
                                 strcat(path, ".csv");
+
+				//save the parameter as output file of the program
                                 strcpy(output_file_csv, path);
                         }
 			else if(!strcmp(argv[i], "-counter")) {
+				// save counter
 				run_counter = atoi(argv[i+1]);
 			} 
+			/*
 			 else if(!strcmp(argv[i], "-starttime")) {
-                                if(i==argc-1) { error_no_value("startime"); return 0;}
+                                if(i==argc-1) { 
+					error_no_value("startime"); 
+					return 0;
+				}
                                 strcpy(start_time, argv[i+1]);
 				printf("time:%s",  start_time);
-                        }
+                        }*/
 			else {
+				// parameter is not defined, ask for parameters again
 				error_wrong_parameter(argv[i]);
 				return 0;
 			}
 		}
         }
+
+	// calculate matrix size after row and column number
 	size=row*column;
         return 1;
 }
