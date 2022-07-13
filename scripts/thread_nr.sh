@@ -14,7 +14,7 @@ echo Run counter: $counter
 for (( thread=4; thread<=20; thread+=1 )); do
 	    echo "THREADS: $thread"
             counter=$((counter+1))
-            ./Run -runtime 250 -thread $thread -counter $counter -csv ThreadNr_250 -xml ThreadNr_250
+            ./Run -runtime 500 -thread $thread -counter $counter -csv ThreadNr_500 -xml ThreadNr_500
 done;
 
 echo Last run counter: $counter
