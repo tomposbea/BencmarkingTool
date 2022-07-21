@@ -4,6 +4,7 @@
 #include "../../headers/defines.h"
 #include "../../headers/init/error.h"
 #include "../../headers/init/usage.h"
+#include "../../headers/init/init.h"
 
 // print help if parameter is -h or --help
 void PrintUsage(){
@@ -19,7 +20,7 @@ void PrintUsage(){
 	printf("\t-xml \t\t output XML file name, default = %s, ex. MatrixReport\n", output_file_xml);
 	printf("\t-csv \t\t output CSV file name, default = %s, ex. MatrixReport\n", output_file_csv);
 	printf("\t-counter \t nth run of script\n");
-	printf("\t-starttime \t start of first run\n");
+	printf("\t-mem-diff \t difference between 2 consecutive memory usages under which tool can be considered stabil, default = %d\n", mem_delta);
 }
 
 // check if there is a correct value after parameter
@@ -217,15 +218,13 @@ int GetParameters(int argc, char** argv){
 				// save counter
 				run_counter = atoi(argv[i+1]);
 			} 
-			/*
-			 else if(!strcmp(argv[i], "-starttime")) {
+			 else if(!strcmp(argv[i], "-mem-diff")) {
                                 if(i==argc-1) { 
-					error_no_value("startime"); 
+					error_no_value("mem-diff"); 
 					return 0;
 				}
-                                strcpy(start_time, argv[i+1]);
-				printf("time:%s",  start_time);
-                        }*/
+				mem_delta = atoi(argv[i+1]);
+                        }
 			else {
 				// parameter is not defined, ask for parameters again
 				error_wrong_parameter(argv[i]);

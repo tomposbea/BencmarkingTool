@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "../../headers/defines.h"
 #include "../../headers/report/print.h"
+#include "../../headers/init/init.h"
 
 // print array and its lcm, gcd
 void print_res(int nr, int gcd, int lcm, int column, int matrix[column]){
@@ -45,6 +46,7 @@ void PrintParams(){
         printf(", Thread nr: %d", thread_nr);
         printf(", Table size: %d", table_size);
         printf(", Matrix size: row-%d, column-%d, size-%d", row, column, size);
-        printf(", Matrix value between: %d - %d\n", lower, upper);
+        printf(", Matrix value between: %d - %d", lower, upper);
+	printf(", Memory delta: %d \n", mem_delta);
 }
 

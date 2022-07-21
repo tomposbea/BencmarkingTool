@@ -21,7 +21,7 @@ void init_xml(const char *filename){
 }
 
 void print_to_xml(){
-	get_system_data();	
+	//get_system_data();	
 	int run_sec = (run_counter-1) * running_time + Counter*log_frequency;
 	
 	//print to XML

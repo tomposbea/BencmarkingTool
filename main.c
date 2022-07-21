@@ -23,6 +23,7 @@
 #include "headers/report/write_xml.h"
 #include "headers/report/write_csv.h"
 #include "headers/report/print.h"
+#include "headers/report/system_data.h"
 #include "headers/init/init.h"
 
 #include "headers/def_linux.h"
@@ -137,37 +138,92 @@ THREADTYPE ThreadProcess(void* data) {
 	return 0;
 }
 
+// print to terminal, write to output files
+void PrintOneLine() {
+	 print_to_xml();
+         print_to_csv();
+         print_report();
+}
+
+// increase counter, restart performance metrics
+void IncreaseCounter() {
+	 // increase run counter
+         Counter++;
+
+	 // restart counting from last log
+         GeneratedCtrl = DroppedCtrl = ProcessedCtrl = DuplicateCtrl = found_tree = found_hash = found_table = found_bstree = 0;
+
+         // empty search trees, hash
+         delete_tree(root_node);
+         root_node=NULL;
+         bsroot=NULL;
+         void empty_hash();
+
+	 // save memory usage
+	 strcpy(old_usage2, usage2);
+}
+
+// stop the current run of the tool, close output files
+void StopTool() {
+	// stop execution
+	Enable = 0;
+        Run = 0;
+
+	//wait for all processes to finish
+        SleepUni(500);
+        
+	printf("\n\nSTOPPED\n--------------------------------------------------\n");
+
+	// close output files
+        close_xml();
+        close_csv();
+
+	// stop the tool
+        exit(0);
+}
+
 THREADTYPE ThreadReport(void* data) {
 	int i;
 	while (Run) {
 		if (Enable)
 		{
-			print_to_xml();
-			print_to_csv();
-			print_report();
+			// get platform parameters, memory usage: usage2
+			get_system_data();
 
-			Counter++;
-			GeneratedCtrl = DroppedCtrl = ProcessedCtrl = DuplicateCtrl = found_tree = found_hash = found_table = found_bstree = 0;
+			// first run, no previous value to compare to
+			if(Counter == 0){
+				printf("Counter: %d, old_mem: %ld, mem: %ld\n", Counter, atol(usage2), atol(usage2));
+				IncreaseCounter();
 			
-			delete_tree(root_node);
-			root_node=NULL;
-			
-			bsroot=NULL;
+			// later runs, old memory usage is saved
+			} else {
+				long int old_mem = atol(old_usage2);
+				long int mem = atol(usage2);
 
-			void empty_hash();	
-			
-			// stop is runtime is up
-			if(Counter>=running_time){
-                                Enable = 0;
-                                Run = 0;
-				SleepUni(500); //wait for all processes to finish
-        			printf("\n\nSTOPPED\n");
-				printf("--------------------------------------------------\n");	
-				close_xml();
-				close_csv();
-				exit(0);
-                        }
+				printf("Counter: %d, old_mem: %ld, mem: %ld\n", Counter, old_mem, mem);
+				
+				// increase counter if difference between last memory usages is more than delta
+				// write last line to output files+stop tool if difference is smaller than delta
+				if(old_mem > mem) {
+					if((old_mem - mem) > mem_delta) {
+						IncreaseCounter();
+					} else {
+						PrintOneLine();
+						StopTool();
+					}
+
+				} else {
+					if((mem - old_mem) > mem_delta) {
+						IncreaseCounter();
+                                        } else {
+						PrintOneLine();
+						StopTool();
+					}
+				}
+			}
 		}
+
+		// sleep until next log
 		int sleep = log_frequency * 1000;
 		SleepUni(sleep);
 	}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<stat>
+	<runsec>000794</runsec>
+	<runcounter>000000</runcounter>
+	<lognr>000804</lognr>
+	<logsec>000804</logsec>
+	<runtime>10</runtime>
+	<logfreq>1</logfreq>
+	<genfreq>1</genfreq>
+	<row>2</row>
+	<column>2</column>
+	<size>4</size>
+	<lower>10</lower>
+	<upper>99</upper>
+	<table>16384</table>
+	<threads>4</threads>
+	<model> Intel(R) Xeon(R) Gold 6258R CPU @ 2.70GHz</model>
+	<cache> 39424</cache>
+	<cpu> 28</cpu>
+	<cpuquota>-1</cpuquota>
+	<cpuperiod>100000</cpuperiod>
+	<cpuusage>590826444434113</cpuusage>
+	<memusage>29160402944</memusage>
+	<memlimit>9223372036854771712</memlimit>
+	<gen>00509396</gen>
+	<drop>00456055</drop>
+	<proc>00000747</proc>
+	<dup>00000000</dup>
+	<duphash>00000000</duphash>
+	<duptable>00000000</duptable>
+	<duprbtree>00021614</duprbtree>
+	<dupbstree>00000000</dupbstree>
+	<thread0>007</thread0>
+	<cpucore0>2</cpucore0>
+	<cpufreq0>2700.000</cpufreq0>
+	<thread1>007</thread1>
+	<cpucore1>3</cpucore1>
+	<cpufreq1>2700.000</cpufreq1>
+	<thread2>007</thread2>
+	<cpucore2>4</cpucore2>
+	<cpufreq2>2700.000</cpufreq2>
+	<thread3>007</thread3>
+	<cpucore3>5</cpucore3>
+	<cpufreq3>2699.999</cpufreq3>
+</stat>
+

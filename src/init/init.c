@@ -130,6 +130,8 @@ int InitSubsystem(int argc, char** argv){
         upper=99;
 	table_size  = 16384;
 
+	mem_delta = 1000000;
+	
 	ReadConfig();
 	
 
