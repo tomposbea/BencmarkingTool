@@ -44,8 +44,11 @@ void* SearchInRBTree2(void* str) {
         int ret = insertion(str);
         if (ret == 0) {
                 // Duplicate found/
+		tree = 1;
                 found_tree++;
-        }
+        } else {
+		tree = 0;
+	}
         return NULL;
 }
 
