@@ -20,7 +20,8 @@ struct bstree *newNode(char* item) {
   // copy data into bstree struct, left and right substrees/children are set to NULL
   strcpy(temp->data, item);
   temp->left = temp->right = NULL;
-  
+  temp->counter = Counter;
+
   // return new bstree node
   return temp;
 }
@@ -72,32 +73,66 @@ struct bstree *delete_bs(struct bstree *bsroot, char* data) {
   if (bsroot == NULL) return bsroot;
 
   // find the bstree to be deleted using inorder inorder
-  if(strcmp(data, bsroot->data)<0)
+  if(strcmp(bsroot->data, data) < 0) // go left
     bsroot->left = delete_bs(bsroot->left, data);
-  else if(strcmp(data, bsroot->data)>0)
+  else if(strcmp(bsroot->data, data) > 0) // go right
     bsroot->right = delete_bs(bsroot->right, data);
+
   // node found
   else {
+
     // if the bstree has one or none children
     if (bsroot->left == NULL) { // no left child
+      
       // free node and return its right chile
       struct bstree *temp = bsroot->right;
+      bsroot = NULL;
       free(bsroot);
       return temp;
     
     } else if (bsroot->right == NULL) { // no right child
+    
       // free node and return its left child
       struct bstree *temp = bsroot->left;
+      bsroot = NULL;
       free(bsroot);
       return temp;
-    }
-
+    
+    } else {
     // if the bstree has two children replace it with inorder successor (smallest right) and delete inorder
-    struct bstree *temp = minValueNode(bsroot->right);
-    strcpy(bsroot->data, temp->data);
-    bsroot->right = delete_bs(bsroot->right, temp->data);
+      
+      // search for smallest child
+      struct bstree *temp = minValueNode(bsroot->right);
+      
+      // replace node with smallest child
+      strcpy(bsroot->data, temp->data);
+
+      // link right child to new node
+      bsroot->right = delete_bs(bsroot->right, temp->data);
+    }
   }
 
   // return root of new tree
   return bsroot;
+}
+
+// delete all nodes where counter matches
+void delete_bst_by_counter(struct bstree *bsroot, int counter) {
+	// inorder traversal of bst
+	if(bsroot != NULL) {
+		//traverse left
+		delete_bst_by_counter(bsroot->left, counter);
+
+		//delete node if its counter matches
+		if(bsroot->counter == counter && bsroot != NULL) {
+			//printf("%d:%s \t", bsroot->counter, bsroot->data);
+
+			// find node in delete function by its unique data
+			delete_bs(bsroot, bsroot->data);
+		}
+
+		//traverse right
+		delete_bst_by_counter(bsroot->right, counter);
+	}
+
 }

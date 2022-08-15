@@ -4,8 +4,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include "../../headers/defines.h"
+#include "../../headers/process/redblacktree2.h"
 
-enum nodeColor {
+/*enum nodeColor {
     RED,
     BLACK
 };
@@ -14,9 +15,11 @@ struct rbNode {
     char data[STRINGLEN];
     int color;
     struct rbNode* link[2];
+    int counter;
 };
 
 struct rbNode* root = NULL;
+*/
 
 // Create a red-black tree
 struct rbNode* createNode(char * data) {
@@ -25,6 +28,7 @@ struct rbNode* createNode(char * data) {
     strncpy(newnode->data, data, STRINGLEN);
     newnode->color = RED;
     newnode->link[0] = newnode->link[1] = NULL;
+    newnode->counter = Counter;
     return newnode;
 }
 
@@ -144,14 +148,17 @@ void deletion(char* data) {
         ptr = ptr->link[diff];
     }
 
+    if (ptr != NULL) {
     if (ptr->link[1] == NULL) {
         if ((ptr == root) && (ptr->link[0] == NULL)) {
-            free(ptr);
+            ptr = NULL;
+	    free(ptr);
             root = NULL;
         }
         else if (ptr == root) {
             root = ptr->link[0];
-            free(ptr);
+            ptr = NULL;
+	    free(ptr);
         }
         else {
             stack[ht - 1]->link[dir[ht - 1]] = ptr->link[0];
@@ -205,11 +212,12 @@ void deletion(char* data) {
             ptr->color = color;
         }
     }
+    }
 
     if (ht < 1)
         return;
 
-    if (ptr->color == BLACK) {
+    if ( ptr != NULL && ptr->color == BLACK) {
         while (1) {
             pPtr = stack[ht - 1]->link[dir[ht - 1]];
             if (pPtr && pPtr->color == RED) {
@@ -246,7 +254,8 @@ void deletion(char* data) {
                     rPtr = stack[ht - 1]->link[1];
                 }
 
-                if ((!rPtr->link[0] || rPtr->link[0]->color == BLACK) &&
+		if ( rPtr != NULL) {
+                if ( (!rPtr->link[0] || rPtr->link[0]->color == BLACK) &&
                     (!rPtr->link[1] || rPtr->link[1]->color == BLACK)) {
                     rPtr->color = RED;
                 }
@@ -324,8 +333,26 @@ void deletion(char* data) {
                     break;
                 }
             }
+	    }
             ht--;
         }
     }
+}
+
+// delete all nodes where counter matches
+void delete_rbt_by_counter(struct rbNode *rb, int counter) {
+	if(rb != NULL) {
+		//traverse left
+		delete_rbt_by_counter(rb->link[0], counter);
+
+		if(rb->counter == counter && rb != NULL) {
+			//printf("%d:%s \t", rb->counter, rb->data);
+			//printf("%d ", rb->counter);
+			deletion(rb->data);
+		}
+
+		// traverse right
+		delete_rbt_by_counter(rb->link[1], counter);
+	}
 }
 

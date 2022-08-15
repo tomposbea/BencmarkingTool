@@ -34,7 +34,7 @@ int GenerateString(char * char_array, int row, int column, int size) {
 	int arr[1024];
     	int* matrix = malloc(row * column * sizeof(int));
 
-	//usleep(10000);
+//	usleep(10000);
     	generate_matrix(row, column, matrix);
     	matrix_to_array(row, column, matrix, size, arr);
     	convert_array_to_char(size, arr, char_array);

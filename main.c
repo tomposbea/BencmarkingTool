@@ -20,10 +20,13 @@
 #include "headers/process/redblacktree.h"
 #include "headers/process/hash_map.h"
 #include "headers/process/fifo.h"
+#include "headers/process/redblacktree2.h"
+
 #include "headers/report/write_xml.h"
 #include "headers/report/write_csv.h"
 #include "headers/report/print.h"
 #include "headers/report/system_data.h"
+
 #include "headers/init/init.h"
 
 #include "headers/def_linux.h"
@@ -153,15 +156,71 @@ void IncreaseCounter() {
 	 // restart counting from last log
          GeneratedCtrl = DroppedCtrl = ProcessedCtrl = DuplicateCtrl = found_tree = found_hash = found_table = found_bstree = 0;
 
-         // empty search trees, hash
-         delete_tree(root_node);
-         root_node=NULL;
-         bsroot=NULL;
-         void empty_hash();
-
 	 // save memory usage
 	 strcpy(old_usage2, usage2);
 }
+
+// BST and RBT are full, start deleting earliest elements
+void TreeIsFull() {
+	// delete BST, RBT nodes for one counter value
+	delete_bst_by_counter(bsroot, Counter2);
+	delete_rbt_by_counter(root, Counter2);
+	
+	// increase delete counter
+	Counter2++;
+	
+	//empty_hash();
+}
+
+int CheckMemoryDiff(int old_mem, int mem) {
+	if(old_mem > mem) {
+        	if((old_mem - mem) > mem_delta) return 0;
+		else return 1;
+        } else {                        
+		if((mem - old_mem) > mem_delta) return 0;
+		else return 1;
+	}
+}
+
+void AvergeInit() {
+ 	avg_usage = 0;
+        avg_usage2 = 0;
+        avg_generated = 0;
+        avg_dropped = 0;
+        avg_processed = 0;
+        avg_duplicate = 0;
+        avg_hash = 0;
+        avg_table = 0;
+        avg_tree = 0;
+        avg_bstree = 0;
+}
+
+void AverageSum() {
+	avg_usage += atoll(usage);
+	avg_usage2 += atoll(usage2);
+	avg_generated += GeneratedCtrl;
+	avg_dropped += DroppedCtrl;
+	avg_processed += ProcessedCtrl;
+	avg_duplicate += DuplicateCtrl;
+	avg_hash += found_hash;
+	avg_table += found_table;
+	avg_tree += found_tree;
+	avg_bstree += found_bstree;
+}
+
+void AverageDiv(int div) {
+	avg_usage /= div;
+        avg_usage2 /= div;
+        avg_generated /= div;
+        avg_dropped /= div;
+        avg_processed /= div;
+        avg_duplicate /= div;
+        avg_hash /= div;
+        avg_table /= div;
+        avg_tree /= div;
+        avg_bstree /= div;
+}
+
 
 // stop the current run of the tool, close output files
 void StopTool() {
@@ -200,23 +259,49 @@ THREADTYPE ThreadReport(void* data) {
 				long int old_mem = atol(old_usage2);
 				long int mem = atol(usage2);
 
-				printf("Counter: %d, old_mem: %ld, mem: %ld\n", Counter, old_mem, mem);
-				
+				printf("\nCounter: %d, old_mem: %ld, mem: %ld\n", Counter, old_mem, mem);
+			
 				// increase counter if difference between last memory usages is more than delta
-				// write last line to output files+stop tool if difference is smaller than delta
-				if(old_mem > mem) {
-					if((old_mem - mem) > mem_delta) {
-						IncreaseCounter();
-					} else {
-						PrintOneLine();
-						StopTool();
-					}
-
+				if(!MemoryDiff && !CheckMemoryDiff(old_mem, mem)) {
+					IncreaseCounter();
+					MemoryDiff = 0;
+					AvergeInit();
 				} else {
-					if((mem - old_mem) > mem_delta) {
+					MemoryDiff = 1;
+				}
+					
+				if(MemoryDiff) {
+					// tool stabilized
+					// calculate average of 10 normal runs
+					if(CounterStop < 10) {
+						printf("normal");
+						AverageSum();
 						IncreaseCounter();
-                                        } else {
-						PrintOneLine();
+						CounterStop++;
+					// save just the average, re-init averages
+					} else if(CounterStop == 10) {
+						printf("AVG normal");
+						AverageDiv(10);
+						print_avg_to_csv();
+						IncreaseCounter();
+                                                CounterStop++;
+						AvergeInit();
+					// calculate average og 10 runs where oldest tree nodes are deleted
+					} else if (CounterStop > 10 && CounterStop <= 20) {
+						TreeIsFull();
+						printf("delete");
+						AverageSum();
+						IncreaseCounter();
+                                        	CounterStop++;
+					// save average of delete runs
+					} else if (CounterStop == 21) {
+						printf("AVG delete");
+						AverageDiv(10);
+                                                print_avg_to_csv();
+                                                IncreaseCounter();
+                                                CounterStop++;
+					// stop tool when both averages are saved
+					} else {
 						StopTool();
 					}
 				}

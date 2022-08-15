@@ -20,7 +20,8 @@ void PrintUsage(){
 	printf("\t-xml \t\t output XML file name, default = %s, ex. MatrixReport\n", output_file_xml);
 	printf("\t-csv \t\t output CSV file name, default = %s, ex. MatrixReport\n", output_file_csv);
 	printf("\t-counter \t nth run of script\n");
-	printf("\t-mem-diff \t difference between 2 consecutive memory usages under which tool can be considered stabil, default = %d\n", mem_delta);
+	printf("\t-memory \t difference between 2 consecutive memory usages under which tool can be considered stabil, default = %d\n", mem_delta);
+	printf("\t-tree \t\t tree size limit, after how many seconds should the tool delete old nodes, default = %ds \n", tree_limit);
 }
 
 // check if there is a correct value after parameter
@@ -218,12 +219,19 @@ int GetParameters(int argc, char** argv){
 				// save counter
 				run_counter = atoi(argv[i+1]);
 			} 
-			 else if(!strcmp(argv[i], "-mem-diff")) {
+			else if(!strcmp(argv[i], "-memory")) {
                                 if(i==argc-1) { 
 					error_no_value("mem-diff"); 
 					return 0;
 				}
 				mem_delta = atoi(argv[i+1]);
+                        } 
+			else if(!strcmp(argv[i], "-tree")) {
+                                 // check if it is a positive integer
+                                if(!CheckParameter(i, argc, argv, "tree limit")) return 0;
+
+                                // save thread number
+                                tree_limit=atoi(argv[i+1]);
                         }
 			else {
 				// parameter is not defined, ask for parameters again

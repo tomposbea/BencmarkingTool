@@ -48,5 +48,6 @@ void PrintParams(){
         printf(", Matrix size: row-%d, column-%d, size-%d", row, column, size);
         printf(", Matrix value between: %d - %d", lower, upper);
 	printf(", Memory delta: %d \n", mem_delta);
+	printf(", Tree limit: %d \n", tree_limit);
 }
 

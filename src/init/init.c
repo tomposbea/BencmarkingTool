@@ -19,6 +19,7 @@
 #include "../../headers/defines.h"
 #include "../../headers/process/binary_search_tree.h"
 #include "../../headers/process/redblacktree.h"
+#include "../../headers/process/redblacktree2.h"
 #include "../../headers/process/hash_map.h"
 #include "../../headers/report/write_xml.h"
 #include "../../headers/report/write_csv.h"
@@ -40,6 +41,7 @@
 #include "../../headers/defines.h"
 #include "../../headers/process/binary_search_tree.h"
 #include "../../headers/process/redblacktree.h"
+#include "../../headers/process/redblacktree2.h"
 #include "../../headers/process/hash_map.h"
 #include "../../headers/report/write_xml.h"
 #include "../../headers/report/write_csv.h"
@@ -114,6 +116,9 @@ int InitSubsystem(int argc, char** argv){
         ProcessedCtrl = 0;
         DroppedCtrl = 0;
         Counter = 0;
+	Counter2 = 0;
+	CounterStop = 0;
+	MemoryDiff = 0;
         Run = 1;
         Enable = 0;
 
@@ -130,7 +135,8 @@ int InitSubsystem(int argc, char** argv){
         upper=99;
 	table_size  = 16384;
 
-	mem_delta = 1000000;
+	mem_delta = 10000000;
+	tree_limit = 10;
 	
 	ReadConfig();
 	
@@ -173,6 +179,7 @@ int InitSubsystem(int argc, char** argv){
 	
 	InitBSTree();
 	InitRBTree();
+	root = NULL;
 
 	// hash map deleted item replacer
 	InitDummyItem();

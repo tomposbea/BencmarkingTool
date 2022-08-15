@@ -5,6 +5,7 @@ struct node {
     struct node* p; // parent
     struct node* r; // right-child
     struct node* l; // left child
+    int counter;
 };
 
 // red-black tree root node

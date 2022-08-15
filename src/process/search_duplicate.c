@@ -23,6 +23,7 @@
 #include "../../headers/process/hash_map.h"
 #include "../../headers/process/lcm.h"
 #include "../../headers/process/search_duplicate.h"
+#include "../../headers/process/redblacktree2.h"
 
 #include "../../headers/generate/generate.h"
 #include "../../headers/generate/conversions.h"
@@ -32,12 +33,6 @@
 #else
 #include "../../headers/def_windows.h"
 #endif
-
-
-//int tree, table, hash, bstree;
-
-int insertion(char* data);
-void deletion(char* data);
 
 // RB tree by Zsigmond
 void* SearchInRBTree2(void* str) {

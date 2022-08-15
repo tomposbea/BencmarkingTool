@@ -13,7 +13,7 @@ echo Run counter: $counter
 for row in {2..5}; do
             echo "MATRIX SIZE: $row x 3"
             counter=$((counter+1))
-            ./Run -runtime 500 -row $row -column 3 -counter $counter -csv MatrixRow_500 -xml MatrixRow_500
+            ./Run -row $row -column 3 -counter $counter -csv MatrixRow_500 -xml MatrixRow_500
 done;
 
 echo Last run counter: $counter
