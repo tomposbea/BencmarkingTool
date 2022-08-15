@@ -251,7 +251,7 @@ THREADTYPE ThreadReport(void* data) {
 
 			// first run, no previous value to compare to
 			if(Counter == 0){
-				printf("Counter: %d, old_mem: %ld, mem: %ld\n", Counter, atol(usage2), atol(usage2));
+				printf("Counter: %d, old_mem: %ld, mem: %ld", Counter, atol(usage2), atol(usage2));
 				IncreaseCounter();
 			
 			// later runs, old memory usage is saved
@@ -259,7 +259,7 @@ THREADTYPE ThreadReport(void* data) {
 				long int old_mem = atol(old_usage2);
 				long int mem = atol(usage2);
 
-				printf("\nCounter: %d, old_mem: %ld, mem: %ld\n", Counter, old_mem, mem);
+				printf("\nCounter: %d, old_mem: %ld, mem: %ld", Counter, old_mem, mem);
 			
 				// increase counter if difference between last memory usages is more than delta
 				if(!MemoryDiff && !CheckMemoryDiff(old_mem, mem)) {
@@ -274,13 +274,13 @@ THREADTYPE ThreadReport(void* data) {
 					// tool stabilized
 					// calculate average of 10 normal runs
 					if(CounterStop < 10) {
-						printf("normal");
+						printf("\t -> normal");
 						AverageSum();
 						IncreaseCounter();
 						CounterStop++;
 					// save just the average, re-init averages
 					} else if(CounterStop == 10) {
-						printf("AVG normal");
+						printf("\t -> AVG normal");
 						AverageDiv(10);
 						print_avg_to_csv();
 						IncreaseCounter();
@@ -289,13 +289,13 @@ THREADTYPE ThreadReport(void* data) {
 					// calculate average og 10 runs where oldest tree nodes are deleted
 					} else if (CounterStop > 10 && CounterStop <= 20) {
 						TreeIsFull();
-						printf("delete");
+						printf("\t -> delete");
 						AverageSum();
 						IncreaseCounter();
                                         	CounterStop++;
 					// save average of delete runs
 					} else if (CounterStop == 21) {
-						printf("AVG delete");
+						printf("\t -> AVG delete");
 						AverageDiv(10);
                                                 print_avg_to_csv();
                                                 IncreaseCounter();
