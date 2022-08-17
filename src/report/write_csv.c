@@ -65,7 +65,11 @@ void print_avg_to_csv(){
         //get_system_data();
 
         // calculate output time since first run (different runs with different configurations)
-        int run_sec = (run_counter-1) * running_time + Counter*log_frequency;
+        //int run_sec = (run_counter-1) * running_time + Counter*log_frequency;
+	// run_sec = 0 for normal average, 1 for delete average
+	int run_sec;
+	if (run_counter % 2) run_sec = 0;
+	else run_sec = 1;
 
         //print to CSV
         fprintf(fp, "%d, %d, %6.6d, %6.6d, ", run_sec, run_counter, Counter, Counter*log_frequency); //time data
@@ -88,6 +92,9 @@ void print_avg_to_csv(){
                  fprintf(fp, ", %s, %s, %s", "", "", "");
 
         fprintf(fp,"\n");
+
+	// increase counter of number of lines in csv file
+	run_counter++;
 }
 
 

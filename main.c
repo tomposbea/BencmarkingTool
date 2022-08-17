@@ -148,6 +148,13 @@ void PrintOneLine() {
          print_report();
 }
 
+// print to terminal, write to output files
+void PrintAvgLine() {
+         print_avg_to_xml();
+         print_avg_to_csv();
+         print_report();
+}
+
 // increase counter, restart performance metrics
 void IncreaseCounter() {
 	 // increase run counter
@@ -282,7 +289,7 @@ THREADTYPE ThreadReport(void* data) {
 					} else if(CounterStop == 10) {
 						printf("\t -> AVG normal");
 						AverageDiv(10);
-						print_avg_to_csv();
+						PrintAvgLine();
 						IncreaseCounter();
                                                 CounterStop++;
 						AvergeInit();
@@ -297,7 +304,7 @@ THREADTYPE ThreadReport(void* data) {
 					} else if (CounterStop == 21) {
 						printf("\t -> AVG delete");
 						AverageDiv(10);
-                                                print_avg_to_csv();
+                                                PrintAvgLine();
                                                 IncreaseCounter();
                                                 CounterStop++;
 					// stop tool when both averages are saved

@@ -135,7 +135,7 @@ int InitSubsystem(int argc, char** argv){
         upper=99;
 	table_size  = 16384;
 
-	mem_delta = 10000000;
+	mem_delta = 10000;
 	tree_limit = 10;
 	
 	ReadConfig();
