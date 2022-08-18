@@ -10,7 +10,8 @@ fi
 counter=$1
 echo Run counter: $counter
 
-for row in {3..5}; do
+# row=3 in Results_dut37
+for row in {4..5}; do
   for (( lower=10; lower<=70; lower+=20 )); do    
     for (( table=16384; table>=256; table/=2 )); do
       for (( thread=4; thread<=20; thread+=1 )); do
