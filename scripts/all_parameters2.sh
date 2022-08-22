@@ -21,7 +21,7 @@ for row in {3..5}; do
                 -table $table \
                 -thread $thread \
                 -counter $counter \
-                -csv Result_docker_memory -xml Result_docker_memory
+                -csv Result_docker_cpu2 -xml Result_docker_cpu2
         counter=$((counter+2))
       done;
     done;
